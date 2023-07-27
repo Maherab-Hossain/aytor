@@ -1,0 +1,800 @@
+// ********************* HOME PAGE START / 1st PAGE ********************************
+// BANNER START
+#banner{
+    position: relative;
+    .bannerSlide{
+      padding: 241px 0px;
+      background-position: center;
+      background-size: cover;
+      .bannerCnt{
+      color:$bannerTextColor ;
+      h4{
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      margin-bottom: 14px;
+      transition-delay: 0.20s;
+      }
+      h2{
+      font-size: clamp(18px, 12vw, 64px);
+      font-weight: 700;
+      line-height: 74px;
+      transition-delay: 0.25s;
+      }
+      p{
+      font-size: 16px;
+      margin-top: 16px;
+      margin-bottom: 29px;
+      font-weight: 400;
+      line-height: 28px;
+      transition-delay: 0.30s;
+      }
+      a{
+      @include showMoreBtn ();
+      }
+      & > *{       
+      transform: translateY(-500px);
+      opacity: 0;
+      transition: 0.40s ease-in-out;
+      }
+      }
+      &.slick-active .bannerCnt > *{
+      transform: translateY(0px);
+      opacity: 1;
+      }
+     }
+// js dots slider start
+    .banner_slider_dot{
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      li{
+      display: inline-block;
+      button{
+      width: 15px;
+      height: 10px;
+      background-color: $whiteColor;
+      border: none;
+      border-radius: 5px;
+      color: transparent;
+      margin-right: 15px;
+      transition: 0.35s ease;
+      }
+      &.slick-active button{
+      width: 30px;
+      background-color: $colorPrimary;
+      }
+      }
+    }
+// js dots slider end
+}
+// BANNER END
+
+//  BEAUTY CREAM START
+#beautyCream{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .beautybox{
+      cursor: pointer;
+      img{
+      width: 100%;
+      }
+      .creamCnt{
+      position: absolute;
+      inset: 30px;
+      background-color:$beautyCreamHoverBg;
+      z-index: 9999;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transition: 0.25s ease-in;
+      transform: rotate(180deg);
+      transform: scale(0.5);
+      opacity: 0;
+      cursor: pointer;
+      h4{
+      text-align: center;
+      color: $whiteColor;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 40px;
+      }
+      a{
+      @include showMoreBtn (transparent);
+      }
+      &:hover{
+      transform: rotate(0deg);
+      transform: scale(1);
+      opacity: 1;
+      }
+      }
+      .creamCntC{
+      inset: 50px;
+      background-color:$beautyCreamHoverBg;
+      z-index: 9999;
+      text-align: center;
+      }
+      &:hover > *{
+      transform: rotate(0deg);
+      transform: scale(1);
+      opacity: 1;
+      }
+    }
+    .beautyCntA{
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+    }
+    .beautyCntB{
+      margin-top: 25px;
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+    }
+    .beautyCntC{
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      padding-left: 25px;
+      @include phone (){
+      padding-top: 20px;
+      padding-left: 0px;
+      }
+      @include phonePro (){
+      padding-top: 20px;
+      padding-left: 0px;
+      }
+    }
+}
+//  BEAUTY CREAM END
+
+// NEW ARRIVALS START
+#arrival{
+    margin-top: 85px;
+    margin-bottom: 100px;
+    .boxTitle{
+      h2{
+      @include bannerTitle ();
+      } 
+    }
+    .arrivBox{
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      padding-right: 24px;
+      .arrivCnt{
+      .arrivImg {
+      width: inherit;
+      img{
+      width: 100%;
+      filter: brightness(100%);
+      }
+      }
+      .sale h4{
+      width: 52px;
+      height: 26px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: $whiteColor;
+      background-color: $colorPrimary;
+      transform: rotate(-90deg);
+      border-radius: 13px 0px 0px 13px;
+      padding: 0px 8px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      }
+      .arriveIcon{
+      position: absolute;
+      top: 50%;
+      left: 265px;
+      transform: translateY(-82%);
+      transition: 0.25s ease-in;
+      @include phone (){
+      left: 400px;
+      }
+      @include phonePro (){
+      left: 200px;
+      }
+      @include tab (){
+      left: 175px;
+      }
+      @include laptop (){
+      left: 180px;
+      }
+      @include tv (){
+      left: 220px;
+      }
+      li{
+      margin-bottom: 10px;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateX(-200%);
+      transition: 0.1s ease-in-out;
+      transition-delay: calc(0.1s * var(--num));    
+      button{
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 50%;
+      color: $navButtonColor;
+      text-align: center;
+      display: inline-block;
+      background-color: $whiteColor;
+      border: none;
+      transition: 0.25s ease-in;
+      &:hover{
+      color: $whiteColor;
+      background-color: $colorPrimary;
+      }
+      }
+      }   
+      }
+      &:hover .arriveIcon li{
+      transform: translateX(-50%);
+      opacity: 1;
+      } 
+      &:hover .arrivImg{
+      filter: brightness(80%);
+      }
+    }
+    .arrivText{
+      width: 100%; 
+      text-align: center;
+      padding-top: 24px;
+      padding-bottom: 26px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+      h5{
+      font-size: 16px;
+      color: $arrivalpriceColor;
+      font-weight: 400;
+      line-height: 26px;
+      }
+      h4{
+      font-size: 18px;
+      color: $textColorPrimary;
+      font-weight: 600;
+      line-height: 28px;
+      }
+      span{
+      color: $colorPrimary;
+      }
+    }
+    }
+   .beautyArrow{
+      text-align: center;
+      @include phone (){
+      display: none;
+      }
+      @include phonePro (){
+      display: none;
+      }
+    .beautyleft{
+      position: absolute;
+      width: 30px;
+      height: 50px;
+      color: $whiteColor;
+      background-color: $beautyArrowbg;
+      line-height: 50px;
+      top: 320px;
+      left: 13px;
+    }
+    .beautyright{
+      position: absolute;
+      width: 30px;
+      height: 50px;
+      color: $whiteColor;
+      background-color: $beautyArrowbg;
+      line-height: 50px;
+      top: 320px;
+      right: 38px;
+    }
+    }
+}
+// NEW ARRIVALS END
+
+// SPA CREAM BANNER START
+#spaCnt{
+    background-image: url(../images/spa\ cosmetics\ cream\ bg.jpg); 
+    background-position: center;
+    background-size: cover;
+    margin: 100px 0px;
+    .spaCreamText{
+      color:$whiteColor ;
+      padding-bottom: 100px;
+      h2{
+      font-size: clamp(18px, 12vw, 36px);
+      font-weight: 700;
+      line-height: 46px;
+      padding-top: 100px;
+      }
+      p{
+      font-size: 16px;
+      margin-top: 16px;
+      margin-bottom: 30px;
+      font-weight: 400;
+      line-height: 28px;
+      }
+      a{
+      @include showMoreBtn (transparent);
+      border: 2px solid $whiteColor;
+      }    
+    }
+} 
+// SPA CREAM BANNER END
+
+// BEST SELLER PRODUCTS START
+#bestSeller{
+    margin-top: 85px;
+    margin-bottom: 100px;
+    .boxTitle{
+      h2{
+      @include bannerTitle ();
+      } 
+    }
+    .bestSellerCnt{
+      margin-bottom: 24px;
+    }
+    .bestBox{
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      padding-right: 24px;
+    .bestCnt{
+      .arrivImg {
+      width: inherit;
+      img{
+      width: 100%;
+      filter: brightness(100%);
+      }
+      }
+    .sale h4{
+      width: 52px;
+      height: 26px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: $whiteColor;
+      background-color: $colorPrimary;
+      transform: rotate(-90deg);
+      border-radius: 13px 0px 0px 13px;
+      padding: 0px 8px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+    }
+    .arriveIcon{
+      position: absolute;
+      top: 50%;
+      left: 265px;
+      transform: translateY(-82%);
+      transition: 0.25s ease-in;
+      @include phone (){
+      left: 333px;
+      }
+      @include phonePro (){
+      left: 465px;
+      }
+      @include tab (){
+      left: 290px;
+      }
+      @include laptop (){
+      left: 180px;
+      }
+      @include tv (){
+      left: 220px;
+      } 
+      li{
+      margin-bottom: 10px;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateX(-200%);
+      transition: 0.1s ease-in-out;
+      transition-delay: calc(0.1s * var(--num));         
+      button{
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 50%;
+      color: $navButtonColor;
+      text-align: center;
+      display: inline-block;
+      background-color: $whiteColor;
+      border: none;
+      transition: 0.25s ease-in;
+      &:hover{
+      color: $whiteColor;
+      background-color: $colorPrimary;
+      }
+      }
+      }  
+      }
+      &:hover .arriveIcon li{
+      transform: translateX(-50%);
+      opacity: 1;
+      }
+      &:hover .arrivImg{
+      filter: brightness(80%);
+      }
+      }
+      .bestText{
+      width: 100%; 
+      text-align: center;
+      padding-top: 24px;
+      padding-bottom: 26px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+      h5{
+      font-size: 16px;
+      color: $arrivalpriceColor;
+      font-weight: 400;
+      line-height: 26px;
+      }
+      h4{
+      font-size: 18px;
+      color: $textColorPrimary;
+      font-weight: 600;
+      line-height: 28px;
+      }
+      span{
+      color: $colorPrimary;
+      }
+      }
+      }
+      .bestSellerButton{
+      text-align: center;
+      a{
+      @include showMoreBtn ();
+      width: 200px;
+      margin-top: 40px;
+      }
+      }
+    }  
+// BEST SELLER PRODUCTS END
+ 
+// DEALS OF THE DAYS START
+#dealDays{
+    margin: 100px 0px;
+    .boxTitle {
+      h2{
+      @include bannerTitle ();
+    }}
+    .dealBox{
+      max-height: 646px;
+      background-color: $whiteColor;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+      margin-top: 68px;
+      .timer{
+      width: 100%;
+      max-width: 424px;
+      height: 70px;
+      border-radius: 40px;
+      background-color: $whiteColor;
+      box-shadow: 0px 0px 10px 0px rgba(21, 26, 50, 0.10);
+      margin: auto;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      ul{
+      text-align: center;
+      li{
+      display: inline-block;
+      margin: 0px 26px;
+      position: relative;
+      @include customScreen (320px, 410px){
+      margin: 0px 22px;
+      }
+      &::after,
+      &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $colorPrimary;
+      right: -23px; 
+      }
+      &::after{                       
+      top: 10px;
+      }
+      &::before{                        
+      bottom: 10px;
+      }
+      &:last-child::after,
+      &:last-child::before{
+      display: none;
+      }
+      }
+      }
+      }
+      .dealslidCnt{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .dealCnt{
+      width: 100%;
+      max-width: 570px;
+      max-height: 485px;
+      color: $textColorPrimary;
+      background-color: $dealCntbgColor;
+      margin: 0px 26px 86px 39px;
+      padding:35px 0px 131px 40px;
+      h6{
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      line-height: 28px; 
+      }
+      h3{
+      font-size: clamp(18px, 12vw, 36px);
+      font-weight: 700;
+      line-height: 46px;
+      margin-bottom: 16px;
+      }
+      p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px; 
+      margin-bottom: 19px;
+      }
+      h4{
+      font-size: 20px;
+      margin-bottom: 30px;
+      font-weight: 600;
+      line-height: 30px;
+      span{
+      text-decoration: line-through;
+      color:$arrivalpriceColor;
+      opacity: 0.8;
+      }
+      }
+      a{
+      @include showMoreBtn ($navButtonColor);
+      width: 160px;
+      }
+      }
+      } 
+    }
+ // js deal slider dots start
+    .deal_slider_dot{
+      position: absolute;
+      top: 90%;
+      left: 52%;
+      transform: translateX(-50%);
+      li{
+      display: inline-block;
+      button{
+      width: 20px;
+      height: 10px;
+      background-color: $dealCntbgColor;
+      border: none;
+      border-radius: 5px;
+      color: transparent;
+      margin-right: 15px;
+      transition: 0.35s ease;
+      }
+      &.slick-active button{
+      width: 40px;
+      background-color: $navButtonColor;
+      }
+      }
+    }
+ // js deal slider dots end
+}
+// DEALS OF THE DAYS END
+
+// SPECIAL OFFER START
+#specialBanner{
+    position: relative;
+    margin: 100px 0px;
+    background-color: $spacialBgColor;
+    .specialText{
+      padding: 100px 0px ;
+      h6{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      }
+      h3{
+      max-width: 412px;
+      font-size: clamp(18px, 12vw, 36px);
+      font-weight: 700;
+      line-height: 46px;
+      margin-bottom: 16px;
+      }
+      p{
+      max-width: 417px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px; 
+      margin-bottom: 19px;
+      }
+      a{
+      @include showMoreBtn ();
+      }
+    }
+    .specialCnt{
+      @include customScreen (320px, 991px){
+      padding-bottom: 100px
+      }
+      .video{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       object-position: center;
+      }
+      @include customScreen (320px, 991px) {
+       position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      width: 100%;
+      }    
+      }
+      .videoIcon{
+      position: absolute;
+      display: inline-block;
+      width: 61px;
+      height: 61px;
+      text-align: center;
+      background: $whiteColor;
+      border-radius: 50%;
+      left: 45%;
+      top: 45%;
+      &::after{
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 120px;
+      background-color:  $whiteColor;
+      border-radius: 50%;
+      top: -30px;
+      right: -30px;
+      animation: specialBtn 2s infinite;
+      -webkit-animation: specialBtn 2s infinite;
+      z-index: 99;
+      }
+      @keyframes specialBtn {
+      0%{
+      transform: scale(.6, .6);
+      opacity: 0.3;
+      }
+      0%{
+      transform: scale(.5, .5);
+      opacity: 0.1;
+      }
+      100%{
+      transform: scale(1, 1);
+      opacity: 0.6;
+      }
+      }
+      span{
+      font-size: 20px;
+      margin-left: 2px;
+      color: $colorPrimary;
+      line-height: 61px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      }
+      }
+    }
+}
+// SPECIAL OFFER END
+
+// LATEST NEWS START
+#latestNews{
+    margin-top: 85px;
+    margin-bottom: 100px;
+    .slick-track{
+      padding:15px 0px;
+    }
+    .boxTitle{
+      h2{
+      @include bannerTitle ();
+      } 
+    }
+    .newsBox{
+      width: 100%;
+      display: inline-block;
+      cursor: pointer; 
+      margin: 0px auto;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+      .newsImg {
+      img{
+      width: 100%;
+      padding: 20px 20px 15px 20px;
+      }
+      }
+      .newsText{
+      width: 100%; 
+      padding: 9px 20px 10px;
+      h5{
+      font-family: $secondaryfont;
+      font-size: 16px;
+      color: $arrivalpriceColor;
+      font-weight: 400;
+      line-height: 28px;
+      }
+      h4{
+      font-size: 20px;
+      color: $textColorPrimary;
+      font-weight: 600;
+      line-height: 30px;
+      transition: 0.25s ease-in;
+      &:hover{
+      color: $colorPrimary;
+      }
+      }
+      a{
+      position: relative;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 28px;
+      color: $arrivalpriceColor;
+      display: flex;
+      justify-content: space-between;
+      transition: 0.25s ease-in;
+      span{
+      font-size: 18px;
+      position: absolute;
+      top: 5px;
+      left: 85px;
+      } 
+      &:hover{
+      color: $colorPrimary;
+      }  
+      } 
+      }
+    }
+
+ // js deal slider dots start
+    .newsBox_slider_dot{
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      li{
+      display: inline-block;
+      button{
+      width: 20px;
+      height: 10px;
+      background-color: $dealCntbgColor;
+      border: none;
+      border-radius: 5px;
+      color: transparent;
+      margin-right: 15px;
+      transition: 0.35s ease;
+      }
+      &.slick-active button{
+      width: 40px;
+      background-color: $navButtonColor;
+      }
+      }
+    }
+ // js deal slider dots end
+}
+// LATEST NEWS END
+// FOOTER START
+@import "./_footer.scss";
+// FOOTER END
+ // ********************* HOME PAGE END / 1st PAGE ********************************

@@ -1,0 +1,77 @@
+// mixin start
+// ****************** SHOW MORE BUTTON ******************
+@mixin showMoreBtn ($showMoreBtnbgColor:$colorPrimary, ){
+  width: 197px;
+  height: 56px;
+  background-color: $showMoreBtnbgColor;
+  color: $whiteColor;
+  display: inline-block;
+  padding: 14px 37px ;
+  position: relative;
+  transition-delay: 0.35s;
+  span{
+   font-size: 18px;
+   position: absolute;
+   top: 17px;
+  }
+}
+// ****************** SHOW MORE BUTTON ******************
+
+// page banner title start
+@mixin bannerTitle (){
+  color: $textColorPrimary;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+// page banner title end
+// mixin end
+
+// ************************ MEDIA START    *****************************
+// SM / PHONE START
+@mixin phone () {
+  @media (320px <= width <= 575px) {
+  @content;
+  }
+}
+@mixin phonePro () {
+  @media (576px <= width <= 767px) {
+  @content;
+  }
+}
+// SM / PHONE END
+
+// MD / TAB/IPAD START
+@mixin tab () {
+  @media (768px <= width <= 991px) {
+  @content;
+  }
+}
+// MD / TAB/IPAD END
+
+// lg / laptop START
+@mixin laptop () {
+  @media (992px <= width <= 1199px) {
+  @content;
+  }
+}
+// lg / laptop START
+
+// xl / TV START
+@mixin tv () {
+  @media (1200px <= width <= 1399px) {
+  @content;
+  }
+}
+// xl / TV END
+
+// custom responsive start
+@mixin customScreen ($min, $max) {
+  @media (min-width:$min) and (max-width:$max) {
+  @content;
+  }
+}
+// custom responsive end
+// ************************ MEDIA END    *****************************

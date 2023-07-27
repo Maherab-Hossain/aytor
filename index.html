@@ -1,0 +1,2222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aytor</title>
+  <!-- CSS LINKS START -->
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/venobox.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <!-- CSS LINKS END -->
+  <link rel="shortcut icon" href="./images/favv logo.png" type="image/x-icon">
+</head>
+<body>
+  <!-- pre load start -->
+    <div class="preload">
+    <div class="prebox">
+    </div>
+  </div>
+  <!-- pre load end -->
+
+  <!-- MODAL FORM START -->
+  <div class=" modal-fullscreen-sm-down" id="modalCnt">
+    <div class="upbutton">
+      <button type="button" class="btnBox d-lg-block d-none d-md-block" data-bs-toggle="modal" data-bs-target="#chatModal" data-bs-whatever="@mdo">
+      <img src="./images/modal button.gif" alt="" class="modalBtn">
+      </button>
+    </div>
+  <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+    <!-- modal logo start -->
+      <img src="./images/sm logo.png" alt="">
+    <!-- modal logo start -->
+    <!-- modal closeButton start -->
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- modal closeButton start -->
+      </div>
+      <div class="modal-body">
+      <!-- modal form start -->
+        <form>
+          <div class="mb-3">
+          <label for="recipient-name" class="col-form-label">Email</label>
+          <input type="email" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+          <label for="message-text" class="col-form-label">Message</label>
+          <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      <!-- modal form end -->
+      </div>
+      <div class="modal-footer">
+      <!-- modal send button start -->
+      <a href=""><button type="button" class="btn  modalSendTextBtn">Send message</button></a>
+      <!-- modal send button end -->
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- MODAL FORM END -->
+
+  <!-- NAV START -->
+  <!-- ********* NAV lg START ********** --> 
+  <nav class="navbar navbar-expand-lg d-none d-lg-block" id="menu">
+    <div class="container">
+          <!-- nav lg logo start -->
+          <a class="navbar-brand" href="#">
+          <img src="./images/aytor nav logo.png" alt="">
+          </a>
+          <!-- nav lg logo start -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <!-- nav option start -->
+          <div class="collapse navbar-collapse navOption" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+              <li class="nav-item">
+              <a class="nav-link "  href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blogs
+                </a>
+                <ul class="dropdown-menu " >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link "  href="#">Contact</a>
+              </li>
+             
+            </ul>
+          </div>
+        <!-- nav option end -->
+          <div class="navButton">
+            <ul>
+            <!-- search modal button start -->
+            <li>
+              <span  type="button" class="search" data-bs-toggle="modal" data-bs-target="#searchModal"><iconify-icon icon="mingcute:search-line" rotate="90deg"></iconify-icon></span>
+            </li>
+            <!-- search modal button end -->  
+
+            <!-- search modal start -->
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <img src="./images/sm logo.png" alt="">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form >
+                    <input type="text"   placeholder="Search For Products">
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <a href=""><button type="button" class="searchModalbtn">Search</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- search modal end -->
+            <!-- nav icon start -->
+                <li>
+                    <a href="#"><iconify-icon icon="fluent-mdl2:contact"></iconify-icon></a>
+                </li>
+                <li>
+                    <a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a>
+                </li>
+                <li>
+                <a href="#"><iconify-icon icon="uil:cart"></iconify-icon>
+                  <div class="cart">
+                  0
+                  </div>
+                </a>
+                </li>
+              <!-- nav icon end -->  
+            </ul>
+
+          </div>
+    </div>
+  </nav>
+      <!-- ********* NAV lg END ********** --> 
+
+  <!-- ********* NAV sm START ********** --> 
+      <nav class="navbar navbar-sm d-block d-lg-none " id="menuSm">
+        <div class="container">
+          <div class="row w-100 align-items-center">
+
+            <div class="col-3 menuSmBar text-start">
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><iconify-icon icon="mingcute:menu-fill"></iconify-icon></button>
+            </div>
+            <div class="col-6 text-center">
+              <img src="./images/sm logo.png" alt="">
+            </div>
+            <div class="col-3 text-end">
+              <div class="navButton">
+                <ul>
+                    <li>
+                        <a href=""><iconify-icon icon="uil:cart"></iconify-icon>
+    
+                          <div class="cart">
+                            0
+                          </div>
+                    </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SIDE MENU START -->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+               <!-- SIDE BAR LOGO/BUTTON -->
+                <div class="logoSm">
+                  <img src="./images/sm logo.png" alt="">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <!-- SIDE BAR LOGO/BUTTON -->
+
+              <div class="offcanvas-body">
+                <!-- SEARCH BAR -->
+
+                
+
+                <div>
+                  <div class="searchbarSm ">
+
+
+                     <!-- search modal start -->
+                     <!-- <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="searchModalLabel">Search for any product</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="searchmodal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form action="#">
+                              <input type="text" placeholder="keywords here..">
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary closeBtn" data-bs-dismiss="searchmodal">Close</button>
+                            <button type="button" class="btn btn-primary searchBtn">Search</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                     <!-- search modal end -->
+
+                       <!-- Button trigger search modal start -->
+                          <!-- <span>
+                             <iconify-icon icon="iconamoon:search"data-bs-toggle="searchmodal" data-bs-target="#searchModal"></iconify-icon>
+                          </span> -->
+                       <!-- Button trigger search modal end -->
+
+
+                     <!-- MODAL FOR SEARCH ICON ENDS -->
+                    <form class="">
+                      <!-- <label id="sideSearch"></label> -->
+                      <input type="search" class="sideBarSearch " placeholder="Search for products" value=""   >
+                      <button type="button" class="sideSearchButton"><iconify-icon icon="iconamoon:search"></iconify-icon></button>
+                    </form>
+                  </div>
+                </div>
+                <!-- SEARCH BAR -->
+
+                <!-- menu/categories start -->
+
+                <ul class="nav nav-underline nav-pills mb-3 menuCateBox" id="pills-tab" role="tablist">
+                  <li class="nav-item col-4" role="presentation">
+                    <button class="menuCate " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#sideMenuFilter" type="button" role="tab" aria-controls="pills-home" aria-selected="true">MENU</button>
+                  </li>
+                  <li class="nav-item col-4" role="presentation">
+                    <button class="menuCate " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">CATEGORIES</button>
+                  </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="sideMenuFilter" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <!-- side menu start -->
+                    <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                      <li class="nav-item">
+                        <a class="nav-link "  href="#">Home</a>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+                       
+                      <li class="nav-item">
+                        <a class="nav-link "  href="#">Contact</a>
+                      </li>
+                    
+  
+                    </ul>
+                    <!-- side menu end -->
+
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <!-- categoties start -->
+
+                    <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                      <li class="nav-item">
+                        <a class="nav-link "  href="#">Food|Beverage</a>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Books|Games
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Movies|Music
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Furniture|Decor
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Consumer|Electronics
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+
+                    <!-- categoties end -->
+
+                  </div>
+
+                </div>
+
+
+                <!-- menu/categories end -->
+
+            <!-- SIDE MENU END -->
+
+          </div>
+        </div>
+      </nav>
+  <!-- ********* NAV sm END ********** --> 
+
+  <!-- NAV END -->
+
+  <!-- BANNER START -->
+      <section id="banner">
+
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-3.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+                 
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider\ 7.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-2.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-4.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-5.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-1.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </section>
+  <!-- BANNER END -->
+    
+  <!-- BEAUTY CREAM START -->
+  <section id="beautyCream">
+  <div class="container">
+    <div class="row ">
+      <div class="beautyCnt col-sm12 col-lg-5">
+          <div class="beautyCntA beautybox">
+            <img src="./images/beauty cream cnt 1.jpg" alt="">
+            <div class="creamCnt">
+
+              <h4>Mega Sale</h4>
+              <a href="#">Shop Now &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+              </a>
+            </div>
+          </div>
+          <div class="beautyCntB beautybox">
+            <img src="./images/beauty cream cnt 2.jpg" alt="">
+            <div class="creamCnt">
+              
+              <h4>Mega Sale</h4>
+              <a href="#">Shop Now &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="beautyCnt col-sm-12 col-lg-7">
+          <div class="beautyCntC beautybox mt-2">
+            <img src="./images/beauty cream cnt 3.jpg" alt="">
+            <div class="creamCnt creamCntC ">
+              
+              <h4>Mega Sale</h4>
+              <a href="#">Shop Now &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- BEAUTY CREAM END    -->
+   
+  <!-- NEW ARRIVALS START -->
+  <section id="arrival">
+  <div class="container position-relative">
+
+    <div class="boxTitle">
+      <h2>New Arrivals Products</h2>
+    </div>
+<div id="arrivSlider">
+  
+      <div class="arrivBox col-lg-3 col-md-6 col-sm-12">
+  
+        <div class="arrivCnt">
+          <div class="arrivImg"><img src="./images/arrival 1.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="arrivText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="arrivBox col-lg-3 col-md-6 col-sm-12">
+  
+        <div class="arrivCnt">
+          <div class="arrivImg"><img src="./images/arrival 2.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="arrivText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="arrivBox col-lg-3 col-md-6 col-sm-12">
+  
+        <div class="arrivCnt">
+          <div class="arrivImg"><img src="./images/arrival 3.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="arrivText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="arrivBox col-lg-3 col-md-6 col-sm-12">
+  
+        <div class="arrivCnt">
+          <div class="arrivImg"><img src="./images/arrival 4.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="arrivText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="arrivBox col-lg-3 col-md-6 col-sm-12">
+  
+        <div class="arrivCnt">
+          <div class="arrivImg"><img src="./images/arrival 3.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="arrivText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+</div>
+
+ <!-- slider arrows start -->
+
+ <div class="beautyArrow">
+  <div class="beautyleft"><iconify-icon icon="mingcute:left-fill" ></iconify-icon></div>
+  <div class="beautyright"><iconify-icon icon="mingcute:right-fill" ></iconify-icon></div>
+ </div>
+
+ <!-- slider arrows start -->
+    
+  </div>
+  </section>
+  <!-- NEW ARRIVALS END -->
+
+  <!-- SPA CREAM BANNER START -->
+  <section id="spaCnt">
+  <div class="container">
+    <div class="spaCreamText col-lg-6">
+      <h2>Get Up To 35% Off all
+        Bestzzzzzzzzzzzz Spa Cosmetics
+        Cream
+      </h2>
+      <p>Holisticly maximize interoperable action items for effective <br class="d-none d-lg-block d-sm-none"> e-business. 
+        Globally impact enterprise-wide niche markets <br class="d-none d-lg-block d-sm-none"> through dynamic.
+      </p>
+      <a href="#">Shop Now &nbsp;
+        <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+      </a>
+    </div>
+  </div>
+  </section>
+  <!-- SPA CREAM BANNER END -->
+
+  <!-- BEST SELLER PRODUCTS START -->
+  <section id="bestSeller">
+  <div class="container position-relative">
+
+    <div class="boxTitle">
+      <h2>Best Seller Products</h2>
+    </div>
+    
+<div  class="bestSellerCnt row">
+  
+      <div class=" bestBox col-lg-3 col-md-6 col-sm-12">
+  
+        <div class="bestCnt">
+          <div class="arrivImg"><img src="./images/best seller pr 1.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="bestText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="bestBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+  
+        <div class="bestCnt">
+          <div class="arrivImg"><img src="./images/best seller pr 2.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="bestText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="bestBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+  
+        <div class="bestCnt">
+          <div class="arrivImg"><img src="./images/best seller pr 3.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="bestText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="bestBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+  
+        <div class="bestCnt">
+          <div class="arrivImg"><img src="./images/best seller pr 4.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="bestText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+</div>
+
+<div  class="row">
+  
+      <div class=" bestBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+  
+        <div class="bestCnt">
+          <div class="arrivImg"><img src="./images/best seller pr 5.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="bestText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="bestBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+  
+        <div class="bestCnt">
+          <div class="arrivImg"><img src="./images/best seller pr 6.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="bestText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="bestBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+  
+        <div class="bestCnt">
+          <div class="arrivImg"><img src="./images/best seller pr 7.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="bestText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+      <div class="bestBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+  
+        <div class="bestCnt">
+          <div class="arrivImg"><img src="./images/best seller pr 8.jpg" alt=""></div>
+          <div class="sale">
+            <h4>-45%</h4>
+          </div>
+          <div class="arriveIcon">
+            <ul>
+              <li style="--num:0">
+                <a href="#"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                    <button>
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </a>
+              </li>
+              <li style="--num:1">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-heart"></i>
+
+                  </button>
+                </a>
+              </li>
+              <li style="--num:2">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </a>
+              </li>
+              <li style="--num:3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                  <button>
+                    <i class="fa-solid fa-signal"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="bestText">
+  
+          <h5>$150.65</h5>
+          <h4>Lotion Shower gel</h4>
+  
+          <span>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+          </span>
+  
+        </div>
+  
+      </div>
+</div>
+
+<div class="bestSellerButton">
+  <a href="#">See All Products &nbsp;
+    <span style="left: 165px;"><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+  </a>
+</div>
+
+</div>
+  </section>
+  <!-- BEST SELLER PRODUCTS END -->
+
+  <!-- DEALS OF THE DAYS START -->
+  <section id="dealDays">
+  <div class="container">
+
+    
+    <div class="boxTitle">
+      <h2>Deals Of The Days</h2>
+    </div>
+    
+    <div class="dealBox">
+      <div class="timer">
+             <ul>
+              <li>
+                <h4 class="days">27</h4>
+                 <p>Days</p>
+              </li>
+              <li>
+                <h4 class="hour">16</h4>
+                <p>Hour</p>
+              </li>
+              <li>
+                <h4 class="min">13</h4>
+                <p>Minute</p>
+              </li>
+              <li>
+                <h4 class="sec">30</h4>
+                <p>Sec</p>
+              </li>
+             </ul>
+      </div>
+      <div id="dealSlider" >
+        <div  class="dealslidCnt col-lg-3 col-md-6 col-sm-12">
+          
+          <div class="dealCnt ">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          <div class="dealCnt d-lg-block 	d-none ">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          
+        </div>
+        <div  class="dealslidCnt col-lg-3 col-md-6 col-sm-12">
+          
+          <div class="dealCnt ">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          <div class="dealCnt  d-lg-block 	d-none ">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          
+        </div>
+        <div  class="dealslidCnt col-lg-3 col-md-6 col-sm-12">
+          
+          <div class="dealCnt ">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          <div class="dealCnt  d-lg-block 	d-none ">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          
+        </div>
+        <div  class="dealslidCnt col-lg-3 col-md-6 col-sm-12">
+          
+          <div class="dealCnt ">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          <div class="dealCnt  d-lg-block 	d-none">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          
+        </div>
+        <div  class="dealslidCnt col-lg-3 col-md-6 col-sm-12">
+          
+          <div class="dealCnt ">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          <div class="dealCnt  d-lg-block 	d-none ">
+            <h6>Fairness Cream</h6>
+            <h3>Get Up To 35% Off</h3>
+            <p class="col-md-10">Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+            <h4>
+              $256.35 &nbsp;<span>$356.35</span>
+            </h4>
+            <a href="#">Shop Now &nbsp;
+              <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- DEALS OF THE DAYS END -->
+
+  <!-- SPECIAL OFFER START -->
+  <section id="specialBanner">
+  <div class="container">
+    <div class="row ">
+      <div class="specialText col-sm-12 col-lg-5 mx-lg-2">
+        <h6>Fairness Cream</h6>
+        <h3>Beauty Inspired by Real
+          Shine In Life 
+        </h3>
+        <p >Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+        <a href="#">Shop Now &nbsp;
+          <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+        </a>
+      </div>
+
+      <div class="specialCnt col-sm-12 col-lg-7">
+
+        <a class="venoBox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/embed/0o14GXlDWfc">
+          <div class="video">
+            <img class="w-100" src="./images/Mask here.jpg" alt="Img">
+
+            <div class="videoIcon">
+              <a class="venoBox" href="https://www.youtube.com/embed/0o14GXlDWfc" data-autoplay="true" data-vbtype="video"><span><i class="fa-solid fa-play"></i></span></a>
+    
+            </div>
+          </div>
+          
+       </a>
+        
+
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- SPECIAL OFFER END -->
+
+  <!-- LATEST NEWS START -->
+  <section id="latestNews">
+  <div class="container position-relative">
+
+    <div class="boxTitle">
+      <h2>Latest News</h2>
+    </div>
+<div id="latestSlider">
+  
+    
+        <div class="newsBox ">
+          
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          
+    
+        </div>
+        <div class="newsBox ">
+          
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          
+    
+        </div>
+        <div class="newsBox ">
+          
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          
+    
+        </div>
+        <div class="newsBox ">
+          
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          
+    
+        </div>
+        <div class="newsBox ">
+          
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          
+    
+        </div>
+        <div class="newsBox ">
+          
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          
+    
+        </div>
+         <div class="newsBox ">
+          <div class="newsCnt">
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="newsBox ">
+          <div class="newsCnt">
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="newsBox ">
+          <div class="newsCnt">
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="newsBox ">
+          <div class="newsCnt">
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="newsBox ">
+          <div class="newsCnt">
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="newsBox ">
+          <div class="newsCnt">
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="newsBox ">
+          <div class="newsCnt">
+    
+            <div class="newsImg">
+              <img src="./images/latest news img.jpg" alt="">
+            </div>
+    
+    
+            <div class="newsText">
+    
+              <h4>Best multi-step Beauty skin.</h4>
+               <h5>Appropriately seize 24/365 markets without adaptive.</h5>
+    
+               <a href="#">Read More &nbsp;
+                <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+    
+                <h6>Jan 04, 2022</h6>
+    
+              </a>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+  
+</div>
+
+</div>
+  </section>
+  <!-- LATEST NEWS END -->
+
+  <!-- FOOTER START -->
+
+  <section id="footer">
+  <div class="container">
+    <div class="delivery ">
+       <ul class="row">
+        <li class="col-lg-3 col-3">
+          <a href="">
+            <div class="shiping row ">
+
+              <div class="iconBox col-lg-5 col-3">
+               <i class="fa-solid fa-truck"></i>
+              </div>
+              <div class="shipingText col-lg-7 d-lg-block 	d-none d-md-none">
+                <h6>FREE SHIPING</h6>
+                <p>all orders over <span>$150</span></p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="col-lg-3 col-3">
+          <a href="">
+            <div class="shiping row ">
+
+              <div class="iconBox col-lg-5 col-3">
+                <i class="fa-solid fa-money-check-dollar"></i>
+              </div>
+              <div class="shipingText col-lg-7 d-lg-block 	d-none d-md-none">
+                <h6>FREE SHIPING</h6>
+                <p>all orders over <span>$150</span></p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="col-lg-3 col-3">
+          <a href="">
+            <div class="shiping row ">
+
+              <div class="iconBox col-lg-5 col-3">
+               <i class="fa-solid fa-right-left"></i>
+              </div>
+              <div class="shipingText col-lg-7 d-lg-block 	d-none d-md-none">
+                <h6>FREE SHIPING</h6>
+                <p>all orders over <span>$150</span></p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="col-lg-3 col-3">
+          <a href="">
+            <div class="shiping row ">
+
+              <div class="iconBox col-lg-5 col-3">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div class="shipingText col-lg-7 d-lg-block 	d-none d-md-none">
+                <h6>FREE SHIPING</h6>
+                <p>all orders over <span>$150</span></p>
+              </div>
+            </div>
+          </a>
+        </li>
+        
+       </ul>
+    </div>
+    <div class="footerCnt row">
+      <div class="social col-lg-3 col-12 mb-4">
+          <ul class="row justify-content-center">
+            <li class="col-lg-3 ">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="col-lg-3 ">
+              <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+            </li>
+            <li class="col-lg-3 ">
+              <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+            </li>
+            <li class="col-lg-3 ">
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></i></a>
+            </li>
+          </ul>
+      </div>
+
+      <div class="footerlogo col-lg-6 col-12 mb-4">
+        <img src="./images/footer logo.png" alt="">
+      </div>
+
+      <div class="payment col-lg-3 col-12 mb-4">
+        <img src="./images/footer payment.png" alt="">
+      </div>
+
+    </div>
+
+    <hr class="border-2" style="color: #E0E0E0;">
+
+    <div class="footerInfo row">
+
+      <div class="myaccount col-xl-2 col-md-12 mb-4">
+        
+        <div class="title">
+          My Account
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> My Account
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> View Cart
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Wishlist
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Compare
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> New Products
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="support col-xl-2 col-md-12 mb-4">
+        
+        <div class="title">
+          Support
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Help
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Feedback
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Customer Service
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Store Locations
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="opening col-xl-2 col-md-12 mb-4">
+        
+        <div class="title">
+          Opening Time
+        </div>
+
+        <ul>
+          <li>
+            Mon - Tue:    <span>8AM - 10PM</span>
+          </li>
+          <li>
+            Wed :    <span>8AM - 7PM</span>
+          </li>
+          <li>
+            Fri :    <span>7AM - 12PM</span>
+          </li>
+          <li>
+            Sat :    <span>9AM - 8PM</span>
+          </li>
+          <li>
+            Sun :    <span>9AM - 8PM</span>
+          </li>
+          
+        </ul>
+
+      </div>
+      <div class="footerContact col-xl-2 col-md-12 mb-4">
+          
+          <div class="title">
+            Contact Us
+          </div>
+  
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-location-dot"></i></span> &nbsp; <a href="#">
+                United States
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-phone"></i></span> &nbsp; <a href="tel:+18008660286">
+                +18008660286
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span> &nbsp; <a href="mailto:aetor.info@gmail.com">
+                aetor.info@gmail.com
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-globe"></i></span> &nbsp; <a href="#">
+                info@aetor.com
+              </a>
+            </li>
+            
+            
+          </ul>
+  
+        </div>
+  
+      <div class="newsletter col-xl-2 col-md-12 mb-4">
+          
+          <div class="title">
+            News Letter
+          </div>
+  
+          <ul>
+            <li>
+              <p>
+                Authoritatively morph 24/7 potentialities with error-free partnerships.
+              </p>
+            </li>
+           <li>
+            <form class="row ms-2">
+              <input type="text" placeholder="Enter your email..." class="border-0 col">
+              <button class="col">Subscribe</button>
+            </form>
+           </li>
+            
+            
+          </ul>
+  
+        </div>
+  
+    </div>
+
+  </div>
+
+  </section>
+  <!-- COPY RIGHT START  -->
+  <div class="copyright">
+
+  <h3> © 2033 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft </span>.</h3>
+
+  </div>
+  <!-- COPY RIGHT END  -->
+  <!-- FOOTER END -->
+
+<!-- JS LINKS START -->
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/typeit.umd.js"></script>
+<script src="./js/jquery.countdown.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/iconify-icon.min.js"></script>
+<script src="./js/venobox.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/app.js"></script>
+<!-- JS LINKS END -->
+
+
+</body>
+</html>

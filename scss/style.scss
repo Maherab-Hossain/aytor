@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+// COMMON CSS START
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // outline: 2px solid red;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,p,span,ol,a{
+  margin: 0;
+  padding: 0;
+}
+// COMMON CSS END
+
+// ROOT START
+@import "./_variable.scss";
+// ROOT END
+
+// mixin start
+@import "./_mixin.scss";
+// mixin end
+
+body{
+  font-family: $primaryfont;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* pre load start */
+@import "./_preloader.scss";
+/* pre load end */
+
+// MODAL START
+@import "./_modal.scss";
+// MODAL END
+
+// NAV START
+@import "./_navbar.scss";
+// NAV END
+// ********************* HOME PAGE START / 1st PAGE ********************************
+@import "./_homepage.scss";
+// ********************* HOME PAGE END / 1st PAGE ********************************
+
+// RESPONSIVE DIVICE START
+@import "./responsive" ;
+// RESPONSIVE DIVICE END 
