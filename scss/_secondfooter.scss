@@ -1,0 +1,166 @@
+// ************************************** OTHER PAGE FOOTER START ******************************
+
+#secondFooter{
+    background-color: $aboutCounterHoverbg; 
+    .footerDetails{
+    padding: 100px 0px;
+    //FOOTER INTRO START  
+    .footerIntro{
+    margin-bottom: 70px;
+    // FOOTER TITLE START    
+    .footertitle{
+    h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;    
+    }
+    p{
+    font-family:$secondaryfont;
+    font-size: 16px;
+    color: $arrivalpriceColor;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;     
+    }    
+    }
+    // FOOTER TITLE END
+
+    // SEARCH BOX START
+    .searchBox{
+    form{
+    width: 424px;
+    height: 60px;
+    text-align: center;
+    input{
+    padding: 16px 125px 11px 16px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    }
+    button{
+    @include showMoreBtn ();
+    padding: 0px;
+    height: 60px;
+    border: none;
+    outline: none;
+    }    
+    }    
+    }
+    // SEARCH BOX END
+    }
+    //FOOTER INTRO END
+
+    //FOOTER INTFORMATION START 
+    .footerInformation{
+    margin-top: 85px;  
+    .footerlogo{
+    .f-logo{
+    margin-bottom: 20px;    
+    }
+    .f-text{
+    margin-bottom: 25px;  
+    p{
+    font-family: $secondaryfont;
+    font-size: 16px;
+    color: $arrivalpriceColor;
+    font-weight: 400;
+    line-height: 28px;        
+    }
+    }
+    .f-social{
+    span{
+    a{
+    margin: 0px 5px;  
+    color: $arrivalpriceColor;
+    transition: 0.25s;
+    &:hover{
+    color: $colorPrimary;
+    }
+    }
+    }   
+    }    
+    }
+    .footermyaccount, .footersupport, .footershop, .footerContactInfo{
+    padding: 0px 10px;
+    .title{
+    font-size: 24px;
+    color: $textColorPrimary;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 22px;
+    }
+    ul{
+    li{
+    a{
+    font-size: 16px;
+    color: $arrivalpriceColor;
+    font-weight: 400;
+    line-height: 28px;
+    &:hover{
+    color: $colorPrimary;
+    }
+    }
+    }
+    }
+    }
+    .footershop{
+    ul{
+    li{       
+    font-size: 16px;
+    color: $whiteColor;
+    font-weight: 400;
+    line-height: 28px;
+    display: flex;
+    justify-content: space-between;
+    @include customScreen (320px, 991px) {
+    display: block;
+    }
+    @include laptop () {
+    display: block;
+    }
+    &:hover{
+    color: $colorPrimary;
+    }         
+    }
+    }
+    }
+    .footerContactInfo{
+    padding-left: 20px;
+    ul{
+    li{
+    span{
+    text-align: right;
+    color: $colorPrimary;
+    }
+    a{
+    text-align: left;
+    }
+    }
+    }
+    }    
+    }
+    //FOOTER INTFORMATION START    
+    }
+    // FOOTER COPYRIGHT START
+    .footerCopyright{
+    padding: 25px 0px;
+    .copyrightText{
+      text-align: center;
+    h3{
+    color: $arrivalpriceColor;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    span{
+    color: $colorPrimary;
+    }
+    }  
+    }
+    .copyrightpayment{
+    text-align: center;  
+    }
+    }
+    // FOOTER COPYRIGHT END
+}
+
+// ************************************** OTHER PAGE FOOTER END ******************************
