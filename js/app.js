@@ -162,3 +162,110 @@ $ (function () {
   });
   // SPECIAL VIDEO VENOBOX END
 })
+
+// ABOUT PAGE COUNTER UP START
+
+$('.couterUpAbout').spincrement()
+// ABOUT PAGE COUNTER UP END
+
+// LEADERSHIP START
+// LEADER SLIDER START
+$('#leaderSlider').slick({
+  speed: 800,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow:".leaderleft",
+  nextArrow:".leaderright",
+  centerPadding:"0px",
+  responsive: [
+    {
+    breakpoint: 991,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      arrows:false,
+      }
+    },
+    {
+    breakpoint: 767,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      arrows:false,
+      }
+    },
+    {
+    breakpoint: 575,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows:false,
+      mobileFirst:true,
+      }
+    }
+  ]
+});
+// LEADER SLIDER END
+// LEADERSHIP END
+
+// CUSTOMER START
+$('#customerBoxSlider').slick({
+  arrows:false,
+  dots:true, 
+  dotsClass: "customerBox_slider_dot container",
+  autoplay: true,
+  autoplaySpeed: 1600,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: false,
+  centerPadding: '0px',
+  });
+// CUSTOMER END
+
+ // AEYOR ABOUT INSTAGRAM START
+ $('#aboutInstaSlider').slick({
+  arrows:false,
+  dots:true, 
+  dotsClass: "instaBox_slider_dot container",
+  autoplay: true,
+  autoplaySpeed: 1600,
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  variableWidth: false,
+  centerPadding: '0px',
+  responsive: [
+    {
+    breakpoint: 768,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      arrows:false,
+      mobileFirst:true,
+      centerPadding: '0px',
+      }
+    },
+    {
+    breakpoint: 575,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      arrows:false,
+      mobileFirst:true,
+      centerPadding: '0px',
+      }
+    },
+    {
+    breakpoint: 992,
+      settings: {
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      arrows:false,
+      mobileFirst:true,
+      centerPadding: '0px',
+      }
+    },
+  ]
+  });
+  // AEYOR ABOUT INSTAGRAM END
+
+  

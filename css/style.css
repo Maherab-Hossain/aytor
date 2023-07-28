@@ -1128,6 +1128,12 @@ nav .navButton li span .cart, nav .navButton li a .cart {
     padding: 28px 38px;
   }
 }
+#footer .delivery ul li:nth-child(4) {
+  border: none;
+}
+#footer .delivery ul li {
+  border-right: 4px solid #F1F1F1;
+}
 #footer .delivery ul li .iconBox {
   width: 70px;
   height: 70px;
@@ -1283,4 +1289,845 @@ nav .navButton li span .cart, nav .navButton li a .cart {
 }
 .copyright h3 span {
   color: #FF6F61;
+}
+
+#aboutBanner {
+  background-color: #202938;
+  width: 100%;
+}
+#aboutBanner .banner {
+  padding: 160px 0px;
+  text-align: center;
+}
+#aboutBanner .banner h2 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 58px;
+}
+#aboutBanner .banner h3 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+}
+#aboutBanner .banner h3 a {
+  color: #fff;
+}
+
+#AboutAetorShop {
+  margin: 100px 0px;
+}
+#AboutAetorShop .aboutShop {
+  background-image: url(../images/learn\ about\ aetor\ shop\ bg.png);
+  background-position: center;
+  background-size: cover;
+}
+#AboutAetorShop .aboutShop .aboutAetorCnt {
+  margin-top: 10px;
+  transform: translateX(-10%);
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #AboutAetorShop .aboutShop .aboutAetorCnt {
+    transform: translateX(0);
+  }
+}
+#AboutAetorShop .aboutShop .aboutAetorText {
+  transform: translateX(20%);
+  width: 480px;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #AboutAetorShop .aboutShop .aboutAetorText {
+    transform: translateX(0);
+  }
+}
+#AboutAetorShop .aboutShop .aboutAetorText h2 {
+  margin: 76px 0px 10px 0px;
+  font-size: clamp(16px, 12vw, 36px);
+  font-weight: 700;
+  line-height: 46px;
+}
+#AboutAetorShop .aboutShop .aboutAetorText p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #444;
+  padding-bottom: 28px;
+}
+#AboutAetorShop .aboutShop .aboutAetorText ul {
+  margin-top: 29px;
+}
+#AboutAetorShop .aboutShop .aboutAetorText ul li {
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#AboutAetorShop .aboutShop .aboutAetorText ul li span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: #FF6F61;
+  line-height: 16px;
+}
+#AboutAetorShop .aboutShop .aboutAetorText a {
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  margin-top: 34px;
+  margin-bottom: 76px;
+}
+#AboutAetorShop .aboutShop .aboutAetorText a span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+
+#aboutCounter {
+  margin: 100px 0px;
+}
+#aboutCounter .counterCnt ul {
+  text-align: center;
+}
+#aboutCounter .counterCnt ul li .counterIcon {
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background-color: #ffccc7;
+  color: #151A32;
+  border-radius: 50%;
+  line-height: 100px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+#aboutCounter .counterCnt ul li .counterIcon img {
+  transform: scale(1);
+  transition: 0.25s;
+}
+#aboutCounter .counterCnt ul li .counterIcon:hover {
+  background-color: #F1F3F4;
+}
+#aboutCounter .counterCnt ul li .counterIcon:hover img {
+  transform: scale(0.8);
+}
+#aboutCounter .counterCnt ul li .counterText h2 {
+  color: #FF6F61;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#aboutCounter .counterCnt ul li .counterText p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+#ourStory {
+  position: relative;
+  margin: 100px 0px;
+  background-color: #F1F3F4;
+}
+#ourStory .storyText {
+  padding: 100px 0px;
+}
+#ourStory .storyText h3 {
+  max-width: 412px;
+  font-size: clamp(18px, 12vw, 36px);
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 10px;
+}
+#ourStory .storyText p {
+  max-width: 417px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 14px;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #ourStory .storyCnt {
+    padding-bottom: 100px;
+  }
+}
+#ourStory .storyCnt .video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+}
+#ourStory .storyCnt .video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #ourStory .storyCnt .video {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+  }
+}
+#ourStory .storyCnt .videoIcon {
+  position: absolute;
+  display: inline-block;
+  width: 61px;
+  height: 61px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  left: 45%;
+  top: 45%;
+}
+#ourStory .storyCnt .videoIcon::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: -30px;
+  right: -30px;
+  animation: storyBtn 2s infinite;
+  -webkit-animation: specialBtn 2s infinite;
+  z-index: 99;
+}
+@keyframes storyBtn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 0.3;
+  }
+  0% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0.6;
+  }
+}
+#ourStory .storyCnt .videoIcon span {
+  font-size: 20px;
+  margin-left: 2px;
+  color: #FF6F61;
+  line-height: 61px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+#aboutDelivery {
+  margin: 100px 0px;
+}
+#aboutDelivery .DeliveryCnt .delivery {
+  width: 100%;
+}
+#aboutDelivery .DeliveryCnt .delivery .shiping {
+  justify-content: center;
+}
+#aboutDelivery .DeliveryCnt .delivery ul {
+  padding: 45px 38px;
+  cursor: pointer;
+}
+@media (992px <= width <= 1199px) {
+  #aboutDelivery .DeliveryCnt .delivery ul {
+    padding: 28px 38px;
+  }
+}
+#aboutDelivery .DeliveryCnt .delivery ul li:nth-child(4) {
+  border: none;
+}
+#aboutDelivery .DeliveryCnt .delivery ul li {
+  border-right: 4px solid #F1F1F1;
+}
+#aboutDelivery .DeliveryCnt .delivery ul li .iconBox {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #FF6F61;
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+}
+#aboutDelivery .DeliveryCnt .delivery ul li .shipingText {
+  padding: 10px;
+}
+#aboutDelivery .DeliveryCnt .delivery ul li .shipingText h6 {
+  color: #11161E;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#aboutDelivery .DeliveryCnt .delivery ul li .shipingText p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #444;
+}
+#aboutDelivery .DeliveryCnt .delivery ul li .shipingText p span {
+  color: #FF6F61;
+}
+
+#leaderShip {
+  margin-bottom: 100px;
+}
+#leaderShip .boxTitle h2 {
+  color: #11161E;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+#leaderShip .leaderBox {
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 24px;
+}
+#leaderShip .leaderBox .leaderCnt .leaderImg {
+  width: inherit;
+}
+#leaderShip .leaderBox .leaderCnt .leaderImg img {
+  width: 100%;
+  filter: brightness(100%);
+}
+#leaderShip .leaderBox .leaderCnt:hover .arrivImg {
+  filter: brightness(80%);
+}
+#leaderShip .leaderBox .leaderText {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+}
+#leaderShip .leaderBox .leaderText h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #FF6F61;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+#leaderShip .leaderBox .leaderText h4 {
+  font-size: 20px;
+  color: #11161E;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+#leaderShip .leaderBox .leaderText span a {
+  margin: 0px 5px;
+  color: #444;
+  transition: 0.25s;
+}
+#leaderShip .leaderBox .leaderText span a:hover {
+  color: #FF6F61;
+}
+#leaderShip .leaderArrow {
+  cursor: pointer;
+  text-align: center;
+}
+@media (320px <= width <= 575px) {
+  #leaderShip .leaderArrow {
+    display: none;
+  }
+}
+@media (576px <= width <= 767px) {
+  #leaderShip .leaderArrow {
+    display: none;
+  }
+}
+#leaderShip .leaderArrow .leaderleft {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #444;
+  background-color: #fff;
+  border: 2px solid #444;
+  line-height: 34px;
+  top: 320px;
+  left: -5px;
+  transition: 0.25s;
+}
+#leaderShip .leaderArrow .leaderleft:hover {
+  color: #fff;
+  background-color: #FF6F61;
+  border: none;
+  line-height: 36px;
+}
+#leaderShip .leaderArrow .leaderright {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #444;
+  background-color: #fff;
+  border: 2px solid #444;
+  line-height: 34px;
+  top: 320px;
+  right: 20px;
+  transition: 0.25s;
+}
+#leaderShip .leaderArrow .leaderright:hover {
+  color: #fff;
+  background-color: #FF6F61;
+  border: none;
+  line-height: 36px;
+}
+
+#aboutCustomer {
+  text-align: center;
+  margin-bottom: 100px;
+}
+#aboutCustomer .sliderBox {
+  padding: 36px 0px;
+  background-image: url(../images/customer\ slider\ bg.png);
+  background-position: center;
+  background-size: cover;
+}
+#aboutCustomer .sliderBox .customerCnt {
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+#aboutCustomer .sliderBox .customerText p {
+  padding: 0px 340px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #aboutCustomer .sliderBox .customerText p {
+    padding: 0px;
+  }
+}
+#aboutCustomer .sliderBox .customerText h2 {
+  font-size: 24px;
+  color: #11161E;
+  font-weight: 700;
+  line-height: 34px;
+}
+#aboutCustomer .sliderBox .customerText h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #FF6F61;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 31px;
+}
+#aboutCustomer .customerBox_slider_dot {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#aboutCustomer .customerBox_slider_dot li {
+  display: inline-block;
+}
+#aboutCustomer .customerBox_slider_dot li button {
+  width: 20px;
+  height: 10px;
+  background-color: #CACACA;
+  border: none;
+  border-radius: 5px;
+  color: transparent;
+  margin-right: 15px;
+  transition: 0.35s ease;
+}
+#aboutCustomer .customerBox_slider_dot li.slick-active button {
+  width: 40px;
+  background-color: #FF6F61;
+}
+
+#aboutInsta {
+  margin-bottom: 100px;
+}
+#aboutInsta .slick-track {
+  padding: 15px 0px;
+}
+#aboutInsta .boxTitle h2 {
+  color: #11161E;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+#aboutInsta .instaBox {
+  padding: 0px 12px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0px auto;
+}
+#aboutInsta .instaBox:hover .aboutHover {
+  color: #FF6F61;
+  opacity: 1;
+  visibility: visible;
+}
+#aboutInsta .instaBox .aboutHover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  background-color: #21294f;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+}
+#aboutInsta .instaBox .instaImg {
+  position: relative;
+}
+#aboutInsta .instaBox .instaImg img {
+  width: 100%;
+  max-height: 200px;
+}
+#aboutInsta .instaBox_slider_dot {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#aboutInsta .instaBox_slider_dot li {
+  display: inline-block;
+}
+#aboutInsta .instaBox_slider_dot li button {
+  width: 20px;
+  height: 10px;
+  background-color: #CACACA;
+  border: none;
+  border-radius: 5px;
+  color: transparent;
+  margin-right: 15px;
+  transition: 0.35s ease;
+}
+#aboutInsta .instaBox_slider_dot li.slick-active button {
+  width: 40px;
+  background-color: #FF6F61;
+}
+
+#secondFooter {
+  background-color: #F1F3F4;
+}
+#secondFooter .footerDetails {
+  padding: 100px 0px;
+}
+#secondFooter .footerDetails .footerIntro {
+  margin-bottom: 70px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form {
+  width: 424px;
+  height: 60px;
+  text-align: center;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form input {
+  padding: 16px 125px 11px 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button {
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  padding: 0px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+#secondFooter .footerDetails .footerInformation {
+  margin-top: 85px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-logo {
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text {
+  margin-bottom: 25px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a {
+  margin: 0px 5px;
+  color: #444;
+  transition: 0.25s;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount, #secondFooter .footerDetails .footerInformation .footersupport, #secondFooter .footerDetails .footerInformation .footershop, #secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding: 0px 10px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount .title, #secondFooter .footerDetails .footerInformation .footersupport .title, #secondFooter .footerDetails .footerInformation .footershop .title, #secondFooter .footerDetails .footerInformation .footerContactInfo .title {
+  font-size: 24px;
+  color: #11161E;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a, #secondFooter .footerDetails .footerInformation .footersupport ul li a, #secondFooter .footerDetails .footerInformation .footershop ul li a, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a:hover, #secondFooter .footerDetails .footerInformation .footersupport ul li a:hover, #secondFooter .footerDetails .footerInformation .footershop ul li a:hover, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding-left: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li span {
+  text-align: right;
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  text-align: left;
+}
+#secondFooter .footerCopyright {
+  padding: 25px 0px;
+}
+#secondFooter .footerCopyright .copyrightText {
+  text-align: center;
+}
+#secondFooter .footerCopyright .copyrightText h3 {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerCopyright .copyrightText h3 span {
+  color: #FF6F61;
+}
+#secondFooter .footerCopyright .copyrightpayment {
+  text-align: center;
+}
+
+#secondFooter {
+  background-color: #F1F3F4;
+}
+#secondFooter .footerDetails {
+  padding: 100px 0px;
+}
+#secondFooter .footerDetails .footerIntro {
+  margin-bottom: 70px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form {
+  width: 424px;
+  height: 60px;
+  text-align: center;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form input {
+  padding: 16px 125px 11px 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button {
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  padding: 0px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+#secondFooter .footerDetails .footerInformation {
+  margin-top: 85px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-logo {
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text {
+  margin-bottom: 25px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a {
+  margin: 0px 5px;
+  color: #444;
+  transition: 0.25s;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount, #secondFooter .footerDetails .footerInformation .footersupport, #secondFooter .footerDetails .footerInformation .footershop, #secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding: 0px 10px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount .title, #secondFooter .footerDetails .footerInformation .footersupport .title, #secondFooter .footerDetails .footerInformation .footershop .title, #secondFooter .footerDetails .footerInformation .footerContactInfo .title {
+  font-size: 24px;
+  color: #11161E;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a, #secondFooter .footerDetails .footerInformation .footersupport ul li a, #secondFooter .footerDetails .footerInformation .footershop ul li a, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a:hover, #secondFooter .footerDetails .footerInformation .footersupport ul li a:hover, #secondFooter .footerDetails .footerInformation .footershop ul li a:hover, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding-left: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li span {
+  text-align: right;
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  text-align: left;
+}
+#secondFooter .footerCopyright {
+  padding: 25px 0px;
+}
+#secondFooter .footerCopyright .copyrightText {
+  text-align: center;
+}
+#secondFooter .footerCopyright .copyrightText h3 {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerCopyright .copyrightText h3 span {
+  color: #FF6F61;
+}
+#secondFooter .footerCopyright .copyrightpayment {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
