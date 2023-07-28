@@ -1,0 +1,190 @@
+// FOOTER START
+#footer{
+    width: 100%;
+    padding-bottom: 140px;
+    margin-top: 350px;
+    background-color: $footerBgColor;
+    .delivery{
+        width: 100%;
+        height: 100%;
+        max-width: 1320px;
+        box-shadow: 0px 0px 50px 0px rgba(21, 26, 50, 0.10);
+        background-color: $whiteColor;
+        transform: translateY(-50%);
+        .shiping{
+          justify-content: center;
+        }
+        ul{ 
+          padding: 45px 38px;
+        cursor: pointer;
+        @include laptop () {
+          padding: 28px 38px;
+        };
+        li:nth-child(4) {
+        border: none;
+        }  
+        li{
+        border-right: 4px solid $footerbordercolor;  
+        .iconBox{
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background-color: $colorPrimary;
+          font-size: 30px;
+          line-height: 70px;
+          text-align: center;
+          color: $whiteColor;
+        }
+        .shipingText{
+          padding: 10px;
+        h6{
+          color: $textColorPrimary;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 30px;
+        }
+        p{
+          font-family: $secondaryfont;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 28px;
+          color: $arrivalpriceColor;
+        span{
+          color: $colorPrimary;
+        }
+        }
+        }
+        }
+        }
+    }
+    .footerCnt{
+        margin-bottom: 70px;
+        text-align: center;
+        cursor: pointer;
+        ul{
+        li{
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          background-color:$whiteColor;
+          margin: 0px 5px;   
+          &:hover{
+          color: $whiteColor;
+          background-color: $colorPrimary;
+          }
+          &:hover a{
+          color: $whiteColor;
+          }
+          a{
+          color: $arrivalpriceColor;       
+          }
+        }
+        }
+    }
+    .footerInfo{
+        color: $whiteColor;
+        cursor: pointer;
+        .myaccount, .support, .opening, .footerContact, .newsletter{
+          padding: 0px 10px;
+          .title{
+          font-size: 24px;
+          color: $whiteColor;
+          font-weight: 700;
+          line-height: 34px;
+          margin-bottom: 22px;
+          }
+          ul{
+          li{
+          a{
+          font-size: 16px;
+          color: $whiteColor;
+          font-weight: 400;
+          line-height: 28px;
+          &:hover{
+          color: $colorPrimary;
+          }
+          }
+          }
+          }
+        }
+    .opening{
+        ul{
+        li{       
+          font-size: 16px;
+          color: $whiteColor;
+          font-weight: 400;
+          line-height: 28px;
+          display: flex;
+          justify-content: space-between;
+          @include customScreen (320px, 991px) {
+          display: block;
+          }
+          @include laptop () {
+          display: block;
+          }
+          &:hover{
+          color: $colorPrimary;
+          }         
+          }
+        }
+        }
+    .footerContact{
+        padding-left: 20px;
+        ul{
+          li{
+          span{
+          text-align: right;
+          color: $colorPrimary;
+          }
+          a{
+          text-align: left;
+          }
+          }
+        }
+    }
+    .newsletter{
+        p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 23px;
+        }
+
+        form{
+          width: 312px;
+          height: 50px;
+          text-align: center;
+          input{
+          padding: 10px 20px 11px 10px;
+          border: none;
+          box-shadow: none;
+          outline: none;
+          }
+          button{
+          @include showMoreBtn ();
+          padding: 0px;
+          height: 50px;
+          border: none;
+          outline: none;
+          }
+        }
+        }
+    }
+}
+// COPY RIGHT START
+    .copyright{
+        background-color: $arrivalpriceColor;
+        text-align: center;
+        h3{
+          color: $whiteColor;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 28px;
+          span{
+          color: $colorPrimary;
+          }
+        }
+    }
+// COPY RIGHT END    
+// FOOTER END
