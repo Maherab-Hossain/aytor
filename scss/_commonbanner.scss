@@ -1,0 +1,27 @@
+// COMMON BANNER START 
+#commonBanner{
+    background-color: $pageBannerBg;
+    width: 100%;
+    .banner{
+    padding: 160px 0px;
+    text-align: center;
+    h2{
+    font-size: 48px;
+    color: $whiteColor;
+    font-weight: 700;
+    line-height: 58px;
+    }
+    h3{
+    color: $whiteColor;
+    font-family: $secondaryfont;
+    font-size: 16px;
+    color: $whiteColor;
+    font-weight: 400;
+    line-height: 28px;
+    a{  
+    color: $whiteColor;
+    }
+    }
+    }
+}
+// COMMON BANNER END 

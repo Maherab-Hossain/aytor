@@ -11,9 +11,15 @@ $ (function () {
       if (scrollup > 800) {
       // $(`#menu`).addClass(`menufixed`)
       $(`.upbutton`).fadeIn()
+      // scrollUp start
+      $(`.scrollup`).slideDown()
+      // scrollup end
       } else {
       // $(`#menu`).removeClass(`menufixed`)
       $(`.upbutton`).fadeOut()
+      // scrollup start
+      $(`.scrollup`).slideUp()
+      // scrollup end
       }
     })
     $(`.upbutton`).scroll (function () {
@@ -22,6 +28,18 @@ $ (function () {
       },1200)
      })
   // modal chat button end
+
+  
+  // SCROLL UP START
+ $(`.scrollup`).click (function () {
+    
+  $(`html,body`).animate({
+      scrollTop:0
+  },800)
+
+ })
+  // SCROLL UP END
+
 
   //banner slick slider  start
     $('#banner').slick({
@@ -161,8 +179,9 @@ $ (function () {
     selector: ".venoBox"
   });
   // SPECIAL VIDEO VENOBOX END
-})
+ 
 
+// ********************* ABOUT US PAGE START / 2nd PAGE ********************************
 // ABOUT PAGE COUNTER UP START
 
 $('.couterUpAbout').spincrement()
@@ -170,7 +189,7 @@ $('.couterUpAbout').spincrement()
 
 // LEADERSHIP START
 // LEADER SLIDER START
-$('#leaderSlider').slick({
+ $('#leaderSlider').slick({
   speed: 800,
   slidesToShow: 4,
   slidesToScroll: 4,
@@ -204,12 +223,12 @@ $('#leaderSlider').slick({
       }
     }
   ]
-});
+ });
 // LEADER SLIDER END
 // LEADERSHIP END
 
 // CUSTOMER START
-$('#customerBoxSlider').slick({
+ $('#customerBoxSlider').slick({
   arrows:false,
   dots:true, 
   dotsClass: "customerBox_slider_dot container",
@@ -219,7 +238,7 @@ $('#customerBoxSlider').slick({
   slidesToScroll: 1,
   variableWidth: false,
   centerPadding: '0px',
-  });
+ });
 // CUSTOMER END
 
  // AEYOR ABOUT INSTAGRAM START
@@ -265,7 +284,8 @@ $('#customerBoxSlider').slick({
       }
     },
   ]
-  });
+ });
   // AEYOR ABOUT INSTAGRAM END
+// ********************* ABOUT US PAGE END / 2nd PAGE ********************************
 
-  
+})

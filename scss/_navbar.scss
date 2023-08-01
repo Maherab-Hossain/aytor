@@ -1,25 +1,20 @@
-
-
 // NAV START
-
-
 // menu fixed start
-
 .menufixed{
-    position:fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999999999;
-    background-color: $whiteColor;
-    animation: menuFixed 1s ease-in forwards;
+position:fixed;
+top: 0;
+width: 100%;
+z-index: 999999999;
+background-color: $whiteColor;
+animation: menuFixed 1s ease-in forwards;
 }
 
 @keyframes menuFixed {
     0%{
-        transform: translateY(-100%);
+    transform: translateY(-100%);
     }
     100%{
-        transform: translateY(0%);
+    transform: translateY(0%);
     }
 }
 
@@ -28,116 +23,93 @@
 
 //  ********* NAV lg START **********
 nav{
-
+    // nav option start
     .navOption{
-
-        padding: 37px 0px;
+    padding: 37px 0px;
 
         ul li {
-            padding: 0px 22px;
-
-            // short (.navOption) responsive
-
-            @media (992px <= width <= 1199px) {
-                padding: 0px 0px;
-            }
-
-            // short (.navOption) responsive
+        padding: 0px 22px;
+        // short (.navOption) responsive
+        @media (992px <= width <= 1199px) {
+        padding: 0px 0px;
         }
-        
+        // short (.navOption) responsive
+        }
         a{
-            color: $textColorPrimary;
-            font-size: 16px;
-            font-weight: 400;
-            transition: 0.35s;
-
-            &:hover{
-                color: $colorPrimary;
-            }
+        color: $textColorPrimary;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.35s;
+        &:hover{
+        color: $colorPrimary;
+        }
         }
 
     }
+    // nav option end
 
+    // nav button start
     .navButton{
-        
         li{
-            display:inline-block;
-            padding: 0px 10px;
-            
-            span,a{
-               color: $navButtonColor;
-               font-size: 24px;
-               position: relative;
-
-              .cart {
-                
-                position: absolute;
-                right: -6px;
-                top: -7px;
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background-color: $colorPrimary;
-                    font-size: 14px;
-                    color:$whiteColor ;
-                    line-height: 17px;
-                    text-align: center;
-                
-              }
-
-            }
+        display:inline-block;
+        padding: 0px 10px;
+        span,a{
+        color: $navButtonColor;
+        font-size: 24px;
+        position: relative;
+        .cart {
+        position: absolute;
+        right: -6px;
+        top: -7px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $colorPrimary;
+        font-size: 14px;
+        color:$whiteColor ;
+        line-height: 17px;
+        text-align: center;
+        }
+        }
         }
     }
-
+    // nav button end
 }
 //  lg search modal start *********************
-#searchModal{
-          
+#searchModal{  
     .modal-body{
         box-shadow: rgba(0, 0, 0, 0.28) 0px 5px 12px;
-
-         input{
-            width: 100%;
-            border: none;
-            outline: none !important;
-            box-shadow: none !important;
-
-            
+        input{
+        width: 100%;
+        border: none;
+        outline: none !important;
+        box-shadow: none !important;  
         }
     }
-
     .modal-footer{
-        
         .searchModalbtn{
-            @include showMoreBtn ();
-            width: 120px;
-            height: 50px;
-            border: none;
-            padding: 10px 5px;
-            font-size: 16px;
-            box-shadow: rgba(0, 0, 0, 0.28) 0px 5px 12px;
+        @include showMoreBtn ();
+        width: 120px;
+        height: 50px;
+        border: none;
+        padding: 10px 5px;
+        font-size: 16px;
+        box-shadow: rgba(0, 0, 0, 0.28) 0px 5px 12px;
         }
     }
-
     // lg search modal end *********************
 }
-
 //  ********* NAV lg END **********
 
 
-
 //  ********* NAV sm START **********
-
 #menuSm{
-
     .menuSmBar{
-        
         button{
-            background: transparent;
-            border: none;
-            font-size: 28px;
+        background: transparent;
+        border: none;
+        font-size: 28px;
         }
-
     }
     .searchbarSm{
         width: 100%;
@@ -146,24 +118,19 @@ nav{
         outline: 2px solid $colorPrimary;
         border-radius: 25px;
         .sideBarSearch{
-            border: transparent;
-            padding: -5 50px 0 18px;
-            height: 70px;
-            font-weight: 600;
-            outline: none;
-            
+        border: transparent;
+        padding: -5 50px 0 18px;
+        height: 70px;
+        font-weight: 600;
+        outline: none;  
         }
-
         .sideSearchButton{
-            background: transparent;
-            border: none;
-            font-size: 24px;
-            text-align: center;
-           
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        text-align: center;  
         }
-
     }
-
     .menuCate{
         color: $textColorPrimary;
         border: none;
@@ -173,14 +140,9 @@ nav{
         text-align: center;
 
         &:hover{
-            border-bottom: 2px solid $colorPrimary;
+        border-bottom: 2px solid $colorPrimary;
         }
     }
-
 }
-
-
 //  ********* NAV sm END **********
-
-
 // NAV END

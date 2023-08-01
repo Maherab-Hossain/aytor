@@ -1,0 +1,26 @@
+/* scroll up start */
+.scrollup{
+    position: fixed;
+    right: 50px;
+    bottom: 170px;
+    z-index: 999;
+    // display: none;
+
+    button{
+    position: static;    
+    color: $whiteColor;
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    background-color: $colorPrimary;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    img{
+    width: 60px;    
+    height: 60px;    
+    }
+    }
+    
+}
+/* scroll up end */
