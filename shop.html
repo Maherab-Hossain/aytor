@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aytor</title>
+        <!-- CSS LINKS START -->
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/venobox.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/style.min.css">
+        <!-- CSS LINKS END -->
+        <link rel="shortcut icon" href="./images/favv logo.png" type="image/x-icon">
+</head>
+<body>
+    
+
+      <!-- pre load start -->
+      <div class="preload">
+        <div class="prebox">
+        </div>
+      </div>
+      <!-- pre load end -->
+      <!-- scroll up arrow start -->
+      <div class="scrollup">
+        <button class="d-lg-block d-none d-md-block"><img src="./images/scrolluparrow.gif" alt=""></button>
+      </div>
+      <!-- scroll up arrow end -->
+      <!-- MODAL FORM START -->
+      <div class=" modal-fullscreen-sm-down" id="modalCnt">
+        <div class="upbutton">
+          <button type="button" class="btnBox d-lg-block d-none d-md-block" data-bs-toggle="modal" data-bs-target="#chatModal" data-bs-whatever="@mdo">
+          <img src="./images/modal button.gif" alt="" class="modalBtn">
+          </button>
+        </div>
+      <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+        <!-- modal logo start -->
+          <img src="./images/sm logo.png" alt="">
+        <!-- modal logo start -->
+        <!-- modal closeButton start -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- modal closeButton start -->
+          </div>
+          <div class="modal-body">
+          <!-- modal form start -->
+            <form>
+              <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email</label>
+              <input type="email" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message</label>
+              <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          <!-- modal form end -->
+          </div>
+          <div class="modal-footer">
+          <!-- modal send button start -->
+          <a href=""><button type="button" class="btn  modalSendTextBtn">Send message</button></a>
+          <!-- modal send button end -->
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!-- MODAL FORM END -->
+    
+      <!-- NAV START -->
+      <!-- ********* NAV lg START ********** --> 
+      <nav class="navbar navbar-expand-lg d-none d-lg-block" id="menu">
+        <div class="container">
+              <!-- nav lg logo start -->
+              <a class="navbar-brand" href="#">
+              <img src="./images/aytor nav logo.png" alt="">
+              </a>
+              <!-- nav lg logo start -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+            <!-- nav option start -->
+            <div class="collapse navbar-collapse navOption" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                <li class="nav-item">
+                <a class="nav-link "  href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                  <li><hr class="dropdown-divider"></li>  
+                  <li><a class="dropdown-item" href="#">Shop - Details</a></li>
+                  <li><a class="dropdown-item" href="#">Compare</a></li>
+                  <li><a class="dropdown-item" href="#">Cart</a></li>
+                  <li><a class="dropdown-item" href="#">Checkout</a></li>
+                  <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./aboutUs.html">About</a></li>
+                  <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Shope Details</a></li>
+                  <li><a class="dropdown-item" href="#">Compare</a></li>
+                  <li><a class="dropdown-item" href="#">Cart</a></li>
+                  <li><a class="dropdown-item" href="#">Checkout</a></li>
+                  <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  </ul>
+                </li>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Features
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Women's & Girls' Fashion</a></li>
+                    <li><a class="dropdown-item" href="#">Men's Fashion</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Kid's Fashion</a></li>
+                  </ul>
+                </li>
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blogs
+                  </a>
+                  <ul class="dropdown-menu " >
+                    <li><a class="dropdown-item" href="#">Blogs</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Blog - Classic</a></li>
+                    <li><a class="dropdown-item" href="#">Blog - Classic With Sidebar</a></li>
+                    <li><a class="dropdown-item" href="#">Blog - Details</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link "  href="#">Contact</a>
+                </li>
+               
+              </ul>
+            </div>
+            <!-- nav option end -->
+              <div class="navButton">
+                <ul>
+                <!-- search modal button start -->
+                <li>
+                  <span  type="button" class="search" data-bs-toggle="modal" data-bs-target="#searchModal"><iconify-icon icon="mingcute:search-line" rotate="90deg"></iconify-icon></span>
+                </li>
+                <!-- search modal button end -->  
+    
+                <!-- search modal start -->
+                <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <img src="./images/sm logo.png" alt="">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form >
+                        <input type="text"   placeholder="Search For Products">
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <a href=""><button type="button" class="searchModalbtn">Search</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- search modal end -->
+                <!-- nav icon start -->
+                    <li>
+                        <a href="#"><iconify-icon icon="fluent-mdl2:contact"></iconify-icon></a>
+                    </li>
+                    <li>
+                        <a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a>
+                    </li>
+                    <li>
+                    <a href="#"><iconify-icon icon="uil:cart"></iconify-icon>
+                      <div class="cart">
+                      0
+                      </div>
+                    </a>
+                    </li>
+                  <!-- nav icon end -->  
+                </ul>
+    
+              </div>
+        </div>
+      </nav>
+          <!-- ********* NAV lg END ********** --> 
+    
+      <!-- ********* NAV sm START ********** --> 
+          <nav class="navbar navbar-sm d-block d-lg-none " id="menuSm">
+            <div class="container">
+              <div class="row w-100 align-items-center">
+    
+                <div class="col-3 menuSmBar text-start">
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><iconify-icon icon="mingcute:menu-fill"></iconify-icon></button>
+                </div>
+                <div class="col-6 text-center">
+                  <img src="./images/sm logo.png" alt="">
+                </div>
+                <div class="col-3 text-end">
+                  <div class="navButton">
+                    <ul>
+                        <li>
+                            <a href=""><iconify-icon icon="uil:cart"></iconify-icon>
+        
+                              <div class="cart">
+                                0
+                              </div>
+                        </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- SIDE MENU START -->
+    
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                   <!-- SIDE BAR LOGO/BUTTON -->
+                    <div class="logoSm">
+                      <img src="./images/sm logo.png" alt="">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <!-- SIDE BAR LOGO/BUTTON -->
+    
+                  <div class="offcanvas-body">
+                    <!-- SEARCH BAR -->    
+                    <div>
+                      <div class="searchbarSm ">
+                         <!-- MODAL FOR SEARCH ICON ENDS -->
+                        <form class="">
+                          <!-- <label id="sideSearch"></label> -->
+                          <input type="search" class="sideBarSearch " placeholder="Search for products" value=""   >
+                          <button type="button" class="sideSearchButton"><iconify-icon icon="iconamoon:search"></iconify-icon></button>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- SEARCH BAR -->
+    
+                    <!-- menu/categories start -->
+    
+                    <ul class="nav nav-underline nav-pills mb-3 menuCateBox" id="pills-tab" role="tablist">
+                      <li class="nav-item col-4" role="presentation">
+                        <button class="menuCate " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#sideMenuFilter" type="button" role="tab" aria-controls="pills-home" aria-selected="true">MENU</button>
+                      </li>
+                      <li class="nav-item col-4" role="presentation">
+                        <button class="menuCate " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">CATEGORIES</button>
+                      </li>
+                    </ul>
+    
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="sideMenuFilter" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+    
+                        <!-- side menu start -->
+                        <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                          <li class="nav-item">
+                            <a class="nav-link "  href="./index.html">Home</a>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                              <li><hr class="dropdown-divider"></li> 
+                              <li><a class="dropdown-item" href="#">Shop - Details</a></li>
+                              <li><a class="dropdown-item" href="#">Compare</a></li>
+                              <li><a class="dropdown-item" href="#">Cart</a></li>
+                              <li><a class="dropdown-item" href="#">Checkout</a></li>
+                              <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./aboutUs.html">About</a></li>
+                              <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Shope Details</a></li>
+                              <li><a class="dropdown-item" href="#">Compare</a></li>
+                              <li><a class="dropdown-item" href="#">Cart</a></li>
+                              <li><a class="dropdown-item" href="#">Checkout</a></li>
+                              <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Blog</a></li>
+                              <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Women's & Girls' Fashion</a></li>
+                              <li><a class="dropdown-item" href="#">Men's Fashion</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Kid's Fashion</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blogs
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Blogs</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Blog - Classic</a></li>
+                              <li><a class="dropdown-item" href="#">Blog - Classic With Sidebar</a></li>
+                              <li><a class="dropdown-item" href="#">Blog - Details</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+                           
+                          <li class="nav-item">
+                            <a class="nav-link "  href="#">Contact</a>
+                          </li>
+                        
+      
+                        </ul>
+                        <!-- side menu end -->
+    
+                      </div>
+    
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+    
+                        <!-- categoties start -->
+    
+                        <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                          <li class="nav-item">
+                            <a class="nav-link "  href="#">Food|Beverage</a>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Books|Games
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Movies|Music
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Furniture|Decor
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Consumer|Electronics
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          
+                        </ul>
+    
+                        <!-- categoties end -->
+    
+                      </div>
+    
+                    </div>
+    
+    
+                    <!-- menu/categories end -->
+    
+                <!-- SIDE MENU END -->
+    
+              </div>
+            </div>
+          </nav>
+      <!-- ********* NAV sm END ********** --> 
+    
+      <!-- NAV END -->
+
+     <!-- SHOP BANNER START -->
+
+     <section id="commonBanner">
+      <div class="container">
+        <div class="banner">
+          <h2>Shop - Grid</h2>
+          <h3><a href="./index.html">Home</a> / <a href="./shop.html">Shop</a></h3>
+        </div>
+      </div>
+     </section>
+
+     <!-- SHOP BANNER END -->
+     
+     <!-- SHOP SLIDER START -->
+     <section id="shopGrid">
+      <div class="container">
+        <div class="shopGridBox">
+          <div class="gridSetting row">
+            <div class="gridOption col-lg-6">
+              <span><img src="./images/shop grid filter.svg" alt=""></span>
+              <span><i class="fa-solid fa-grip"></i></span>
+            </div>
+            <div class="gridDropdown mt-2 mx-2 col-lg-6">
+              <div class="d-flex justify-content-between w-100">
+                <button class="btn  btn-sm" type="button">
+                 Default sorting
+                </button>
+                <button type="button" class="btn btn-sm droparrow" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class=""><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">
+                      <span><i class="fa-solid fa-angle-right"></i></span>Men’s Shopping
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span><i class="fa-solid fa-angle-right"></i></span>Women’s Shopping
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span><i class="fa-solid fa-angle-right"></i></span>Kids’ Shopping
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span><i class="fa-solid fa-angle-right"></i></span>Discounts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span><i class="fa-solid fa-angle-right"></i></span>New Arrivels
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <div id="gridSlider">
+            <div  class="shopGridCnt">
+            <div class="row">
+                <div class=" shopSliderBox col-lg-3 col-md-6 col-sm-12">
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-1.jpg" alt=""></div>
+                    <div class="sale">
+                      <h4>New</h4>
+                    </div>
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Spaghetti Hoodie</h4>
+                    <h5>$250.65</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <span>(5)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-2.jpg" alt=""></div>
+                    <div class="sale">
+                      <h4>New</h4>
+                    </div>
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Crew Neck Cotton</h4>
+                    <h5>$150.65</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <span>(5)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-3.jpg" alt=""></div>
+                    <div class="sale">
+                      <h4>New</h4>
+                    </div>
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Spaghetti Strap</h4>
+                    <h5>$265.65</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <span>(5)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-4.jpg" alt=""></div>
+                    <div class="sale">
+                      <!-- <h4>...</h4> -->
+                    </div>
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Pink Neck Frog</h4>
+                    <h5>$180.85</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <!-- <iconify-icon icon="mdi:star"></iconify-icon> -->
+                        <span>(4)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-5.jpg" alt=""></div>
+                    <!-- <div class="sale">
+                      <h4>...</h4>
+                    </div> -->
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>T-shirt Blouse Sleeve</h4>
+                    <h5>$125.55</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <!-- <iconify-icon icon="mdi:star"></iconify-icon> -->
+                        <span>(4)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-6.jpg" alt=""></div>
+                    <div class="sale">
+                      <h4>New</h4>
+                    </div>
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Crew Neck T-shirt</h4>
+                    <h5>$170.25</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <!-- <iconify-icon icon="mdi:star"></iconify-icon> -->
+                        <span>(4)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-7.jpg" alt=""></div>
+                    <!-- <div class="sale">
+                      <h4>...</h4>
+                    </div> -->
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Blouse Jacket</h4>
+                    <h5>$140.65</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <span>(5)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-8.jpg" alt=""></div>
+                    <!-- <div class="sale">
+                      <h4>...</h4>
+                    </div> -->
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Hoodie Sweater</h4>
+                    <h5>$220.65</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <span>(5)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-9.jpg" alt=""></div>
+                    <div class="sale">
+                      <h4>New</h4>
+                    </div>
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Hoodie Coat</h4>
+                    <h5>$160.65</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <span>(5)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-10.jpg" alt=""></div>
+                    <!-- <div class="sale">
+                      <h4>...</h4>
+                    </div> -->
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Flight jacket</h4>
+                    <h5>$190.65</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <span>(5)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-11.jpg" alt=""></div>
+                    <!-- <div class="sale">
+                      <h4>...</h4>
+                    </div> -->
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Shoulder Dress</h4>
+                    <h5>$156.65</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <span>(5)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+                <div class=" shopSliderBox col-lg-3 d-lg-block 	d-none d-md-block col-md-6 mb-md-4">
+    
+                  <div class="bestCnt">
+                    <div class="arrivImg"><img src="./images/shop product-12.jpg" alt=""></div>
+                    <div class="sale">
+                      <h4>New</h4>
+                    </div>
+                    <div class="arriveIcon">
+                      <ul>
+                        <li style="--num:0">
+                          <a href="#" data-bs-custom-class="arrivTooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <button>
+                                <i class="fa-solid fa-cart-plus"></i>
+                              </button>
+                          </a>
+                        </li>
+                        <li style="--num:1">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-heart"></i>
+    
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:2">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li style="--num:3">
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <button>
+                              <i class="fa-solid fa-signal"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="bestText">
+                    <h4>Pajamas Nightwear</h4>
+                    <h5>$135.55</h5>
+                      <span>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                        <!-- <iconify-icon icon="mdi:star"></iconify-icon> -->
+                        <span>(4)</span>
+                      </span>
+    
+                  </div>
+    
+                </div>
+            </div>
+            </div>  
+
+            
+        </div>
+       <!-- pagination start -->
+       <div class="paginationbox">
+        <nav aria-label="Page navigation example" class="paginationCnt mx-auto">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link arrowBtn border-0" href="#"><span><i class="fa-solid fa-arrow-left-long"></i></span> &nbsp;Pre</a></li>
+            <li class="page-item"><a class="page-link arrowNumber" href="#">1</a></li>
+            <li class="page-item"><a class="page-link arrowNumber" href="#">2</a></li>
+            <li class="page-item"><a class="page-link arrowNumber" href="#">3</a></li>
+            <li class="page-item"><a class="page-link arrowBtn border-0" href="#">Next &nbsp;<span><i class="fa-solid fa-arrow-right-long"></i></span></a></li>
+          </ul>
+        </nav>
+       </div>
+       <!-- pagination end -->
+        </div>
+      </div>
+     </section>
+     <!-- SHOP SLIDER END -->
+
+     <!-- SHOP FOOTER START -->
+     <section id="secondFooter">
+      <div class="container">
+         <div class="footerDetails">
+  
+          <div class="footerIntro">
+            <div class="row">
+              <div class="footertitle col-lg-6 col-12">
+                <h2>Subscribe to Our Newsletter!</h2>
+                <p>Authoritatively morph 24/7 potentialities with error-free partnerships. <br> Objectively engineer multimedia.</p>
+              </div>
+              <div class="searchBox col-lg-6 col-12">
+                <form class="row px-2 ms-lg-2">
+                  <input type="text" placeholder="Enter your email..." class="border-0 col">
+                  <button class="col">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <hr style="background: #151A32; opacity: 0.2;">
+      <div class="footerInformation row">
+       <div class="footerlogo col-xl-3 col-md-12 mb-4">
+        <div class="f-logo">
+          <img src="./images/secondfooter logo.png" alt="">
+        </div>
+        <div class="f-text">
+          <p>Progressively optimize effective ideas before turnkey process improvements. Proactively disseminate</p>
+        </div>
+        <div class="f-social">
+          <span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </span>
+        </div>
+       </div>
+        
+      <div class="footermyaccount col-xl-2 col-md-12 mb-4">
+        <div class="title">
+          My Account
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> My Account
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> View Cart
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Wishlist
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Compare
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> New Products
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footersupport col-xl-2 col-md-12 mb-4">
+        
+        <div class="title">
+          Support
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Help
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Feedback
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Customer Service
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Store Locations
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footershop col-xl-2 col-md-12 mb-4">
+        
+        <div class="title">
+          Shope
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Men’s Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Women’s Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Kids’ Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Discounts
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>New Arrivels
+            </a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <div class="footerContactInfo col-xl-2 col-md-12 mb-4">
+          
+          <div class="title">
+            Contact Us
+          </div>
+  
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-location-dot"></i></span> &nbsp; <a href="#">
+                United States
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-phone"></i></span> &nbsp; <a href="tel:+18008660286">
+                +18008660286
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span> &nbsp; <a href="mailto:aetor.info@gmail.com">
+                aetor.info@gmail.com
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-globe"></i></span> &nbsp; <a href="#">
+                info@aetor.com
+              </a>
+            </li>
+            
+            
+          </ul>
+  
+        </div>
+  
+      </div>
+      </div>
+      </div>
+
+      <hr>
+      <div class="container">
+      <div class="footerCopyright row">
+          <div class="copyrightText col-lg-6">
+            <h3> © 2033 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft </span></h3>
+          </div>
+          <div class="copyrightpayment col-lg-6">
+           <img src="./images/footer payment.png" alt=""> 
+          </div>
+        </div>  
+      </div>
+    </section>
+     <!-- SHOP FOOTER END -->
+    
+<!-- JS LINKS START -->
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/typeit.umd.js"></script>
+<script src="./js/jquery.countdown.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/iconify-icon.min.js"></script>
+<script src="./js/venobox.min.js"></script>
+<script src="./js/jquery.spincrement.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/app.js"></script>
+<!-- JS LINKS END -->
+  
+</body>
+</html>

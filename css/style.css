@@ -56,6 +56,30 @@ body {
 }
 /* pre load end */
 /* pre load end */
+/* scroll up start */
+.scrollup {
+  position: fixed;
+  right: 50px;
+  bottom: 170px;
+  z-index: 999;
+}
+.scrollup button {
+  position: static;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  font-size: 25px;
+  background-color: #FF6F61;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.scrollup button img {
+  width: 60px;
+  height: 60px;
+}
+
+/* scroll up end */
 #modalCnt .upbutton {
   position: fixed;
   right: 40px;
@@ -649,7 +673,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
 }
 @media (320px <= width <= 575px) {
   #bestSeller .bestBox .bestCnt .arriveIcon {
-    left: 333px;
+    left: 288px;
   }
 }
 @media (576px <= width <= 767px) {
@@ -1291,6 +1315,32 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   color: #FF6F61;
 }
 
+#commonBanner {
+  background-color: #202938;
+  width: 100%;
+}
+#commonBanner .banner {
+  padding: 160px 0px;
+  text-align: center;
+}
+#commonBanner .banner h2 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 58px;
+}
+#commonBanner .banner h3 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+}
+#commonBanner .banner h3 a {
+  color: #fff;
+}
+
 #aboutBanner {
   background-color: #202938;
   width: 100%;
@@ -1413,6 +1463,12 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   transition: 0.25s;
   cursor: pointer;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  #aboutCounter .counterCnt ul li .counterIcon {
+    width: 90px;
+    height: 90px;
+  }
+}
 #aboutCounter .counterCnt ul li .counterIcon img {
   transform: scale(1);
   transition: 0.25s;
@@ -1425,7 +1481,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
 }
 #aboutCounter .counterCnt ul li .counterText h2 {
   color: #FF6F61;
-  font-size: 36px;
+  font-size: clamp(16px, 12vw, 36px);
   font-weight: 700;
   line-height: 46px;
 }
@@ -1840,6 +1896,382 @@ nav .navButton li span .cart, nav .navButton li a .cart {
 #aboutInsta .instaBox_slider_dot li.slick-active button {
   width: 40px;
   background-color: #FF6F61;
+}
+
+#secondFooter {
+  background-color: #F1F3F4;
+}
+#secondFooter .footerDetails {
+  padding: 100px 0px;
+}
+#secondFooter .footerDetails .footerIntro {
+  margin-bottom: 70px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form {
+  width: 424px;
+  height: 60px;
+  text-align: center;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form input {
+  padding: 16px 125px 11px 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button {
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  padding: 0px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+#secondFooter .footerDetails .footerInformation {
+  margin-top: 85px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-logo {
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text {
+  margin-bottom: 25px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a {
+  margin: 0px 5px;
+  color: #444;
+  transition: 0.25s;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount, #secondFooter .footerDetails .footerInformation .footersupport, #secondFooter .footerDetails .footerInformation .footershop, #secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding: 0px 10px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount .title, #secondFooter .footerDetails .footerInformation .footersupport .title, #secondFooter .footerDetails .footerInformation .footershop .title, #secondFooter .footerDetails .footerInformation .footerContactInfo .title {
+  font-size: 24px;
+  color: #11161E;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a, #secondFooter .footerDetails .footerInformation .footersupport ul li a, #secondFooter .footerDetails .footerInformation .footershop ul li a, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a:hover, #secondFooter .footerDetails .footerInformation .footersupport ul li a:hover, #secondFooter .footerDetails .footerInformation .footershop ul li a:hover, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding-left: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li span {
+  text-align: right;
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  text-align: left;
+}
+#secondFooter .footerCopyright {
+  padding: 25px 0px;
+}
+#secondFooter .footerCopyright .copyrightText {
+  text-align: center;
+}
+#secondFooter .footerCopyright .copyrightText h3 {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerCopyright .copyrightText h3 span {
+  color: #FF6F61;
+}
+#secondFooter .footerCopyright .copyrightpayment {
+  text-align: center;
+}
+
+#commonBanner {
+  background-color: #202938;
+  width: 100%;
+}
+#commonBanner .banner {
+  padding: 160px 0px;
+  text-align: center;
+}
+#commonBanner .banner h2 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 58px;
+}
+#commonBanner .banner h3 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+}
+#commonBanner .banner h3 a {
+  color: #fff;
+}
+
+#shopGrid {
+  margin: 100px 0px;
+}
+#shopGrid .shopGridBox .gridSetting {
+  justify-content: space-between;
+}
+#shopGrid .shopGridBox .gridSetting .gridOption span {
+  text-align: center;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 22px;
+  line-height: 35px;
+  color: #fff;
+  background-color: #151A32;
+  transition: 0.25s;
+}
+#shopGrid .shopGridBox .gridSetting .gridOption span:hover {
+  cursor: pointer;
+  background-color: #FF6F61;
+}
+#shopGrid .shopGridBox .gridSetting .gridDropdown {
+  text-align: right;
+  width: 312px;
+  height: 40px;
+  background-color: #F1F3F4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#shopGrid .shopGridBox .gridSetting .gridDropdown .droparrow {
+  border: none;
+  transition: 0.25s;
+}
+#shopGrid .shopGridBox .gridSetting .gridDropdown .droparrow:hover {
+  color: #FF6F61;
+}
+#shopGrid .shopGridBox .gridSetting .gridDropdown ul li {
+  padding: 10px 30px;
+}
+#shopGrid .shopGridBox .gridSetting .gridDropdown ul li a {
+  color: #11161E;
+  transition: 0.25s;
+}
+#shopGrid .shopGridBox .gridSetting .gridDropdown ul li a:hover {
+  color: #FF6F61;
+}
+#shopGrid .shopGridBox #gridSlider {
+  margin-top: 30px;
+}
+#shopGrid .shopGridBox #gridSlider .shopGridCnt {
+  margin-bottom: 24px;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 24px;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arrivImg {
+  width: inherit;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arrivImg img {
+  width: 100%;
+  filter: brightness(100%);
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .sale h4 {
+  width: 80px;
+  height: 26px;
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  text-align: center;
+  color: #fff;
+  background-color: #FF6F61;
+  padding: 0px 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon {
+  position: absolute;
+  top: 50%;
+  left: 265px;
+  transform: translateY(-82%);
+  transition: 0.25s ease-in;
+}
+@media (320px <= width <= 575px) {
+  #shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon {
+    left: 333px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon {
+    left: 465px;
+  }
+}
+@media (768px <= width <= 991px) {
+  #shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon {
+    left: 290px;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon {
+    left: 180px;
+  }
+}
+@media (1200px <= width <= 1399px) {
+  #shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon {
+    left: 220px;
+  }
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(-200%);
+  transition: 0.1s ease-in-out;
+  transition-delay: calc(0.1s * var(--num));
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon li button {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  background-color: #151A32;
+  border: none;
+  transition: 0.25s ease-in;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon li button:hover {
+  color: #fff;
+  background-color: #FF6F61;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt:hover .arriveIcon li {
+  transform: translateX(-50%);
+  opacity: 1;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt:hover .arrivImg {
+  filter: brightness(80%);
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestText {
+  width: 100%;
+  padding-top: 24px;
+  position: relative;
+  padding-bottom: 26px;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestText h5 {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 26px;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestText h4 {
+  font-size: 18px;
+  color: #11161E;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestText span {
+  position: absolute;
+  top: 25%;
+  right: 25px;
+  color: #FF6F61;
+}
+#shopGrid .shopGridBox #gridSlider .shopSliderBox .bestText span span {
+  top: -3px;
+  right: -25px;
+  color: #444;
+}
+#shopGrid .paginationbox {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+#shopGrid .paginationbox .paginationCnt {
+  text-align: center;
+}
+#shopGrid .paginationbox .paginationCnt ul li {
+  margin-left: 10px;
+}
+#shopGrid .paginationbox .paginationCnt ul li a {
+  color: #444;
+}
+#shopGrid .paginationbox .paginationCnt ul li .arrowNumber {
+  transition: 0.25s;
+}
+#shopGrid .paginationbox .paginationCnt ul li .arrowNumber:hover {
+  color: #fff;
+  background-color: #151A32;
+}
+#shopGrid .paginationbox .paginationCnt ul li .arrowBtn {
+  box-shadow: none;
+  background: transparent;
+  color: #444;
+  transition: 0.25s;
+}
+#shopGrid .paginationbox .paginationCnt ul li .arrowBtn:hover {
+  color: #FF6F61;
 }
 
 #secondFooter {

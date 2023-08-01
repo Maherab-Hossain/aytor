@@ -36,6 +36,10 @@ body{
 @import "./_preloader.scss";
 /* pre load end */
 
+// SCROLL UP START
+@import "./_scrolluparrow.scss";
+// SCROLL UP END
+
 // MODAL START
 @import "./_modal.scss";
 // MODAL END
@@ -48,15 +52,23 @@ body{
 // ********************* HOME PAGE END / 1st PAGE ********************************
 
 // RESPONSIVE DIVICE START
-@import "./responsive" ;
+@import "./responsive.scss" ;
 // RESPONSIVE DIVICE END 
 
+// ********************* COMMON BANNER START ********************************
+@import "./_commonbanner.scss";
+// ********************* COMMON BANNER END ********************************
+
 // ********************* ABOUT US PAGE START / 2nd PAGE ********************************
-@import "./_aboutus";
+@import "./_aboutus.scss";
 // ********************* ABOUT US PAGE END / 2nd PAGE ********************************
+
+// ********************* SHOP PAGE START / 3rd PAGE ********************************
+@import "./_shop.scss";
+// ********************* SHOP PAGE END / 3rd PAGE ********************************
 
 // ************************************** OTHER PAGE FOOTER START ******************************
 
-@import "./_secondfooter";
+@import "./_secondfooter.scss";
 
 // ************************************** OTHER PAGE FOOTER END ******************************

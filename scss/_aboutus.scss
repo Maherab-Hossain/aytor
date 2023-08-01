@@ -111,7 +111,11 @@
     border-radius: 50%;  
     line-height: 100px;
     transition: 0.25s;
-    img{
+    @include customScreen (320px, 767px){
+     width: 90px;
+     height: 90px;
+    }
+    img{ 
     transform: scale(1);
     transition: 0.25s;    
     }
@@ -126,7 +130,7 @@
     .counterText{
     h2{
     color: $colorPrimary;
-    font-size: 36px;
+    font-size: clamp(16px, 12vw, 36px);
     font-weight: 700;
     line-height: 46px;
     }
