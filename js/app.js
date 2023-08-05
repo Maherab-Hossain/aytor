@@ -328,7 +328,7 @@ $('#leatherSlider').slick({
 });
 // sub slider start
 $('#sub-leatherSlider').slick({
-  arrows:true,
+  arrows:false,
   slidesToScroll: 1,
   slidesToShow:5,
   asNavFor: '#leatherSlider',
@@ -344,6 +344,7 @@ $('#reletedSlider').slick({
   speed: 800,
   slidesToShow: 4,
   slidesToScroll: 4,
+  arrows:true,
   prevArrow:".beautyleft",
   nextArrow:".beautyright",
   responsive: [
