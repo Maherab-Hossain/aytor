@@ -6,7 +6,7 @@
     padding: 160px 0px;
     text-align: center;
     h2{
-    font-size: 48px;
+    font-size: clamp(30px, 12vw, 48px);
     color: $whiteColor;
     font-weight: 700;
     line-height: 58px;

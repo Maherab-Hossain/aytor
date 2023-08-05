@@ -2,7 +2,7 @@ $ (function () {
   // pre loader start
     $(window).on(`load`, function () {
       $(`.preload`).fadeOut()
-    })
+    });
   // pre loader end
 
   // modal chat button start
@@ -287,5 +287,92 @@ $('.couterUpAbout').spincrement()
  });
   // AEYOR ABOUT INSTAGRAM END
 // ********************* ABOUT US PAGE END / 2nd PAGE ********************************
+});
+// ********************* SHOP - DETAILS PAGE START / 4TH PAGE ********************************
 
-})
+// QUANTITY ARROW START
+
+// UP BUTTON STARTS
+let upbtn = document.querySelector(`.quantity-up`);
+let output = document.querySelector(`.output`);
+function upResult() {
+  let upNewValue = Number(output.value);
+  upNewValue = upNewValue + 1;
+  output.value = upNewValue;
+}
+upbtn.addEventListener(`click`, upResult);
+// UP BUTTON ENDS
+
+// // DOWN BUTTON STARTS
+let downbtn = document.querySelector(`.quantity-down`)
+function downResult() {
+  let downNewValue =Number(output.value);
+  if (downNewValue == 0) {
+  return false
+  }
+  downNewValue = downNewValue - 1;
+  output.value = downNewValue;
+}
+downbtn.addEventListener(`click`, downResult);
+// // DOWN BUTTON ENDS
+
+// QUANTITY ARROW END
+
+// LEATHER JACKET SLIDER START
+$('#leatherSlider').slick({
+  arrows:true,
+  fade: true,
+  asNavFor: '#sub-leatherSlider',
+  prevArrow:".jacketleft",
+  nextArrow:".jacketright",
+});
+// sub slider start
+$('#sub-leatherSlider').slick({
+  arrows:true,
+  slidesToScroll: 1,
+  slidesToShow:5,
+  asNavFor: '#leatherSlider',
+  centerPadding:"0px",
+  centerMode: true,
+  focusOnSelect: true,
+});
+// sub slider end
+// LEATHER JACKET SLIDER END
+
+// RELETED SLIDER START
+$('#reletedSlider').slick({
+  speed: 800,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow:".beautyleft",
+  nextArrow:".beautyright",
+  responsive: [
+    {
+    breakpoint: 991,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      arrows:false,
+      }
+    },
+    {
+    breakpoint: 767,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      arrows:false,
+      }
+    },
+    {
+    breakpoint: 575,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows:false,
+      mobileFirst:true,
+      }
+    }
+  ]
+});
+// RELETED SLIDER END
+// ********************* SHOP - DETAILS PAGE END / 4TH PAGE **********************************

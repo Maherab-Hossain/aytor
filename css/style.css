@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6, ul, p, span, ol, a {
 
 body {
   font-family: "Josefin Sans", sans-serif;
+  color: #11161E;
   position: relative;
   overflow-x: hidden;
 }
@@ -1324,7 +1325,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   text-align: center;
 }
 #commonBanner .banner h2 {
-  font-size: 48px;
+  font-size: clamp(30px, 12vw, 48px);
   color: #fff;
   font-weight: 700;
   line-height: 58px;
@@ -2052,7 +2053,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   text-align: center;
 }
 #commonBanner .banner h2 {
-  font-size: 48px;
+  font-size: clamp(30px, 12vw, 48px);
   color: #fff;
   font-weight: 700;
   line-height: 58px;
@@ -2272,6 +2273,535 @@ nav .navButton li span .cart, nav .navButton li a .cart {
 }
 #shopGrid .paginationbox .paginationCnt ul li .arrowBtn:hover {
   color: #FF6F61;
+}
+
+#secondFooter {
+  background-color: #F1F3F4;
+}
+#secondFooter .footerDetails {
+  padding: 100px 0px;
+}
+#secondFooter .footerDetails .footerIntro {
+  margin-bottom: 70px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form {
+  width: 424px;
+  height: 60px;
+  text-align: center;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form input {
+  padding: 16px 125px 11px 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button {
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  padding: 0px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+#secondFooter .footerDetails .footerInformation {
+  margin-top: 85px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-logo {
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text {
+  margin-bottom: 25px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a {
+  margin: 0px 5px;
+  color: #444;
+  transition: 0.25s;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount, #secondFooter .footerDetails .footerInformation .footersupport, #secondFooter .footerDetails .footerInformation .footershop, #secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding: 0px 10px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount .title, #secondFooter .footerDetails .footerInformation .footersupport .title, #secondFooter .footerDetails .footerInformation .footershop .title, #secondFooter .footerDetails .footerInformation .footerContactInfo .title {
+  font-size: 24px;
+  color: #11161E;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a, #secondFooter .footerDetails .footerInformation .footersupport ul li a, #secondFooter .footerDetails .footerInformation .footershop ul li a, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a:hover, #secondFooter .footerDetails .footerInformation .footersupport ul li a:hover, #secondFooter .footerDetails .footerInformation .footershop ul li a:hover, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding-left: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li span {
+  text-align: right;
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  text-align: left;
+}
+#secondFooter .footerCopyright {
+  padding: 25px 0px;
+}
+#secondFooter .footerCopyright .copyrightText {
+  text-align: center;
+}
+#secondFooter .footerCopyright .copyrightText h3 {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerCopyright .copyrightText h3 span {
+  color: #FF6F61;
+}
+#secondFooter .footerCopyright .copyrightpayment {
+  text-align: center;
+}
+
+#commonBanner {
+  background-color: #202938;
+  width: 100%;
+}
+#commonBanner .banner {
+  padding: 160px 0px;
+  text-align: center;
+}
+#commonBanner .banner h2 {
+  font-size: clamp(30px, 12vw, 48px);
+  color: #fff;
+  font-weight: 700;
+  line-height: 58px;
+}
+#commonBanner .banner h3 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+}
+#commonBanner .banner h3 a {
+  color: #fff;
+}
+
+#leatherJacket {
+  margin: 100px 0px;
+}
+#leatherJacket .jacketSlider {
+  position: relative;
+}
+#leatherJacket .jacketSlider #leatherSlider img {
+  width: 100%;
+}
+#leatherJacket .jacketSlider #sub-leatherSlider {
+  cursor: pointer;
+}
+#leatherJacket .jacketSlider #sub-leatherSlider .leatherSlidCnt {
+  text-align: center;
+  transform: scale(0.8);
+}
+#leatherJacket .jacketSlider #sub-leatherSlider .leatherSlidCnt.slick-center {
+  transform: scale(1);
+}
+#leatherJacket .jacketSlider .jacketArrow {
+  text-align: center;
+}
+@media (320px <= width <= 575px) {
+  #leatherJacket .jacketSlider .jacketArrow {
+    display: none;
+  }
+}
+@media (576px <= width <= 767px) {
+  #leatherJacket .jacketSlider .jacketArrow {
+    display: none;
+  }
+}
+#leatherJacket .jacketSlider .jacketArrow .jacketleft {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  color: #fff;
+  background-color: rgba(21, 26, 50, 0.5490196078);
+  line-height: 50px;
+  bottom: 25px;
+  left: 0px;
+  cursor: pointer;
+}
+#leatherJacket .jacketSlider .jacketArrow .jacketright {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  color: #fff;
+  background-color: rgba(21, 26, 50, 0.5490196078);
+  line-height: 50px;
+  bottom: 25px;
+  right: 20px;
+  cursor: pointer;
+}
+#leatherJacket .jacketInfo h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 8px;
+}
+#leatherJacket .jacketInfo .review {
+  margin-bottom: 24px;
+}
+#leatherJacket .jacketInfo .review span {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 26px;
+}
+#leatherJacket .jacketInfo .review .r-start {
+  color: #FF6F61;
+  padding: 0px 10px;
+  border-right: 2px solid #CACACA;
+}
+#leatherJacket .jacketInfo .price-dis {
+  margin-bottom: 20px;
+}
+#leatherJacket .jacketInfo .price-dis h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#leatherJacket .jacketInfo .price-dis h6 span {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: line-through;
+}
+#leatherJacket .jacketInfo .product-details {
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#leatherJacket .jacketInfo .hr-line {
+  border: 1px solid #444;
+}
+#leatherJacket .jacketInfo .info-form {
+  margin-top: 42px;
+}
+#leatherJacket .jacketInfo .info-form ul li .product-volume {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+#leatherJacket .jacketInfo .info-form ul li select option {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 26px;
+}
+#leatherJacket .jacketInfo .info-form ul li h4 {
+  margin-top: 40px;
+}
+#leatherJacket .jacketInfo .info-form .quantity-arrow {
+  margin-top: 15px;
+  color: #444;
+}
+#leatherJacket .jacketInfo .info-form .quantity-arrow .quantity-down {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #F1F3F4;
+}
+@media (min-width: 1000px) and (max-width: 1150px) {
+  #leatherJacket .jacketInfo .info-form .quantity-arrow .quantity-down {
+    width: 40px;
+    height: 40px;
+  }
+}
+#leatherJacket .jacketInfo .info-form .quantity-arrow .quantity-up {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #F1F3F4;
+}
+@media (min-width: 1000px) and (max-width: 1150px) {
+  #leatherJacket .jacketInfo .info-form .quantity-arrow .quantity-up {
+    width: 40px;
+    height: 40px;
+  }
+}
+#leatherJacket .jacketInfo .info-form .quantity-arrow .output {
+  font-size: 18px;
+  color: #444;
+  font-weight: 600;
+  line-height: 28px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #F1F3F4;
+  box-shadow: none;
+}
+@media (min-width: 1000px) and (max-width: 1150px) {
+  #leatherJacket .jacketInfo .info-form .quantity-arrow .output {
+    width: 40px;
+    height: 40px;
+  }
+}
+#leatherJacket .jacketInfo .info-form .product-bttn {
+  margin-top: 15px;
+}
+#leatherJacket .jacketInfo .info-form .product-bttn ul li a {
+  color: #fff;
+  background-color: #151A32;
+  transition: 0.25s;
+}
+#leatherJacket .jacketInfo .info-form .product-bttn ul li a:hover {
+  background-color: #FF6F61;
+}
+#leatherJacket .jacketInfo .info-form .product-bttn ul .cart-box a {
+  padding: 17px 52px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+@media (min-width: 320px) and (max-width: 1150px) {
+  #leatherJacket .jacketInfo .info-form .product-bttn ul .cart-box a {
+    padding: 15px 12px;
+  }
+}
+#leatherJacket .jacketInfo .info-form .product-bttn ul .cart-box a span {
+  margin-right: 11px;
+}
+#leatherJacket .jacketInfo .info-form .product-bttn ul .cart-Cnt a {
+  padding: 17px;
+}
+@media (min-width: 320px) and (max-width: 1100px) {
+  #leatherJacket .jacketInfo .info-form .product-bttn ul .cart-Cnt a {
+    padding: 15px;
+  }
+}
+#leatherJacket .jacketInfo .product-code p {
+  font-size: 18px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#leatherJacket .jacketInfo .product-code p span {
+  font-weight: 600;
+  color: #151A32;
+}
+#leatherJacket .jacketInfo .f-social {
+  cursor: pointer;
+}
+#leatherJacket .jacketInfo .f-social span a {
+  padding: 5px;
+  color: #CACACA;
+  transition: 0.25s;
+}
+#leatherJacket .jacketInfo .f-social span a:hover {
+  color: #151A32;
+}
+@media (min-width: 320px) and (max-width: 1100px) {
+  #leatherJacket .jacketInfo .f-social span a {
+    padding: 2px;
+  }
+}
+
+#productNavandTabs {
+  margin: 113px 0px 86px;
+}
+#productNavandTabs .descriptionCnt .product-navTabs-bttn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#productNavandTabs .descriptionCnt .product-navTabs-bttn .bttn-navTabs {
+  padding: 15px 55px;
+  background-color: #11161E;
+  color: #fff;
+  margin-bottom: 40px;
+  border: none;
+  transition: 0.25s;
+}
+#productNavandTabs .descriptionCnt .product-navTabs-bttn .bttn-navTabs.active {
+  background-color: #FF6F61;
+}
+#productNavandTabs .descriptionCnt .product-navTabs-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+#releted-product {
+  margin-top: 85px;
+  margin-bottom: 100px;
+}
+#releted-product .boxTitle h2 {
+  color: #11161E;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+#releted-product .releted-Box {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 24px;
+}
+#releted-product .releted-Box .arrivCnt .arrivImg {
+  transition: 0.25s;
+  width: inherit;
+}
+#releted-product .releted-Box .arrivCnt .arrivImg img {
+  width: 100%;
+  filter: brightness(100%);
+}
+#releted-product .releted-Box .arrivCnt .arrivImg:hover {
+  filter: brightness(80%);
+}
+#releted-product .releted-Box .arrivCnt .sale h4 {
+  width: 80px;
+  height: 26px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  color: #fff;
+  background-color: #FF6F61;
+  padding: 0px 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+#releted-product .releted-Box .reletedText {
+  width: 100%;
+  padding-top: 24px;
+  position: relative;
+  padding-bottom: 26px;
+}
+#releted-product .releted-Box .reletedText h5 {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 26px;
+}
+#releted-product .releted-Box .reletedText h4 {
+  font-size: 18px;
+  color: #11161E;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+#releted-product .releted-Box .reletedText span {
+  position: absolute;
+  top: 25%;
+  right: 0px;
+  color: #FF6F61;
+}
+#releted-product .releted-Box .reletedText span span {
+  top: -3px;
+  right: -25px;
+  color: #444;
+}
+#releted-product .beautyArrow {
+  text-align: center;
+}
+@media (320px <= width <= 575px) {
+  #releted-product .beautyArrow {
+    display: none;
+  }
+}
+@media (576px <= width <= 767px) {
+  #releted-product .beautyArrow {
+    display: none;
+  }
+}
+#releted-product .beautyArrow .beautyleft {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  color: #fff;
+  background-color: rgba(21, 26, 50, 0.5490196078);
+  line-height: 50px;
+  top: 320px;
+  left: 13px;
+}
+#releted-product .beautyArrow .beautyright {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  color: #fff;
+  background-color: rgba(21, 26, 50, 0.5490196078);
+  line-height: 50px;
+  top: 320px;
+  right: 38px;
 }
 
 #secondFooter {

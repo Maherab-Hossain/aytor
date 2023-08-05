@@ -1,4 +1,4 @@
-// ********************* SHOP PAGE END / 3rd PAGE ********************************
+// ********************* SHOP PAGE START / 3rd PAGE ********************************
 // SHOP BANNER START
 @import"./_commonbanner";
 // SHOP BANNER END
@@ -58,39 +58,39 @@
     } 
 //*********************************************************** girdsetting / option end
     #gridSlider{
-        margin-top: 30px;
-        .shopGridCnt{
-            margin-bottom: 24px;
-          }
-          .shopSliderBox{
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            padding-right: 24px;
-          .bestCnt{
-            .arrivImg {
-            width: inherit;
-            img{
-            width: 100%;
-            filter: brightness(100%);
-            }
-            }
-          .sale h4{
-            width: 80px;
-            height: 26px;
-            position: absolute;
-            top: 0px;
-            left: 12px;
-            text-align: center;
-            color: $whiteColor;
-            background-color: $colorPrimary;
-            padding: 0px 8px;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 26px;
-          }
-          .arriveIcon{
+    margin-top: 30px;
+    .shopGridCnt{
+    margin-bottom: 24px;
+    }
+    .shopSliderBox{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 24px;
+    .bestCnt{
+    .arrivImg {
+    width: inherit;
+    img{
+    width: 100%;
+    filter: brightness(100%);
+    }
+    }
+    .sale h4{
+    width: 80px;
+    height: 26px;
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    text-align: center;
+    color: $whiteColor;
+    background-color: $colorPrimary;
+    padding: 0px 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    }
+    .arriveIcon{
             position: absolute;
             top: 50%;
             left: 265px;
@@ -135,46 +135,46 @@
             }
             }
             }  
-            }
-            &:hover .arriveIcon li{
-            transform: translateX(-50%);
-            opacity: 1;
-            }
-            &:hover .arrivImg{
-            filter: brightness(80%);
-            }
-            }
-            .bestText{    
-            width: 100%; 
-            padding-top: 24px;
-            position: relative;
-            padding-bottom: 26px;
-            h5{
-            font-size: 16px;
-            color: $arrivalpriceColor;
-            font-weight: 400;
-            line-height: 26px;
-            }
-            h4{
-            font-size: 18px;
-            color: $textColorPrimary;
-            font-weight: 600;
-            line-height: 28px;
-            margin-bottom: 10px;
-            }
-            span{
-            position: absolute;
-            top: 25%;
-            right: 25px;    
-            color: $colorPrimary;
-            span{
-            top: -3px;    
-            right: -25px;    
-            color: $arrivalpriceColor;    
-            }
-            }
-            }
-            }
+    }
+    &:hover .arriveIcon li{
+    transform: translateX(-50%);
+    opacity: 1;
+    }
+    &:hover .arrivImg{
+    filter: brightness(80%);
+    }
+    }
+    .bestText{    
+    width: 100%; 
+    padding-top: 24px;
+    position: relative;
+    padding-bottom: 26px;
+    h5{
+    font-size: 16px;
+    color: $arrivalpriceColor;
+    font-weight: 400;
+    line-height: 26px;
+    }
+    h4{
+    font-size: 18px;
+    color: $textColorPrimary;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 10px;
+    }
+    span{
+    position: absolute;
+    top: 25%;
+    right: 25px;    
+    color: $colorPrimary;
+    span{
+    top: -3px;    
+    right: -25px;    
+    color: $arrivalpriceColor;    
+    }
+    }
+    }
+    }
     }   
     }
     .paginationbox{
