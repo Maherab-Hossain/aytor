@@ -139,7 +139,7 @@
         height: 50px;
         background-color: transparent;
         border: 1px solid $spacialBgColor;
-        @include customScreen (1000px , 1150px){
+        @include customScreen (1000px , 1199px){
           width: 40px;
           height: 40px;
         } 
@@ -149,7 +149,7 @@
         height: 50px;
         background-color: transparent;
         border: 1px solid $spacialBgColor;
-        @include customScreen (1000px , 1150px){
+        @include customScreen (1000px , 1199px){
           width: 40px;
           height: 40px;
         } 
@@ -164,7 +164,7 @@
         text-align: center;
         border: 1px solid $spacialBgColor;
         box-shadow: none;
-        @include customScreen (1000px , 1150px){
+        @include customScreen (1000px , 1199px){
           width: 40px;
           height: 40px;
         } 
@@ -172,7 +172,7 @@
         }
         // quantity arrow end
         .product-bttn{
-        margin-top: 15px;
+        margin-top: 26px;
         ul{
         li{
         a{   
@@ -190,7 +190,7 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 28px;
-        @include customScreen (320px , 1150px){
+        @include customScreen (320px , 1200px){
           padding: 15px 12px;
         } 
         span{

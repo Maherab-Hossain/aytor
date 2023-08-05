@@ -2574,7 +2574,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   background-color: transparent;
   border: 1px solid #F1F3F4;
 }
-@media (min-width: 1000px) and (max-width: 1150px) {
+@media (min-width: 1000px) and (max-width: 1199px) {
   #leatherJacket .jacketInfo .info-form .quantity-arrow .quantity-down {
     width: 40px;
     height: 40px;
@@ -2586,7 +2586,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   background-color: transparent;
   border: 1px solid #F1F3F4;
 }
-@media (min-width: 1000px) and (max-width: 1150px) {
+@media (min-width: 1000px) and (max-width: 1199px) {
   #leatherJacket .jacketInfo .info-form .quantity-arrow .quantity-up {
     width: 40px;
     height: 40px;
@@ -2603,14 +2603,14 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   border: 1px solid #F1F3F4;
   box-shadow: none;
 }
-@media (min-width: 1000px) and (max-width: 1150px) {
+@media (min-width: 1000px) and (max-width: 1199px) {
   #leatherJacket .jacketInfo .info-form .quantity-arrow .output {
     width: 40px;
     height: 40px;
   }
 }
 #leatherJacket .jacketInfo .info-form .product-bttn {
-  margin-top: 15px;
+  margin-top: 26px;
 }
 #leatherJacket .jacketInfo .info-form .product-bttn ul li a {
   color: #fff;
@@ -2626,7 +2626,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   font-weight: 600;
   line-height: 28px;
 }
-@media (min-width: 320px) and (max-width: 1150px) {
+@media (min-width: 320px) and (max-width: 1200px) {
   #leatherJacket .jacketInfo .info-form .product-bttn ul .cart-box a {
     padding: 15px 12px;
   }
