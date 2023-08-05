@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5,h6,ul,p,span,ol,a{
 
 body{
   font-family: $primaryfont;
+  color: $textColorPrimary;
   position: relative;
   overflow-x: hidden;
 }
@@ -66,6 +67,10 @@ body{
 // ********************* SHOP PAGE START / 3rd PAGE ********************************
 @import "./_shop.scss";
 // ********************* SHOP PAGE END / 3rd PAGE ********************************
+
+// ********************* SHOP - DETAILS PAGE START / 4TH PAGE ********************************
+@import "./shopdetails.scss";
+// ********************* SHOP - DETAILS PAGE END / 4TH PAGE ********************************
 
 // ************************************** OTHER PAGE FOOTER START ******************************
 

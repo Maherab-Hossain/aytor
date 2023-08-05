@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aytor</title>
+  <!-- CSS LINKS START -->
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/venobox.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <!-- CSS LINKS END -->
+  <link rel="shortcut icon" href="./images/favv logo.png" type="image/x-icon">
+</head>
+<body>
+   <!-- pre load start -->
+   <div class="preload">
+    <div class="prebox">
+    </div>
+  </div>
+  <!-- pre load end -->
+  <!-- scroll up arrow start -->
+  <div class="scrollup ">
+    <button class="d-lg-block d-none d-md-block"><img src="./images/scrolluparrow.gif" alt=""></i></button>
+  </div>
+  <!-- scroll up arrow end -->
+  <!-- MODAL FORM START -->
+  <div class=" modal-fullscreen-sm-down" id="modalCnt">
+    <div class="upbutton">
+      <button type="button" class="btnBox d-lg-block d-none d-md-block" data-bs-toggle="modal" data-bs-target="#chatModal" data-bs-whatever="@mdo">
+      <img src="./images/modal button.gif" alt="" class="modalBtn">
+      </button>
+    </div>
+  <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+    <!-- modal logo start -->
+      <img src="./images/sm logo.png" alt="">
+    <!-- modal logo start -->
+    <!-- modal closeButton start -->
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- modal closeButton start -->
+      </div>
+      <div class="modal-body">
+      <!-- modal form start -->
+        <form>
+          <div class="mb-3">
+          <label for="recipient-name" class="col-form-label">Email</label>
+          <input type="email" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+          <label for="message-text" class="col-form-label">Message</label>
+          <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      <!-- modal form end -->
+      </div>
+      <div class="modal-footer">
+      <!-- modal send button start -->
+      <a href=""><button type="button" class="btn  modalSendTextBtn">Send message</button></a>
+      <!-- modal send button end -->
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- MODAL FORM END -->
+
+  <!-- NAV START -->
+  <!-- ********* NAV lg START ********** --> 
+  <nav class="navbar navbar-expand-lg d-none d-lg-block" id="menu">
+    <div class="container">
+          <!-- nav lg logo start -->
+          <a class="navbar-brand" href="#">
+          <img src="./images/aytor nav logo.png" alt="">
+          </a>
+          <!-- nav lg logo start -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <!-- nav option start -->
+          <div class="collapse navbar-collapse navOption" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+              <li class="nav-item">
+              <a class="nav-link "  href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                <li><hr class="dropdown-divider"></li>  
+                <li><a class="dropdown-item" href="#">Shop - Details</a></li>
+                <li><a class="dropdown-item" href="#">Compare</a></li>
+                <li><a class="dropdown-item" href="#">Cart</a></li>
+                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./aboutUs.html">About</a></li>
+                <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Shope Details</a></li>
+                <li><a class="dropdown-item" href="#">Compare</a></li>
+                <li><a class="dropdown-item" href="#">Cart</a></li>
+                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Women's & Girls' Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Men's Fashion</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Kid's Fashion</a></li>
+                </ul>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blogs
+                </a>
+                <ul class="dropdown-menu " >
+                  <li><a class="dropdown-item" href="#">Blogs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Blog - Classic</a></li>
+                  <li><a class="dropdown-item" href="#">Blog - Classic With Sidebar</a></li>
+                  <li><a class="dropdown-item" href="#">Blog - Details</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link "  href="#">Contact</a>
+              </li>
+             
+            </ul>
+          </div>
+        <!-- nav option end -->
+          <div class="navButton">
+            <ul>
+            <!-- search modal button start -->
+            <li>
+              <span  type="button" class="search" data-bs-toggle="modal" data-bs-target="#searchModal"><iconify-icon icon="mingcute:search-line" rotate="90deg"></iconify-icon></span>
+            </li>
+            <!-- search modal button end -->  
+
+            <!-- search modal start -->
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <img src="./images/sm logo.png" alt="">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form >
+                    <input type="text"   placeholder="Search For Products">
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <a href=""><button type="button" class="searchModalbtn">Search</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- search modal end -->
+            <!-- nav icon start -->
+                <li>
+                    <a href="#"><iconify-icon icon="fluent-mdl2:contact"></iconify-icon></a>
+                </li>
+                <li>
+                    <a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a>
+                </li>
+                <li>
+                <a href="#"><iconify-icon icon="uil:cart"></iconify-icon>
+                  <div class="cart">
+                  0
+                  </div>
+                </a>
+                </li>
+              <!-- nav icon end -->  
+            </ul>
+
+          </div>
+    </div>
+  </nav>
+      <!-- ********* NAV lg END ********** --> 
+
+  <!-- ********* NAV sm START ********** --> 
+      <nav class="navbar navbar-sm d-block d-lg-none " id="menuSm">
+        <div class="container">
+          <div class="row w-100 align-items-center">
+
+            <div class="col-3 menuSmBar text-start">
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><iconify-icon icon="mingcute:menu-fill"></iconify-icon></button>
+            </div>
+            <div class="col-6 text-center">
+              <img src="./images/sm logo.png" alt="">
+            </div>
+            <div class="col-3 text-end">
+              <div class="navButton">
+                <ul>
+                    <li>
+                        <a href=""><iconify-icon icon="uil:cart"></iconify-icon>
+    
+                          <div class="cart">
+                            0
+                          </div>
+                    </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SIDE MENU START -->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+               <!-- SIDE BAR LOGO/BUTTON -->
+                <div class="logoSm">
+                  <img src="./images/sm logo.png" alt="">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <!-- SIDE BAR LOGO/BUTTON -->
+
+              <div class="offcanvas-body">
+                <!-- SEARCH BAR -->
+                <div>
+                  <div class="searchbarSm ">
+                     <!-- MODAL FOR SEARCH ICON ENDS -->
+                    <form class="">
+                      <!-- <label id="sideSearch"></label> -->
+                      <input type="search" class="sideBarSearch " placeholder="Search for products" value=""   >
+                      <button type="button" class="sideSearchButton"><iconify-icon icon="iconamoon:search"></iconify-icon></button>
+                    </form>
+                  </div>
+                </div>
+                <!-- SEARCH BAR -->
+
+                <!-- menu/categories start -->
+
+                <ul class="nav nav-underline nav-pills mb-3 menuCateBox" id="pills-tab" role="tablist">
+                  <li class="nav-item col-4" role="presentation">
+                    <button class="menuCate " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#sideMenuFilter" type="button" role="tab" aria-controls="pills-home" aria-selected="true">MENU</button>
+                  </li>
+                  <li class="nav-item col-4" role="presentation">
+                    <button class="menuCate " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">CATEGORIES</button>
+                  </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="sideMenuFilter" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <!-- side menu start -->
+                    <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                      <li class="nav-item">
+                        <a class="nav-link "href="#">Home</a>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                          <li><hr class="dropdown-divider"></li> 
+                          <li><a class="dropdown-item" href="#">Shop - Details</a></li>
+                          <li><a class="dropdown-item" href="#">Compare</a></li>
+                          <li><a class="dropdown-item" href="#">Cart</a></li>
+                          <li><a class="dropdown-item" href="#">Checkout</a></li>
+                          <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./aboutUs.html">About</a></li>
+                          <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Shope Details</a></li>
+                          <li><a class="dropdown-item" href="#">Compare</a></li>
+                          <li><a class="dropdown-item" href="#">Cart</a></li>
+                          <li><a class="dropdown-item" href="#">Checkout</a></li>
+                          <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Blog</a></li>
+                          <li><a class="dropdown-item" href="#">Contact</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Women's & Girls' Fashion</a></li>
+                          <li><a class="dropdown-item" href="#">Men's Fashion</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Kid's Fashion</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Blogs</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Blog - Classic</a></li>
+                          <li><a class="dropdown-item" href="#">Blog - Classic With Sidebar</a></li>
+                          <li><a class="dropdown-item" href="#">Blog - Details</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+                       
+                      <li class="nav-item">
+                        <a class="nav-link "  href="#">Contact</a>
+                      </li>
+                    
+  
+                    </ul>
+                    <!-- side menu end -->
+
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <!-- categoties start -->
+
+                    <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                      <li class="nav-item">
+                        <a class="nav-link "  href="#">Food|Beverage</a>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Books|Games
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Movies|Music
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Furniture|Decor
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <hr class="border-2">
+  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Consumer|Electronics
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+
+                    <!-- categoties end -->
+
+                  </div>
+
+                </div>
+
+
+                <!-- menu/categories end -->
+
+            <!-- SIDE MENU END -->
+
+          </div>
+        </div>
+      </nav>
+  <!-- ********* NAV sm END ********** --> 
+
+  <!-- NAV END -->
+
+  <!-- SHOP - DETAILS BANNER START -->
+    <section id="commonBanner">
+      <div class="container">
+        <div class="banner">
+        <h2 class="mb-2">Shop - Details Style One</h2>
+        <h3><a href="./index.html">Home</a> / <a href="./shop.html">Shop</a></h3>
+        </div>
+      </div>
+    </section>
+  <!-- SHOP - DETAILS BANNER END -->
+  <!-- LEATHER JACKET START -->
+  <section id="leatherJacket">
+    <div class="container">
+      <div class="jacketCnt row">
+        <!-- jacket slider start -->
+        <div class="jacketSlider col-lg-6 col-12">
+          <div id="leatherSlider">
+            <div class="leatherSlidCnt">
+              <img src="./images/leather jacket 1.png" alt="">
+            </div>
+            <div class="leatherSlidCnt">
+              <img src="./images/leather jacket 3.png" alt="">
+            </div>
+            <div class="leatherSlidCnt">
+              <img src="./images/leather jacket 5.png" alt="">
+            </div>
+            <div class="leatherSlidCnt">
+              <img src="./images/leather jacket 4.png" alt="">
+            </div>
+            <div class="leatherSlidCnt">
+              <img src="./images/leather jacket 2.png" alt="">
+            </div>
+          </div>
+          <div id="sub-leatherSlider">
+            <div class="leatherSlidCnt">
+              <img src="./images/sub-leather jacket 1.png" alt="">
+            </div>
+            <div class="leatherSlidCnt">
+              <img src="./images/sub-leather jacket 3.png" alt="">
+            </div>
+            <div class="leatherSlidCnt">
+              <img src="./images/sub-leather jacket 5.png" alt="">
+            </div>
+            <div class="leatherSlidCnt">
+              <img src="./images/sub-leather jacket 4.png" alt="">
+            </div>
+            <div class="leatherSlidCnt">
+              <img src="./images/sub-leather jacket 2.png" alt="">
+            </div>
+            
+          </div>
+          <!-- slider arrows start -->
+          <div class="jacketArrow">
+            <div class="jacketleft"><iconify-icon icon="mingcute:left-fill" ></iconify-icon></div>
+            <div class="jacketright"><iconify-icon icon="mingcute:right-fill" ></iconify-icon></div>
+           </div>
+          <!-- slider arrows start -->
+         </div>
+        <!-- jacket slider end -->
+        <!-- jacket info start -->
+        <div class="jacketInfo col-lg-6 col-12">
+          <h2>Leather Jackets</h2>
+          <div class="review">
+           <span class="r-text">5.00</span>  
+           <span class="r-start">
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+            <iconify-icon icon="mdi:star"></iconify-icon>
+           </span>
+           <span class="r-text ms-lg-2">
+            (5 Customer Review) 
+           </span>  
+          </div>
+          <div class="price-dis">
+            <h6>$125.65 <span>$150.65</span></h6>
+          </div>
+          <p class="product-details">
+            Quickly productivate holistic systems after 24/365 e-commerce. 
+            Continually synthesize superior catalysts for change via high standards in leadership skills. 
+            Collaboratively evisculate distributed functionalities rather than timely methods of empowerment.
+          </p>
+
+          <hr class="hr-line" >
+
+          <div class="info-form">
+            <ul>
+              <li class="">
+                <div class="row mb-3">
+                  <label for="colFormLabelSm" class="col-sm-2  product-volume">Size:</label>
+                  <div class="col-sm-10">
+                    <select class="form-select col-6" aria-label="Default select example">
+                      <option selected>S</option>
+                      <option value="1">M</option>
+                      <option value="2">L</option>
+                      <option value="3">XL</option>
+                      <option value="4">XXL</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <div class="row mb-3">
+                  <label for="colFormLabelSm" class="col-sm-2  product-volume">Color:</label>
+                  <div class="col-sm-10">
+                    <select class="form-select col-6" aria-label="Default select example">
+                      <option selected>Orange</option>
+                      <option value="1">Black</option>
+                      <option value="2">White</option>
+                      <option value="3">Red</option>
+                      <option value="4">Blue</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="row">
+                <h4 class="product-volume">Quantity:</h4>
+                <!-- quantity arrow start -->
+                <div class="quantity-arrow mb-2 col-lg-4 col-12 ">
+                  <button class="quantity-down"><i class="fa-solid fa-minus"></i></button>
+                  <input  type="text" class="output" value="0">
+                  <button class="quantity-up"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <!-- quantity arrow end -->
+                <div class="product-bttn mb-2 col-lg-8 col-12 ">
+                  <ul class="row">
+                    <li class="col-lg-7 col-md-5 col-7 cart-box">
+                      <a href="#"><span><i class="fa-solid fa-cart-plus"></i></span>Add To Cart</a>
+                    </li>
+                    <li class="col-lg-2 col-md-2 col-2 cart-Cnt">
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    </li>
+                    <li class="col-lg-2 col-md-2 col-2 cart-Cnt">
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="hr-line">
+
+          <div class="product-code">
+            <ul class="row">
+              <li class="col-9">
+                <p><span>SKU:</span>  W0243</p>
+                <p><span>Tags:</span>  Women</p>
+                <p><span>Category:</span>  Dress, T-Shirt, Mini Scut</p>
+              </li>
+              <li class="col-3">
+                <div class="f-social">
+                  <span>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- jacket info end -->
+
+      </div>
+    </div>
+  </section>
+  <!-- LEATHER JACKET END -->
+
+  <!-- Product Description / NAV AND TABS START -->
+  <section id="productNavandTabs">
+    <div class="container">
+      <div class="descriptionCnt">
+        <nav>
+          <div class="nav  product-navTabs-bttn" id="nav-tab" role="tablist">
+            <button class="bttn-navTabs active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+              Product Description
+            </button>
+            <button class="bttn-navTabs" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+              Customer Review(1)
+            </button>
+            <button class="bttn-navTabs" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+              Additional Information
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content product-navTabs-text" id="nav-tabContent">
+          <div class="tab-pane fade show  active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+           Conveniently build adaptive users with front-end human capital. Appropriately unleash team building technology for goal-oriented paradigms. Dynamically generate interoperable e-business vis-a-vis goal-oriented value. Completely pursue fully tested content whereas multifunctional core competencies. Progressively scale team driven process improvements before premier functionalities. Holisticly cultivate intermandated methodologies rather than virtual technology. Monotonectally target interactive synergy without process-centric e-markets. Holisticly pursue enterprise-wide leadership skills for enterprise leadership. Collaboratively underwhelm standardized expertise after effective bandwidth. Conveniently productivate holistic collaboration and idea-sharing rather than granular strategic theme areas.
+           Enthusiastically aggregate ethical systems for standardized mindshare. Energistically target resource maximizing leadership skills without backward-compatible action items. Credibly impact alternative expertise vis-a-vis economically sound results. Dynamically synergize empowered benefits through functional partnerships. Authoritatively empower prospective infomediaries for interactive content.
+           Synergistically embrace 2.0 paradigms through professional intellectual capital. Interactively strategize parallel growth strategies without out-of-the-box web services. Assertively reinvent installed base.
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            Synergistically embrace 2.0 paradigms through professional intellectual capital. Interactively strategize parallel growth strategies without out-of-the-box web services. Assertively reinvent installed base.
+            Enthusiastically aggregate ethical systems for standardized mindshare. Energistically target resource maximizing leadership skills without backward-compatible action items. Credibly impact alternative expertise vis-a-vis economically sound results. Dynamically synergize empowered benefits through functional partnerships. Authoritatively empower prospective infomediaries for interactive content.
+            Conveniently build adaptive users with front-end human capital. Appropriately unleash team building technology for goal-oriented paradigms. Dynamically generate interoperable e-business vis-a-vis goal-oriented value. Completely pursue fully tested content whereas multifunctional core competencies. Progressively scale team driven process improvements before premier functionalities. Holisticly cultivate intermandated methodologies rather than virtual technology. Monotonectally target interactive synergy without process-centric e-markets. Holisticly pursue enterprise-wide leadership skills for enterprise leadership. Collaboratively underwhelm standardized expertise after effective bandwidth. Conveniently productivate holistic collaboration and idea-sharing rather than granular strategic theme areas.
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+           Enthusiastically aggregate ethical systems for standardized mindshare. Energistically target resource maximizing leadership skills without backward-compatible action items. Credibly impact alternative expertise vis-a-vis economically sound results. Dynamically synergize empowered benefits through functional partnerships. Authoritatively empower prospective infomediaries for interactive content.
+           Synergistically embrace 2.0 paradigms through professional intellectual capital. Interactively strategize parallel growth strategies without out-of-the-box web services. Assertively reinvent installed base.
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Product Description / NAV AND TABS END -->
+
+     
+  <!-- RELETED PRODUCT START -->
+  <section id="releted-product">
+    <div class="container position-relative">
+  
+      <div class="boxTitle">
+        <h2>Releted Products</h2>
+      </div>
+  <div id="reletedSlider">
+    
+        <div class="releted-Box col-lg-3 col-md-6 col-sm-12">
+    
+          <div class="arrivCnt">
+            <div class="arrivImg"><img src="./images/releted product 1.jpg" alt=""></div>
+            <div class="sale">
+              <h4>New</h4>
+            </div>
+          </div>
+    
+          <div class="reletedText">
+            <h4>Baseball Cap</h4>
+            <h5>$150.65</h5>
+            <span>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </span>
+    
+          </div>
+    
+        </div>
+        <div class="releted-Box col-lg-3 col-md-6 col-sm-12">
+    
+          <div class="arrivCnt">
+            <div class="arrivImg"><img src="./images/releted product 2.jpg" alt=""></div>
+            <!-- <div class="sale">
+              <h4>New</h4>
+            </div> -->
+          </div>
+    
+          <div class="reletedText">
+            <h4>Flight jacket</h4>
+            <h5>$190.45</h5>
+            <span>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </span>
+    
+          </div>
+    
+        </div>
+        <div class="releted-Box col-lg-3 col-md-6 col-sm-12">
+    
+          <div class="arrivCnt">
+            <div class="arrivImg"><img src="./images/releted product 3.jpg" alt=""></div>
+            <div class="sale">
+              <h4>New</h4>
+            </div>
+          </div>
+    
+          <div class="reletedText">
+            <h4>Shoe Less</h4>
+            <h5>$125.35</h5>
+            <span>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </span>
+    
+          </div>
+    
+        </div>
+        <div class="releted-Box col-lg-3 col-md-6 col-sm-12">
+    
+          <div class="arrivCnt">
+            <div class="arrivImg"><img src="./images/releted product 4.jpg" alt=""></div>
+            <!-- <div class="sale">
+              <h4>New</h4>
+            </div> -->
+          </div>
+    
+          <div class="reletedText">
+            <h4>Blazer Coat</h4>
+            <h5>$210.65</h5>
+            <span>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </span>
+    
+          </div>
+    
+        </div>
+        <div class="releted-Box col-lg-3 col-md-6 col-sm-12">
+    
+          <div class="arrivCnt">
+            <div class="arrivImg"><img src="./images/releted product 3.jpg" alt=""></div>
+            <div class="sale">
+              <h4>New</h4>
+            </div>
+          </div>
+    
+          <div class="reletedText">
+            <h4>Baseball Cap</h4>
+            <h5>$150.65</h5>
+            <span>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </span>
+    
+          </div>
+    
+        </div>
+        <div class="releted-Box col-lg-3 col-md-6 col-sm-12">
+    
+          <div class="arrivCnt">
+            <div class="arrivImg"><img src="./images/releted product 2.jpg" alt=""></div>
+            <div class="sale">
+              <h4>New</h4>
+            </div>
+          </div>
+    
+          <div class="reletedText">
+            <h4>Baseball Cap</h4>
+            <h5>$150.65</h5>
+            <span>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </span>
+    
+          </div>
+    
+        </div>
+        <div class="releted-Box col-lg-3 col-md-6 col-sm-12">
+    
+          <div class="arrivCnt">
+            <div class="arrivImg"><img src="./images/releted product 1.jpg" alt=""></div>
+            <div class="sale">
+              <h4>New</h4>
+            </div>
+          </div>
+    
+          <div class="reletedText">
+            <h4>Baseball Cap</h4>
+            <h5>$150.65</h5>
+            <span>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </span>
+    
+          </div>
+    
+        </div>
+        <div class="releted-Box col-lg-3 col-md-6 col-sm-12">
+    
+          <div class="arrivCnt">
+            <div class="arrivImg"><img src="./images/releted product 4.jpg" alt=""></div>
+            <div class="sale">
+              <h4>New</h4>
+            </div>
+          </div>
+    
+          <div class="reletedText">
+            <h4>Baseball Cap</h4>
+            <h5>$150.65</h5>
+            <span>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </span>
+    
+          </div>
+    
+        </div>
+        
+  </div>
+  
+   <!-- slider arrows start -->
+  
+   <div class="beautyArrow">
+    <div class="beautyleft"><iconify-icon icon="mingcute:left-fill" ></iconify-icon></div>
+    <div class="beautyright"><iconify-icon icon="mingcute:right-fill" ></iconify-icon></div>
+   </div>
+  
+   <!-- slider arrows start -->
+      
+    </div>
+    </section>
+    <!-- RELETED PRODUCT END -->
+  
+     <!-- SHOP - DETAILS FOOTER START -->
+     <section id="secondFooter">
+      <div class="container">
+         <div class="footerDetails">
+  
+          <div class="footerIntro">
+            <div class="row">
+              <div class="footertitle col-lg-6 col-12">
+                <h2>Subscribe to Our Newsletter!</h2>
+                <p>Authoritatively morph 24/7 potentialities with error-free partnerships. <br> Objectively engineer multimedia.</p>
+              </div>
+              <div class="searchBox col-lg-6 col-12">
+                <form class="row px-2 ms-lg-2">
+                  <input type="text" placeholder="Enter your email..." class="border-0 col">
+                  <button class="col">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <hr style="background: #151A32; opacity: 0.2;">
+      <div class="footerInformation row">
+       <div class="footerlogo col-xl-3 col-md-12 mb-4">
+        <div class="f-logo">
+          <img src="./images/secondfooter logo.png" alt="">
+        </div>
+        <div class="f-text">
+          <p>Progressively optimize effective ideas before turnkey process improvements. Proactively disseminate</p>
+        </div>
+        <div class="f-social">
+          <span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </span>
+        </div>
+       </div>
+        
+      <div class="footermyaccount col-xl-2 col-md-12 mb-4 d-none d-sm-none d-md-block d-lg-block">
+        <div class="title">
+          My Account
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> My Account
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> View Cart
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Wishlist
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Compare
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> New Products
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footersupport col-xl-2 col-md-12 mb-4 d-none d-sm-none d-md-block d-lg-block">
+        
+        <div class="title">
+          Support
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Help
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Feedback
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Customer Service
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Store Locations
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footershop col-xl-2 col-md-12 mb-4 d-none d-sm-none d-md-block d-lg-block">
+        
+        <div class="title">
+          Shope
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Men’s Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Women’s Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Kids’ Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Discounts
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>New Arrivels
+            </a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <div class="footerContactInfo col-xl-2 mb-4 mt-sm-4">
+          
+          <div class="title">
+            Contact Us
+          </div>
+  
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-location-dot"></i></span> &nbsp; <a href="#">
+                United States
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-phone"></i></span> &nbsp; <a href="tel:+18008660286">
+                +18008660286
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span> &nbsp; <a href="mailto:aetor.info@gmail.com">
+                aetor.info@gmail.com
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-globe"></i></span> &nbsp; <a href="#">
+                info@aetor.com
+              </a>
+            </li>
+            
+            
+          </ul>
+  
+        </div>
+  
+      </div>
+      </div>
+      </div>
+
+      <hr>
+      <div class="container">
+      <div class="footerCopyright row">
+          <div class="copyrightText col-lg-6">
+            <h3> © 2033 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft </span></h3>
+          </div>
+          <div class="copyrightpayment col-lg-6">
+           <img src="./images/footer payment.png" alt=""> 
+          </div>
+        </div>  
+      </div>
+    </section>
+     <!-- SHOP - DETAILS FOOTER END -->
+    
+    
+<!-- JS LINKS START -->
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/typeit.umd.js"></script>
+<script src="./js/jquery.countdown.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/iconify-icon.min.js"></script>
+<script src="./js/venobox.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/app.js"></script>
+<!-- JS LINKS END --> 
+</body>
+</html>

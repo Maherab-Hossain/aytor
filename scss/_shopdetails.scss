@@ -1,0 +1,389 @@
+// ********************* SHOP - DETAILS PAGE START / 4TH PAGE ********************************
+// SHOP - DETAILS BANNER START
+@import "./_commonbanner.scss";
+// SHOP - DETAILS BANNER END
+// LEATHER JACKET START
+#leatherJacket{
+    margin: 100px 0px;
+    // jacket slider start
+    .jacketSlider{
+    position: relative;     
+    #leatherSlider{
+      img{
+      width: 100%;
+      }    
+    } 
+    #sub-leatherSlider{
+    cursor: pointer;    
+    .leatherSlidCnt{
+    text-align: center;    
+    transform: scale(0.8);
+    &.slick-center{
+    // box-shadow: 0px 0px 50px 0px rgba(21, 26, 50, 0.20);   
+    transform: scale(1);
+    }    
+    }
+    }
+    // slider arrows start
+    .jacketArrow{
+        text-align: center;
+        @include phone (){
+        display: none;
+        }
+        @include phonePro (){
+        display: none;
+        }
+      .jacketleft{
+        position: absolute;
+        width: 30px;
+        height: 50px;
+        color: $whiteColor;
+        background-color: $beautyArrowbg;
+        line-height: 50px;
+        bottom: 25px;
+        left: 0px;
+        cursor: pointer;
+      }
+      .jacketright{
+        position: absolute;
+        width: 30px;
+        height: 50px;
+        color: $whiteColor;
+        background-color: $beautyArrowbg;
+        line-height: 50px;
+        bottom: 25px;
+        right: 20px;
+        cursor: pointer;
+      }
+      }   
+    // slider arrows end   
+    }
+    // jacket slider end
+    // jacket info start
+    .jacketInfo{
+        h2{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 46px;
+        margin-bottom: 8px;    
+        }
+        .review{
+        margin-bottom: 24px;    
+        span{
+        font-size: 16px;
+        color: $arrivalpriceColor;
+        font-weight: 400;
+        line-height: 26px;    
+        }
+        .r-start{
+        color: $colorPrimary;
+        padding: 0px 10px;
+        border-right: 2px solid $dealCntbgColor;    
+        }    
+        }
+        .price-dis{
+        margin-bottom: 20px;    
+        h6{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        span{
+        margin-left: 20px;   
+        font-size: 16px;
+        color: $arrivalpriceColor;
+        font-weight: 400;
+        line-height: 16px;
+        text-decoration: line-through;   
+        }        
+        }    
+        }
+        .product-details{
+        margin-bottom: 30px;    
+        font-family: $secondaryfont;
+        font-size: 16px;
+        color: $arrivalpriceColor;
+        font-weight: 400;
+        line-height: 28px;    
+        }
+        .hr-line{
+        border: 1px solid $arrivalpriceColor;    
+        }
+        .info-form{
+        margin-top: 42px;
+        ul{
+        li{
+        .product-volume{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;    
+        }
+        select{    
+        option{
+        font-size: 16px;
+        color: $arrivalpriceColor;
+        font-weight: 400;
+        line-height: 26px;    
+        }    
+        }
+        h4{
+        margin-top: 40px;    
+        }    
+        }    
+        }
+        // quantity arrow start
+        .quantity-arrow{
+        margin-top: 15px;
+        color: $arrivalpriceColor;    
+        .quantity-down{
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid $spacialBgColor;
+        @include customScreen (1000px , 1150px){
+          width: 40px;
+          height: 40px;
+        } 
+        }
+        .quantity-up{
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid $spacialBgColor;
+        @include customScreen (1000px , 1150px){
+          width: 40px;
+          height: 40px;
+        } 
+        }
+        .output{
+        font-size: 18px;
+        color: $arrivalpriceColor;
+        font-weight: 600;
+        line-height: 28px;    
+        width: 50px;    
+        height: 50px;
+        text-align: center;
+        border: 1px solid $spacialBgColor;
+        box-shadow: none;
+        @include customScreen (1000px , 1150px){
+          width: 40px;
+          height: 40px;
+        } 
+        }   
+        }
+        // quantity arrow end
+        .product-bttn{
+        margin-top: 15px;
+        ul{
+        li{
+        a{   
+        color: $whiteColor;
+        background-color: $navButtonColor;
+        transition: 0.25s;
+        &:hover{
+        background-color: $colorPrimary;    
+        }    
+        }
+        }
+        .cart-box{
+        a{
+        padding:17px 52px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        @include customScreen (320px , 1150px){
+          padding: 15px 12px;
+        } 
+        span{
+        margin-right: 11px;    
+        }
+        }   
+        }
+        .cart-Cnt{
+        a{
+        padding: 17px;
+        @include customScreen (320px , 1100px){
+          padding: 15px;
+        }      
+        } 
+        }     
+        }   
+        }
+        }
+        .product-code{
+        p{
+        font-size: 18px;
+        color: $arrivalpriceColor;
+        font-weight: 400;
+        line-height: 28px;
+        span{
+        font-weight: 600;
+        color: $navButtonColor;    
+        }    
+        }    
+        }
+        .f-social{
+        cursor: pointer;    
+        span{
+        a{
+        padding: 5px;    
+        color: $dealCntbgColor;
+        transition: 0.25s;
+        &:hover{
+        color: $navButtonColor;   
+        } 
+        @include customScreen (320px , 1100px){
+          padding: 2px;
+        }   
+        }    
+        }    
+        }    
+    }
+    // jacket info end
+}
+// LEATHER JACKET END
+
+// Product Description / NAV AND TABS START
+#productNavandTabs{
+   margin: 113px 0px 86px;
+   .descriptionCnt{
+   .product-navTabs-bttn{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   .bttn-navTabs{
+   padding: 15px 55px;
+   background-color: $textColorPrimary;
+   color: $whiteColor;
+   margin-bottom: 40px;
+   border: none;
+   transition: 0.25s;
+   &.active{
+   background-color: $colorPrimary; 
+   } 
+   } 
+   }
+    //product-navTabs-text start
+    .product-navTabs-text{
+      font-family: $secondaryfont;
+      font-size: 16px;
+      color: $arrivalpriceColor;
+      font-weight: 400;
+      line-height: 28px; 
+    } 
+    //product-navTabs-text end 
+}
+}
+// Product Description / NAV AND TABS END
+
+// RELETED PRODUCTS START
+#releted-product{
+  margin-top: 85px;
+  margin-bottom: 100px;
+  .boxTitle{
+    h2{
+    @include bannerTitle ();
+    } 
+  }
+  .releted-Box{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 24px;
+    .arrivCnt{
+    .arrivImg {
+    transition: 0.25s;  
+    width: inherit;
+    img{
+    width: 100%;
+    filter: brightness(100%);
+    }
+    &:hover{
+    filter: brightness(80%);  
+    }
+    }
+    .sale h4{
+    width: 80px;
+    height: 26px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    color: $whiteColor;
+    background-color: $colorPrimary;
+    padding: 0px 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    }
+  }
+  .reletedText{
+    width: 100%; 
+    padding-top: 24px;
+    position: relative;
+    padding-bottom: 26px;
+    h5{
+    font-size: 16px;
+    color: $arrivalpriceColor;
+    font-weight: 400;
+    line-height: 26px;
+    }
+    h4{
+    font-size: 18px;
+    color: $textColorPrimary;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 10px;
+    }
+    span{
+    position: absolute;
+    top: 25%;
+    right: 0px;    
+    color: $colorPrimary;
+    span{
+    top: -3px;    
+    right: -25px;    
+    color: $arrivalpriceColor;    
+    }
+    }
+    }
+  }
+ .beautyArrow{
+    text-align: center;
+    @include phone (){
+    display: none;
+    }
+    @include phonePro (){
+    display: none;
+    }
+  .beautyleft{
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    color: $whiteColor;
+    background-color: $beautyArrowbg;
+    line-height: 50px;
+    top: 320px;
+    left: 13px;
+  }
+  .beautyright{
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    color: $whiteColor;
+    background-color: $beautyArrowbg;
+    line-height: 50px;
+    top: 320px;
+    right: 38px;
+  }
+  }
+}
+// RELETED PRODUCTS END
+
+// SHOP - DETAILS FOOTER START
+@import "./secondfooter.scss";
+// SHOP - DETAILS FOOTER END
+
+
+
+// ********************* SHOP - DETAILS PAGE END / 4TH PAGE ********************************
