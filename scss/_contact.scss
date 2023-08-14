@@ -1,0 +1,76 @@
+// ********************* CONTACT PAGE START / 8TH PAGE ********************************
+// CONTACT INFO START
+#contactInfo{
+   margin: 100px 0px;
+   .contactInfo-details{
+    .phone, .mail{
+    margin-right: 24px;    
+    }
+   .phone, .mail, .social{
+    // width: 424px; 
+   padding: 50px 40px 40px;
+   box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+   .icon{
+    padding-right: 20px; 
+   font-size: 40px;
+   color: $colorPrimary; 
+   }
+   .con-text{
+   h2{
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 34px;
+   margin-bottom: 16px; 
+   }
+   p{
+    font-family: $secondaryfont;
+    font-size: 16px;
+    color: $arrivalpriceColor;
+    font-weight: 400;
+    line-height: 28px;
+   }
+   h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 5px;
+    margin-top: 16px; 
+   }
+   a{
+    font-size: 16px;
+    color: $arrivalpriceColor;
+    font-weight: 400;
+    line-height: 26px;
+   }
+   } 
+   } 
+   } 
+}
+// CONTACT INFO END
+// CONTACT TABLE START
+#contact-user-table{
+   margin-bottom: 100px;
+   .contact-table{
+    box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+    .contact-user-message{
+    padding: 30px 60px 30px 30px;    
+    h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 18px;    
+    } 
+    form{
+    input{
+    padding: 14px 40px 14px 20px;
+    margin-bottom: 24px;    
+    }
+    textarea{
+    padding: 14px 40px 100px 20px;    
+    }    
+    }   
+    }
+   } 
+}
+// CONTACT TABLE END
+// ********************* CONTACT PAGE END / 8TH PAGE ********************************

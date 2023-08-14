@@ -72,6 +72,22 @@ body{
 @import "./shopdetails.scss";
 // ********************* SHOP - DETAILS PAGE END / 4TH PAGE ********************************
 
+// ********************* COMPARE PAGE START / 5TH PAGE ********************************
+@import "./compare";
+// ********************* COMPARE PAGE END / 5TH PAGE ********************************
+
+// ********************* CART PAGE START / 6TH PAGE ********************************
+@import "./cart";
+// ********************* CART PAGE END / 6TH PAGE ********************************
+
+// ********************* CHECKOUT PAGE START / 7TH PAGE ********************************
+@import "./checkout";
+// ********************* CHECKOUT PAGE END / 7TH PAGE ********************************
+
+// ********************* CONTACT PAGE START / 8TH PAGE ********************************
+@import "./contact";
+// ********************* CONTACT PAGE END / 8TH PAGE ********************************
+
 // ************************************** OTHER PAGE FOOTER START ******************************
 
 @import "./_secondfooter.scss";
