@@ -122,6 +122,7 @@ body {
   z-index: 999999999;
   background-color: #fff;
   animation: menuFixed 1s ease-in forwards;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 @keyframes menuFixed {
@@ -1926,11 +1927,21 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   height: 60px;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form {
+    width: inherit;
+  }
+}
 #secondFooter .footerDetails .footerIntro .searchBox form input {
   padding: 16px 125px 11px 16px;
   border: none;
   box-shadow: none;
   outline: none;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form input {
+    padding: 16px 11px;
+  }
 }
 #secondFooter .footerDetails .footerIntro .searchBox form button {
   width: 197px;
@@ -1950,6 +1961,11 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   font-size: 18px;
   position: absolute;
   top: 17px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form button {
+    padding: 16px 11px;
+  }
 }
 #secondFooter .footerDetails .footerInformation {
   margin-top: 85px;
@@ -2160,7 +2176,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
 }
 @media (320px <= width <= 575px) {
   #shopGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arriveIcon {
-    left: 333px;
+    display: none;
   }
 }
 @media (576px <= width <= 767px) {
@@ -2302,11 +2318,21 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   height: 60px;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form {
+    width: inherit;
+  }
+}
 #secondFooter .footerDetails .footerIntro .searchBox form input {
   padding: 16px 125px 11px 16px;
   border: none;
   box-shadow: none;
   outline: none;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form input {
+    padding: 16px 11px;
+  }
 }
 #secondFooter .footerDetails .footerIntro .searchBox form button {
   width: 197px;
@@ -2326,6 +2352,11 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   font-size: 18px;
   position: absolute;
   top: 17px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form button {
+    padding: 16px 11px;
+  }
 }
 #secondFooter .footerDetails .footerInformation {
   margin-top: 85px;
@@ -2831,11 +2862,21 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   height: 60px;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form {
+    width: inherit;
+  }
+}
 #secondFooter .footerDetails .footerIntro .searchBox form input {
   padding: 16px 125px 11px 16px;
   border: none;
   box-shadow: none;
   outline: none;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form input {
+    padding: 16px 11px;
+  }
 }
 #secondFooter .footerDetails .footerIntro .searchBox form button {
   width: 197px;
@@ -2855,6 +2896,11 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   font-size: 18px;
   position: absolute;
   top: 17px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form button {
+    padding: 16px 11px;
+  }
 }
 #secondFooter .footerDetails .footerInformation {
   margin-top: 85px;
@@ -2949,6 +2995,129 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   text-align: center;
 }
 
+#compareCnt {
+  margin: 100px 0px;
+}
+#compareCnt .compareBox table {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #E0E0E0;
+}
+#compareCnt .compareBox table .product-table-searchBar th {
+  background-color: #F1F3F4;
+}
+#compareCnt .compareBox table .product-table-searchBar .searchBar-textArea {
+  text-align: left;
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 26px;
+}
+#compareCnt .compareBox table .product-table-searchBar .searchBar-textArea input {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+#compareCnt .compareBox table .product-table-searchBar .searchBar-iconArea {
+  text-align: right;
+  padding: 13px 20px;
+}
+#compareCnt .compareBox table .product-table-searchBar .searchBar-iconArea button {
+  color: #FF6F61;
+  padding-left: 20px;
+  height: 24px;
+  display: inline-block;
+  border: none;
+  border-left: 1px solid #FF6F61;
+}
+#compareCnt .compareBox table th, #compareCnt .compareBox table tr, #compareCnt .compareBox table td {
+  border: 1px solid #E0E0E0;
+}
+#compareCnt .compareBox table .compare-head {
+  cursor: pointer;
+}
+#compareCnt .compareBox table .compare-head td {
+  padding: 40px 120px;
+  color: #FF6F61;
+}
+#compareCnt .compareBox table .compare-remove {
+  cursor: pointer;
+  padding: 37px 34px;
+}
+#compareCnt .compareBox table .compare-products th {
+  padding: 135px 30px;
+}
+#compareCnt .compareBox table .compare-products td {
+  padding: 30px 40px;
+}
+#compareCnt .compareBox table .compare-products td .productImg {
+  margin-bottom: 15px;
+}
+#compareCnt .compareBox table .compare-products td .productText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+#compareCnt .compareBox table .compare-description th {
+  padding: 37px 19px;
+}
+#compareCnt .compareBox table .compare-description td {
+  padding: 20px 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#compareCnt .compareBox table .compare-price th, #compareCnt .compareBox table .compare-color th, #compareCnt .compareBox table .compare-ratting th, #compareCnt .compareBox table .compare-stock th {
+  padding: 12px 42px;
+}
+#compareCnt .compareBox table .compare-price td, #compareCnt .compareBox table .compare-color td, #compareCnt .compareBox table .compare-ratting td, #compareCnt .compareBox table .compare-stock td {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #444;
+}
+#compareCnt .compareBox table .compare-ratting .compare-star {
+  color: #FF6F61;
+}
+#compareCnt .compareBox table .compare-ratting .compare-star span span {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 26px;
+}
+#compareCnt .compareBox table .compare-stock td span {
+  color: #29CC00;
+  margin-right: 4px;
+}
+#compareCnt .compareBox table .compare-addCart th {
+  padding: 24px 16px;
+}
+#compareCnt .compareBox table .compare-addCart td {
+  padding: 13px 0px;
+}
+#compareCnt .compareBox table .compare-addCart td a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  width: 140px;
+  height: 50px;
+  display: inline-block;
+  padding: 11px 25px;
+  background-color: #FF6F61;
+  color: #fff;
+}
+#compareCnt .compareBox table .compare-price th, #compareCnt .compareBox table .compare-price td, #compareCnt .compareBox table .compare-addCart th, #compareCnt .compareBox table .compare-addCart td, #compareCnt .compareBox table .compare-ratting th, #compareCnt .compareBox table .compare-ratting td {
+  background-color: #F1F3F4;
+}
+#compareCnt .compareBox th {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
 #secondFooter {
   background-color: #F1F3F4;
 }
@@ -2976,11 +3145,21 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   height: 60px;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form {
+    width: inherit;
+  }
+}
 #secondFooter .footerDetails .footerIntro .searchBox form input {
   padding: 16px 125px 11px 16px;
   border: none;
   box-shadow: none;
   outline: none;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form input {
+    padding: 16px 11px;
+  }
 }
 #secondFooter .footerDetails .footerIntro .searchBox form button {
   width: 197px;
@@ -3000,6 +3179,953 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   font-size: 18px;
   position: absolute;
   top: 17px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form button {
+    padding: 16px 11px;
+  }
+}
+#secondFooter .footerDetails .footerInformation {
+  margin-top: 85px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-logo {
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text {
+  margin-bottom: 25px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a {
+  margin: 0px 5px;
+  color: #444;
+  transition: 0.25s;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount, #secondFooter .footerDetails .footerInformation .footersupport, #secondFooter .footerDetails .footerInformation .footershop, #secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding: 0px 10px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount .title, #secondFooter .footerDetails .footerInformation .footersupport .title, #secondFooter .footerDetails .footerInformation .footershop .title, #secondFooter .footerDetails .footerInformation .footerContactInfo .title {
+  font-size: 24px;
+  color: #11161E;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a, #secondFooter .footerDetails .footerInformation .footersupport ul li a, #secondFooter .footerDetails .footerInformation .footershop ul li a, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a:hover, #secondFooter .footerDetails .footerInformation .footersupport ul li a:hover, #secondFooter .footerDetails .footerInformation .footershop ul li a:hover, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding-left: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li span {
+  text-align: right;
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  text-align: left;
+}
+#secondFooter .footerCopyright {
+  padding: 25px 0px;
+}
+#secondFooter .footerCopyright .copyrightText {
+  text-align: center;
+}
+#secondFooter .footerCopyright .copyrightText h3 {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerCopyright .copyrightText h3 span {
+  color: #FF6F61;
+}
+#secondFooter .footerCopyright .copyrightpayment {
+  text-align: center;
+}
+
+#cartTable {
+  margin: 100px 0px;
+}
+#cartTable .cartCnt table {
+  text-align: center;
+  border: 1px solid #E0E0E0;
+}
+#cartTable .cartCnt table .cart-head {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+#cartTable .cartCnt table .cart-head th {
+  border-bottom: 2px solid #FF6F61;
+  background-color: #F1F3F4;
+}
+#cartTable .cartCnt table .cart-product-info {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#cartTable .cartCnt table .cart-product-info td {
+  border: 1px solid #E0E0E0;
+  padding: 30px 50px;
+}
+#cartTable .cartCnt table .cart-product-info .cart-img {
+  padding: 30px 50px;
+}
+#cartTable .cartCnt table .cart-product-info .cart-product {
+  padding: 86px 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#cartTable .cartCnt table .cart-product-info .cart-price, #cartTable .cartCnt table .cart-product-info .cart-total, #cartTable .cartCnt table .cart-product-info .cart-remove {
+  padding: 86px 55px;
+}
+#cartTable .cartCnt table .cart-product-info .cart-remove {
+  color: #FF6F61;
+}
+#cartTable .cartCnt table .cart-product-info .cart-quantity {
+  padding: 85px 53px;
+}
+#cartTable .cartCnt table .cart-product-info .cart-quantity .cart-quantity-down {
+  color: #CACACA;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 1px solid #F1F3F4;
+}
+#cartTable .cartCnt table .cart-product-info .cart-quantity .cart-quantity-up {
+  color: #CACACA;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 1px solid #F1F3F4;
+}
+#cartTable .cartCnt table .cart-product-info .cart-quantity .cart-output {
+  padding: 2px 30px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border: 1px solid #F1F3F4;
+  outline: none;
+}
+#cartTable .cartCnt table .cart-submit {
+  position: relative;
+}
+#cartTable .cartCnt table .cart-submit form {
+  margin-left: 15px;
+  padding: 15px 0px;
+}
+#cartTable .cartCnt table .cart-submit form input {
+  padding: 11px 171px 11px 15px;
+  border: 1px solid #CACACA;
+  outline: none;
+}
+#cartTable .cartCnt table .cart-submit .update-bttn {
+  padding: 15px 0px;
+}
+#cartTable .cartCnt table .cart-submit .update-bttn a {
+  margin-right: 20px;
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  width: inherit;
+}
+#cartTable .cartCnt table .cart-submit .update-bttn a span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+
+#cart-total {
+  margin-bottom: 100px;
+}
+#cart-total .cartTotalBox {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #cart-total .cartTotalBox {
+    display: block;
+  }
+}
+#cart-total .cartTotalBox h3 {
+  margin-right: 533px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #cart-total .cartTotalBox h3 {
+    margin-right: 0px;
+  }
+}
+#cart-total .cartTotalBox table {
+  text-align: center;
+  border: 1px solid #E0E0E0;
+}
+#cart-total .cartTotalBox table tr {
+  color: #444;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 26px;
+  border: 1px solid #E0E0E0;
+}
+#cart-total .cartTotalBox table tr th {
+  border: 1px solid #E0E0E0;
+  padding: 17px 142px 17px 20px;
+  background-color: #F1F3F4;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #cart-total .cartTotalBox table tr th {
+    padding: 17px 0px;
+  }
+}
+#cart-total .cartTotalBox table tr td {
+  padding: 17px 338px 17px 30px;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #cart-total .cartTotalBox table tr td {
+    padding: 17px 30px;
+  }
+}
+#cart-total .cartTotalBox .cart-checkout-bttn {
+  margin-right: 420px;
+  margin-top: 30px;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #cart-total .cartTotalBox .cart-checkout-bttn {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+}
+#cart-total .cartTotalBox .cart-checkout-bttn a {
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  width: 230px;
+}
+#cart-total .cartTotalBox .cart-checkout-bttn a span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+#cart-total .cartTotalBox .cart-checkout-bttn a span {
+  right: 16px;
+}
+
+#secondFooter {
+  background-color: #F1F3F4;
+}
+#secondFooter .footerDetails {
+  padding: 100px 0px;
+}
+#secondFooter .footerDetails .footerIntro {
+  margin-bottom: 70px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form {
+  width: 424px;
+  height: 60px;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form {
+    width: inherit;
+  }
+}
+#secondFooter .footerDetails .footerIntro .searchBox form input {
+  padding: 16px 125px 11px 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form input {
+    padding: 16px 11px;
+  }
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button {
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  padding: 0px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form button {
+    padding: 16px 11px;
+  }
+}
+#secondFooter .footerDetails .footerInformation {
+  margin-top: 85px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-logo {
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text {
+  margin-bottom: 25px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a {
+  margin: 0px 5px;
+  color: #444;
+  transition: 0.25s;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount, #secondFooter .footerDetails .footerInformation .footersupport, #secondFooter .footerDetails .footerInformation .footershop, #secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding: 0px 10px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount .title, #secondFooter .footerDetails .footerInformation .footersupport .title, #secondFooter .footerDetails .footerInformation .footershop .title, #secondFooter .footerDetails .footerInformation .footerContactInfo .title {
+  font-size: 24px;
+  color: #11161E;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a, #secondFooter .footerDetails .footerInformation .footersupport ul li a, #secondFooter .footerDetails .footerInformation .footershop ul li a, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a:hover, #secondFooter .footerDetails .footerInformation .footersupport ul li a:hover, #secondFooter .footerDetails .footerInformation .footershop ul li a:hover, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding-left: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li span {
+  text-align: right;
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  text-align: left;
+}
+#secondFooter .footerCopyright {
+  padding: 25px 0px;
+}
+#secondFooter .footerCopyright .copyrightText {
+  text-align: center;
+}
+#secondFooter .footerCopyright .copyrightText h3 {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerCopyright .copyrightText h3 span {
+  color: #FF6F61;
+}
+#secondFooter .footerCopyright .copyrightpayment {
+  text-align: center;
+}
+
+#checkout-form {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+#checkout-form .haveCoupon {
+  margin-bottom: 40px;
+  background-color: #F1F3F4;
+  padding: 17px 80px 17px 30px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #checkout-form .haveCoupon {
+    padding: 10px;
+    text-align: center;
+  }
+}
+#checkout-form .haveCoupon h4 {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 26px;
+}
+#checkout-form .haveCoupon h4 span {
+  color: #FF6F61;
+  text-decoration: underline;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #checkout-form .haveCoupon h4 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#checkout-form .formBox {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+#checkout-form .formBox .titelText {
+  margin-bottom: 20px;
+}
+#checkout-form .formBox .titelText h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
+#checkout-form .formBox label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#checkout-form .formBox input, #checkout-form .formBox select {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #CACACA;
+  padding: 13px 20px;
+}
+#checkout-form .formBox .checkout-additional textarea {
+  padding: 15px 20px 60px 15px;
+}
+
+#checkoutTable {
+  margin-top: 40px;
+}
+#checkoutTable .checkout-Cnt table {
+  text-align: center;
+  border: 1px solid #E0E0E0;
+}
+#checkoutTable .checkout-Cnt table .checkout-head {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+#checkoutTable .checkout-Cnt table .checkout-head th {
+  border-bottom: 2px solid #FF6F61;
+  background-color: #F1F3F4;
+}
+#checkoutTable .checkout-Cnt table .checkout-product-info {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#checkoutTable .checkout-Cnt table .checkout-product-info td {
+  border: 1px solid #E0E0E0;
+  padding: 30px 50px;
+}
+#checkoutTable .checkout-Cnt table .checkout-product-info .checkout-img {
+  padding: 30px 50px;
+}
+#checkoutTable .checkout-Cnt table .checkout-product-info .checkout-product {
+  padding: 86px 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#checkoutTable .checkout-Cnt table .checkout-product-info .checkout-price, #checkoutTable .checkout-Cnt table .checkout-product-info .checkout-total {
+  padding: 86px 55px;
+}
+#checkoutTable .checkout-Cnt table .checkout-product-info .checkout-quantity {
+  padding: 85px 53px;
+}
+#checkoutTable .checkout-Cnt table .checkout-product-info .checkout-quantity .checkout-quantity-down {
+  color: #CACACA;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 1px solid #F1F3F4;
+}
+#checkoutTable .checkout-Cnt table .checkout-product-info .checkout-quantity .checkout-quantity-up {
+  color: #CACACA;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 1px solid #F1F3F4;
+}
+#checkoutTable .checkout-Cnt table .checkout-product-info .checkout-quantity .checkout-output {
+  padding: 2px 30px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border: 1px solid #F1F3F4;
+  outline: none;
+}
+#checkoutTable .checkout-Cnt table .checkout-sub-total {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+#checkoutTable .checkout-Cnt table .checkout-sub-total th {
+  padding: 12px 30px;
+  border: 1px solid #E0E0E0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+#checkoutTable .checkout-Cnt table .checkout-sub-total td {
+  text-align: right;
+  padding-right: 30px;
+}
+#checkoutTable .checkout-Cnt table .checkout-sub-total .check-total {
+  color: #FF6F61;
+}
+
+#checkout-payment {
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+#checkout-payment .checkBox ul {
+  margin-bottom: 11px;
+}
+#checkout-payment .checkBox ul li label {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#checkout-payment .checkBox ul li .form-check .active {
+  background-color: #FF6F61;
+  border: none;
+}
+#checkout-payment .checkBox .checkBox-details {
+  padding: 12px 40px 12px 20px;
+  background-color: #E0E0E0;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#checkout-payment .checkBox .place-order {
+  margin-top: 15px;
+}
+#checkout-payment .checkBox .place-order p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#checkout-payment .checkBox .place-order p a {
+  color: #FF6F61;
+}
+#checkout-payment .checkBox .place-order .order-bttn a {
+  margin-top: 15px;
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+}
+#checkout-payment .checkBox .place-order .order-bttn a span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+
+#secondFooter {
+  background-color: #F1F3F4;
+}
+#secondFooter .footerDetails {
+  padding: 100px 0px;
+}
+#secondFooter .footerDetails .footerIntro {
+  margin-bottom: 70px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form {
+  width: 424px;
+  height: 60px;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form {
+    width: inherit;
+  }
+}
+#secondFooter .footerDetails .footerIntro .searchBox form input {
+  padding: 16px 125px 11px 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form input {
+    padding: 16px 11px;
+  }
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button {
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  padding: 0px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form button {
+    padding: 16px 11px;
+  }
+}
+#secondFooter .footerDetails .footerInformation {
+  margin-top: 85px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-logo {
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text {
+  margin-bottom: 25px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a {
+  margin: 0px 5px;
+  color: #444;
+  transition: 0.25s;
+}
+#secondFooter .footerDetails .footerInformation .footerlogo .f-social span a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount, #secondFooter .footerDetails .footerInformation .footersupport, #secondFooter .footerDetails .footerInformation .footershop, #secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding: 0px 10px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount .title, #secondFooter .footerDetails .footerInformation .footersupport .title, #secondFooter .footerDetails .footerInformation .footershop .title, #secondFooter .footerDetails .footerInformation .footerContactInfo .title {
+  font-size: 24px;
+  color: #11161E;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a, #secondFooter .footerDetails .footerInformation .footersupport ul li a, #secondFooter .footerDetails .footerInformation .footershop ul li a, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerDetails .footerInformation .footermyaccount ul li a:hover, #secondFooter .footerDetails .footerInformation .footersupport ul li a:hover, #secondFooter .footerDetails .footerInformation .footershop ul li a:hover, #secondFooter .footerDetails .footerInformation .footerContactInfo ul li a:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #secondFooter .footerDetails .footerInformation .footershop ul li {
+    display: block;
+  }
+}
+#secondFooter .footerDetails .footerInformation .footershop ul li:hover {
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo {
+  padding-left: 20px;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li span {
+  text-align: right;
+  color: #FF6F61;
+}
+#secondFooter .footerDetails .footerInformation .footerContactInfo ul li a {
+  text-align: left;
+}
+#secondFooter .footerCopyright {
+  padding: 25px 0px;
+}
+#secondFooter .footerCopyright .copyrightText {
+  text-align: center;
+}
+#secondFooter .footerCopyright .copyrightText h3 {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#secondFooter .footerCopyright .copyrightText h3 span {
+  color: #FF6F61;
+}
+#secondFooter .footerCopyright .copyrightpayment {
+  text-align: center;
+}
+
+#contactInfo {
+  margin: 100px 0px;
+}
+#contactInfo .contactInfo-details .phone, #contactInfo .contactInfo-details .mail {
+  margin-right: 24px;
+}
+#contactInfo .contactInfo-details .phone, #contactInfo .contactInfo-details .mail, #contactInfo .contactInfo-details .social {
+  padding: 50px 40px 40px;
+  box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+}
+#contactInfo .contactInfo-details .phone .icon, #contactInfo .contactInfo-details .mail .icon, #contactInfo .contactInfo-details .social .icon {
+  padding-right: 20px;
+  font-size: 40px;
+  color: #FF6F61;
+}
+#contactInfo .contactInfo-details .phone .con-text h2, #contactInfo .contactInfo-details .mail .con-text h2, #contactInfo .contactInfo-details .social .con-text h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 16px;
+}
+#contactInfo .contactInfo-details .phone .con-text p, #contactInfo .contactInfo-details .mail .con-text p, #contactInfo .contactInfo-details .social .con-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+}
+#contactInfo .contactInfo-details .phone .con-text h3, #contactInfo .contactInfo-details .mail .con-text h3, #contactInfo .contactInfo-details .social .con-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 5px;
+  margin-top: 16px;
+}
+#contactInfo .contactInfo-details .phone .con-text a, #contactInfo .contactInfo-details .mail .con-text a, #contactInfo .contactInfo-details .social .con-text a {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+#contact-user-table {
+  margin-bottom: 100px;
+}
+#contact-user-table .contact-table {
+  box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+}
+#contact-user-table .contact-table .contact-user-message {
+  padding: 30px 60px 30px 30px;
+}
+#contact-user-table .contact-table .contact-user-message h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 18px;
+}
+#contact-user-table .contact-table .contact-user-message form input {
+  padding: 14px 40px 14px 20px;
+  margin-bottom: 24px;
+}
+#contact-user-table .contact-table .contact-user-message form textarea {
+  padding: 14px 40px 100px 20px;
+}
+
+#secondFooter {
+  background-color: #F1F3F4;
+}
+#secondFooter .footerDetails {
+  padding: 100px 0px;
+}
+#secondFooter .footerDetails .footerIntro {
+  margin-bottom: 70px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#secondFooter .footerDetails .footerIntro .footertitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form {
+  width: 424px;
+  height: 60px;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form {
+    width: inherit;
+  }
+}
+#secondFooter .footerDetails .footerIntro .searchBox form input {
+  padding: 16px 125px 11px 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form input {
+    padding: 16px 11px;
+  }
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button {
+  width: 197px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+  padding: 0px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+#secondFooter .footerDetails .footerIntro .searchBox form button span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #secondFooter .footerDetails .footerIntro .searchBox form button {
+    padding: 16px 11px;
+  }
 }
 #secondFooter .footerDetails .footerInformation {
   margin-top: 85px;

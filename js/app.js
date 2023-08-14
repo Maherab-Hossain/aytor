@@ -9,13 +9,13 @@ $ (function () {
     $(window).scroll(function () {
       let scrollup = $(window).scrollTop()
       if (scrollup > 800) {
-      // $(`#menu`).addClass(`menufixed`)
+      $(`#menu`).addClass(`menufixed`)
       $(`.upbutton`).fadeIn()
       // scrollUp start
       $(`.scrollup`).slideDown()
       // scrollup end
       } else {
-      // $(`#menu`).removeClass(`menufixed`)
+      $(`#menu`).removeClass(`menufixed`)
       $(`.upbutton`).fadeOut()
       // scrollup start
       $(`.scrollup`).slideUp()
@@ -335,6 +335,33 @@ $('#sub-leatherSlider').slick({
   centerPadding:"0px",
   centerMode: true,
   focusOnSelect: true,
+  responsive: [
+    {
+    breakpoint: 991,
+    settings: {
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows:false,
+    }
+    },
+    {
+    breakpoint: 767,
+    settings: {
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows:false,
+    }
+    },
+    {
+    breakpoint: 575,
+    settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+    mobileFirst:true, 
+    }
+    }
+  ]
 });
 // sub slider end
 // LEATHER JACKET SLIDER END
@@ -377,3 +404,46 @@ $('#reletedSlider').slick({
 });
 // RELETED SLIDER END
 // ********************* SHOP - DETAILS PAGE END / 4TH PAGE **********************************
+
+// ********************* CART PAGE START / 6TH PAGE ********************************
+// CART TABLE ARROWS START
+// UP BUTTON STARTS
+
+let cartupbtn = document.querySelector(`.cart-quantity-up`);
+let cartoutput = document.querySelector(`.cart-output`);
+
+function cartupResult() {
+    let cartupNewValue = Number(cartoutput.value);
+    cartupNewValue = cartupNewValue + 1;
+    output.value = cartupNewValue;
+
+}
+
+cartupbtn.addEventListener(`click`, cartupResult);
+
+// UP BUTTON ENDS
+
+// // DOWN BUTTON STARTS
+
+
+let cartdownbtn = document.querySelector(`.cart-quantity-down`)
+
+
+function cartdownResult() {
+    let downNewValue =Number(output.value);
+
+    if (downNewValue == 0) {
+        return false
+    }
+
+    downNewValue = downNewValue - 1;
+    output.value = downNewValue;
+}
+
+cartdownbtn.addEventListener(`click`, cartdownResult);
+
+
+// // DOWN BUTTON ENDS
+
+// CART TABLE ARROWS END
+// ********************* CART PAGE END / 6TH PAGE ********************************

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aytor</title>
+  <!-- CSS LINKS START -->
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/venobox.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <!-- CSS LINKS END -->
+  <link rel="shortcut icon" href="./images/favv logo.png" type="image/x-icon">
+</head>
+<body>
+      <!-- pre load start -->
+      <div class="preload">
+        <div class="prebox">
+        </div>
+      </div>
+      <!-- pre load end -->
+      <!-- scroll up arrow start -->
+      <div class="scrollup ">
+        <button class="d-lg-block d-none d-md-block"><img src="./images/scrolluparrow.gif" alt=""></i></button>
+      </div>
+      <!-- scroll up arrow end -->
+      <!-- MODAL FORM START -->
+      <div class=" modal-fullscreen-sm-down" id="modalCnt">
+        <div class="upbutton">
+          <button type="button" class="btnBox d-lg-block d-none d-md-block" data-bs-toggle="modal" data-bs-target="#chatModal" data-bs-whatever="@mdo">
+          <img src="./images/modal button.gif" alt="" class="modalBtn">
+          </button>
+        </div>
+      <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+        <!-- modal logo start -->
+          <img src="./images/sm logo.png" alt="">
+        <!-- modal logo start -->
+        <!-- modal closeButton start -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- modal closeButton start -->
+          </div>
+          <div class="modal-body">
+          <!-- modal form start -->
+            <form>
+              <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email</label>
+              <input type="email" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message</label>
+              <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          <!-- modal form end -->
+          </div>
+          <div class="modal-footer">
+          <!-- modal send button start -->
+          <a href=""><button type="button" class="btn  modalSendTextBtn">Send message</button></a>
+          <!-- modal send button end -->
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!-- MODAL FORM END -->
+    
+      <!-- NAV START -->
+      <!-- ********* NAV lg START ********** --> 
+      <nav class="navbar navbar-expand-lg d-none d-lg-block" id="menu">
+        <div class="container">
+              <!-- nav lg logo start -->
+              <a class="navbar-brand" href="#">
+              <img src="./images/aytor nav logo.png" alt="">
+              </a>
+              <!-- nav lg logo start -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+            <!-- nav option start -->
+              <div class="collapse navbar-collapse navOption" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                  <li class="nav-item">
+                  <a class="nav-link "  href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                    <li><hr class="dropdown-divider"></li>  
+                    <li><a class="dropdown-item" href="./shopdetails.html">Shop - Details</a></li>
+                    <li><a class="dropdown-item" href="./compare.html">Compare</a></li>
+                    <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                    <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                    </ul>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./aboutUs.html">About</a></li>
+                    <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./shopdetails.html">Shope Details</a></li>
+                    <li><a class="dropdown-item" href="./compare.html">Compare</a></li>
+                    <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                    <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                    </ul>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Features
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./shop.html#shopGrid">Women's & Girls' Fashion</a></li>
+                      <li><a class="dropdown-item" href="./shopdetails.html#leatherJacket">Men's Fashion</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./shop.html#shopGrid">Kid's Fashion</a></li>
+                    </ul>
+                  </li>
+                
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blogs
+                    </a>
+                    <ul class="dropdown-menu " >
+                      <li><a class="dropdown-item" href="#">Blogs</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Blog - Classic</a></li>
+                      <li><a class="dropdown-item" href="#">Blog - Classic With Sidebar</a></li>
+                      <li><a class="dropdown-item" href="#">Blog - Details</a></li>
+                    </ul>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link "  href="./contact.html">Contact</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            <!-- nav option end -->
+              <div class="navButton">
+                <ul>
+                <!-- search modal button start -->
+                <li>
+                  <span  type="button" class="search" data-bs-toggle="modal" data-bs-target="#searchModal"><iconify-icon icon="mingcute:search-line" rotate="90deg"></iconify-icon></span>
+                </li>
+                <!-- search modal button end -->  
+    
+                <!-- search modal start -->
+                <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <img src="./images/sm logo.png" alt="">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form >
+                        <input type="text"   placeholder="Search For Products">
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <a href=""><button type="button" class="searchModalbtn">Search</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- search modal end -->
+                <!-- nav icon start -->
+                    <li>
+                        <a href="#"><iconify-icon icon="fluent-mdl2:contact"></iconify-icon></a>
+                    </li>
+                    <li>
+                        <a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a>
+                    </li>
+                    <li>
+                    <a href="#"><iconify-icon icon="uil:cart"></iconify-icon>
+                      <div class="cart">
+                      0
+                      </div>
+                    </a>
+                    </li>
+                  <!-- nav icon end -->  
+                </ul>
+    
+              </div>
+        </div>
+      </nav>
+          <!-- ********* NAV lg END ********** --> 
+    
+      <!-- ********* NAV sm START ********** --> 
+          <nav class="navbar navbar-sm d-block d-lg-none " id="menuSm">
+            <div class="container">
+              <div class="row w-100 align-items-center">
+    
+                <div class="col-3 menuSmBar text-start">
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><iconify-icon icon="mingcute:menu-fill"></iconify-icon></button>
+                </div>
+                <div class="col-6 text-center">
+                  <img src="./images/sm logo.png" alt="">
+                </div>
+                <div class="col-3 text-end">
+                  <div class="navButton">
+                    <ul>
+                        <li>
+                            <a href=""><iconify-icon icon="uil:cart"></iconify-icon>
+        
+                              <div class="cart">
+                                0
+                              </div>
+                        </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- SIDE MENU START -->
+    
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                   <!-- SIDE BAR LOGO/BUTTON -->
+                    <div class="logoSm">
+                      <img src="./images/sm logo.png" alt="">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <!-- SIDE BAR LOGO/BUTTON -->
+    
+                  <div class="offcanvas-body">
+                    <!-- SEARCH BAR -->
+                    <div>
+                      <div class="searchbarSm ">
+                         <!-- MODAL FOR SEARCH ICON ENDS -->
+                        <form class="">
+                          <!-- <label id="sideSearch"></label> -->
+                          <input type="search" class="sideBarSearch " placeholder="Search for products" value=""   >
+                          <button type="button" class="sideSearchButton"><iconify-icon icon="iconamoon:search"></iconify-icon></button>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- SEARCH BAR -->
+    
+                    <!-- menu/categories start -->
+    
+                    <ul class="nav nav-underline nav-pills mb-3 menuCateBox" id="pills-tab" role="tablist">
+                      <li class="nav-item col-4" role="presentation">
+                        <button class="menuCate " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#sideMenuFilter" type="button" role="tab" aria-controls="pills-home" aria-selected="true">MENU</button>
+                      </li>
+                      <li class="nav-item col-4" role="presentation">
+                        <button class="menuCate " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">CATEGORIES</button>
+                      </li>
+                    </ul>
+    
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="sideMenuFilter" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+    
+                        <!-- side menu start -->
+                        <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                          <li class="nav-item">
+                            <a class="nav-link "href="./index.html">Home</a>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                              <li><hr class="dropdown-divider"></li> 
+                              <li><a class="dropdown-item" href="./shopdetails.html">Shop - Details</a></li>
+                              <li><a class="dropdown-item" href="./compare.html">Compare</a></li>
+                              <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                              <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                              <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./aboutUs.html">About</a></li>
+                              <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="./shopdetails.html">Shope Details</a></li>
+                              <li><a class="dropdown-item" href="./compare.html">Compare</a></li>
+                              <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                              <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                              <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Blog</a></li>
+                              <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./shop.html#shopGrid">Women's & Girls' Fashion</a></li>
+                              <li><a class="dropdown-item" href="./shopdetails.html#leatherJacket">Men's Fashion</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="./shop.html#shopGrid">Kid's Fashion</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blogs
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Blogs</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Blog - Classic</a></li>
+                              <li><a class="dropdown-item" href="#">Blog - Classic With Sidebar</a></li>
+                              <li><a class="dropdown-item" href="#">Blog - Details</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+                           
+                          <li class="nav-item">
+                            <a class="nav-link "  href="./contact.html">Contact</a>
+                          </li>
+                        
+      
+                        </ul>
+                        <!-- side menu end -->
+    
+                      </div>
+    
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+    
+                        <!-- categoties start -->
+    
+                        <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                          <li class="nav-item">
+                            <a class="nav-link "  href="#">Food|Beverage</a>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Books|Games
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Movies|Music
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Furniture|Decor
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <hr class="border-2">
+      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Consumer|Electronics
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          
+                        </ul>
+    
+                        <!-- categoties end -->
+    
+                      </div>
+    
+                    </div>
+    
+    
+                    <!-- menu/categories end -->
+    
+                <!-- SIDE MENU END -->
+    
+              </div>
+            </div>
+          </nav>
+      <!-- ********* NAV sm END ********** --> 
+    
+      <!-- NAV END -->
+    
+  <!-- CHECKOUT BANNER START -->
+  <section id="commonBanner">
+    <div class="container">
+      <div class="banner">
+      <h2 class="mb-2">Checkout</h2>
+      <h3><a href="./index.html">Home</a> / <a href="./checkout.html">Checkout</a></h3>
+      </div>
+    </div>
+  </section>
+<!-- CHECKOUT BANNER END -->
+
+<!-- CHEKOUT FORM START  -->
+
+<section id="checkout-form">
+  <div class="container">
+    <div class="haveCoupon">
+      <h4><i class="fa-solid fa-circle-info"></i>&nbsp; Have a coupon? <span>Click here to enter your code</span></h4>
+    </div>
+    <div class="formBox row">
+      <div class="checkout-billing col-12 col-lg-6 col-md-6">
+        <div class="titelText">
+          <h3>Billing Information</h3>
+        </div>
+        <div class="checkout-nameFill row">
+          <div class="col-6 mb-3">
+            <label >First Name*</label>
+            <input type="text" class="form-control" placeholder="Your first name..." >
+          </div>
+          <div class="col-6 mb-3">
+            <label >Last Name*</label>
+            <input type="text" class="form-control" placeholder="Your first name..." >
+          </div>
+        </div>
+        <div class=" mb-3">
+          <label >Company name (optional)*</label>
+          <input type="text" class="form-control" placeholder="Name...">
+          <label >Email*</label>
+          <input type="text" class="form-control" placeholder="youremail@gmail.com">
+          <label >Telephone*</label>
+          <input type="text" class="form-control" placeholder="+123...">
+          <label  for="inputGroupSelect01">Country*</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Select...</option>
+            <option value="1">Bangladesh</option>
+            <option value="2">Finland</option>
+            <option value="3">Norway</option>
+          </select>
+          <label >Street address*</label>
+          <input type="text" class="form-control" placeholder="House and street name...">
+
+          <input type="text" class="form-control" placeholder="Apartment, suite, unit, etc. (optional)">
+
+          <label >Town / City*</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Select...</option>
+            <option value="1">Chittagong</option>
+            <option value="2">Carmen</option>
+            <option value="3">Moss</option>
+          </select>
+          <label >Post Code*</label>
+          <input type="text" class="form-control" placeholder="Code...">
+        </div>
+      </div>
+
+      <div class="checkout-additional col-12 col-lg-6 col-md-6">
+        <div class="titelText">
+          <h3>Additional Information</h3>
+        </div>
+        <div class="">
+          <label >Order notes (optional)*</label>
+          <textarea class="form-control" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHEKOUT FORM END  -->
+
+<!-- CHECKOUT TABLE START -->
+<section id="checkoutTable">
+  <div class="container">
+      <div class="checkout-Cnt">
+          <div class="table-responsive">
+              <table class="table">
+                  <table class="table caption-top">
+                      <thead>
+                        <tr class="checkout-head">
+                          <th scope="col" >Image</th>
+                          <th scope="col" >Product Name</th>
+                          <th scope="col" >Price/Unit</th>
+                          <th scope="col" >Quantity</th>
+                          <th scope="col" >Total</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="checkout-product-info">
+                          <td scope="row" class="checkout-img">
+                              <img src="./images/cart product 1.png" alt="">
+                          </td>
+                          <td  class="checkout-product">
+                              Jacket Hoodie Sweater
+                          </td>
+                          <td class="checkout-price">$130.00</td>
+                          <td class="checkout-quantity">
+                            <!-- quantity arrow start -->
+                            <div class="checkout-quantity-box">
+                              <button class="checkout-quantity-down "><i class="fa-solid fa-minus"></i></button>
+                              <input  type="text" class="checkout-output " value="0">
+                              <button class="checkout-quantity-up"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <!-- quantity arrow end -->
+                          </td>
+                          <td class="checkout-total">$130.00</td>
+                        </tr>
+                        <tr class="checkout-sub-total">
+                          <th scope="col">Subtotal</th>
+                          <td scope="col" colspan="4">$130.00</td>
+                        </tr>
+                        <tr class="checkout-sub-total">
+                          <th scope="row">Total</th>
+                          <td colspan="4" class="check-total">$130.00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </table>
+            </div>
+      </div>
+  </div>
+</section>
+<!-- CHECKOUT TABLE END -->
+
+<!-- CHECKOUT PAYMENT START -->
+<section id="checkout-payment">
+  <div class="container">
+    <div class="checkBox">
+      <div class="money-transfer">
+        
+        <ul class="" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+              <label class="form-check-label" for="defaultCheck1">
+                Direct bank transfer
+              </label>
+            </div>
+          </li>
+        </ul>
+        <div class="tab-content mb-3" id="myTabContent">
+          <div class="tab-pane fade checkBox-details" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our
+            account.
+          </div>
+        </div>
+        
+      </div>
+      <div class="payment">
+        
+        <ul class="" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+              <label class="form-check-label" for="defaultCheck2">
+                Check payments
+              </label>
+            </div>
+          </li>
+        </ul>
+        <div class="tab-content mb-3" id="myTabContent">
+          <div class="tab-pane fade checkBox-details" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
+          </div>
+        </div>
+      </div>
+       <div class="delivery">
+        
+        <ul class="" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+              <label class="form-check-label" for="defaultCheck3">
+                Pay with cash upon delivery.
+              </label>
+            </div>
+          </li>
+        </ul>
+        <div class="tab-content mb-3" id="myTabContent">
+          <div class="tab-pane fade checkBox-details" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
+          </div>
+        </div>
+       
+       </div> 
+       <div class="place-order">
+        <p>Your personal data will be used to process your order, support your experience throughout this website, 
+          and for other purposes described in our <a href="#">privacy policy.</a>
+        </p>
+        <div class="order-bttn">
+          <a href="#">Place Order &nbsp;
+            <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+          </a>
+        </div>
+       </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CHECKOUT PAYMENT END -->
+
+    <!-- CART FOOTER START -->
+    <section id="secondFooter">
+      <div class="container">
+         <div class="footerDetails">
+  
+          <div class="footerIntro">
+            <div class="row">
+              <div class="footertitle col-lg-6 col-12">
+                <h2>Subscribe to Our Newsletter!</h2>
+                <p>Authoritatively morph 24/7 potentialities with error-free partnerships. <br> Objectively engineer multimedia.</p>
+              </div>
+              <div class="searchBox col-lg-6 col-12">
+                <form class="row px-2 ms-lg-2">
+                  <input type="text" placeholder="Enter your email..." class="border-0 col">
+                  <button class="col">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <hr style="background: #151A32; opacity: 0.2;">
+      <div class="footerInformation row">
+       <div class="footerlogo col-xl-3 col-md-12 mb-4">
+        <div class="f-logo">
+          <img src="./images/secondfooter logo.png" alt="">
+        </div>
+        <div class="f-text">
+          <p>Progressively optimize effective ideas before turnkey process improvements. Proactively disseminate</p>
+        </div>
+        <div class="f-social">
+          <span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </span>
+        </div>
+       </div>
+        
+      <div class="footermyaccount col-xl-2 col-md-12 mb-4 d-none d-sm-none d-md-block d-lg-block">
+        <div class="title">
+          My Account
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> My Account
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> View Cart
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Wishlist
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Compare
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> New Products
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footersupport col-xl-2 col-md-12 mb-4 d-none d-sm-none d-md-block d-lg-block">
+        
+        <div class="title">
+          Support
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Help
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Feedback
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Customer Service
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span> Store Locations
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footershop col-xl-2 col-md-12 mb-4 d-none d-sm-none d-md-block d-lg-block">
+        
+        <div class="title">
+          Shope
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Men’s Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Women’s Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Kids’ Shopping
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>Discounts
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa-solid fa-angle-right"></i></span>New Arrivels
+            </a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <div class="footerContactInfo col-xl-2 mb-4 mt-sm-4">
+          
+          <div class="title">
+            Contact Us
+          </div>
+  
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-location-dot"></i></span> &nbsp; <a href="#">
+                United States
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-phone"></i></span> &nbsp; <a href="tel:+18008660286">
+                +18008660286
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span> &nbsp; <a href="mailto:aetor.info@gmail.com">
+                aetor.info@gmail.com
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-globe"></i></span> &nbsp; <a href="#">
+                info@aetor.com
+              </a>
+            </li>
+            
+            
+          </ul>
+  
+        </div>
+  
+      </div>
+      </div>
+      </div>
+
+      <hr>
+      <div class="container">
+      <div class="footerCopyright row">
+          <div class="copyrightText col-lg-6">
+            <h3> © 2033 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft </span></h3>
+          </div>
+          <div class="copyrightpayment col-lg-6">
+           <img src="./images/footer payment.png" alt=""> 
+          </div>
+        </div>  
+      </div>
+    </section>
+    <!-- CART FOOTER END -->
+                           
+<!-- JS LINKS START -->
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/typeit.umd.js"></script>
+<script src="./js/jquery.countdown.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/iconify-icon.min.js"></script>
+<script src="./js/venobox.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/app.js"></script>
+<!-- JS LINKS END -->
+</body>
+</html>

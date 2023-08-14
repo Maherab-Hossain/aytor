@@ -1,0 +1,151 @@
+// ********************* COMPARE PAGE START / 5TH PAGE START ********************************
+//  COMPARE START
+#compareCnt{
+   margin: 100px 0px;
+   .compareBox{
+   table{
+   cursor: pointer; 
+   text-align: center;
+   border: 1px solid $comparetableBorder;
+   .product-table-searchBar{
+    th{
+    background-color: $spacialBgColor;
+    }
+   .searchBar-textArea{
+   input{
+   background-color: transparent;
+   border: none;
+   box-shadow: none;
+   outline: none;  
+   } 
+   text-align: left;
+   padding: 12px 30px;
+   font-size: 16px;
+   color: $arrivalpriceColor;
+   font-weight: 400;
+   line-height: 26px; 
+   } 
+   .searchBar-iconArea{ 
+   text-align: right;
+   padding: 13px 20px;
+   button{
+   color: $colorPrimary;
+   padding-left: 20px;
+   height: 24px;
+   display: inline-block;
+   border: none;
+   border-left: 1px solid $colorPrimary; 
+   }
+   }
+   }
+   th, tr, td{
+   border: 1px solid $comparetableBorder;    
+   }
+   .compare-head{
+    cursor: pointer; 
+   td{
+   padding: 40px 120px;
+   color: $colorPrimary;    
+   }  
+   }
+   .compare-remove{
+   cursor: pointer; 
+   padding: 37px 34px;
+   }
+   .compare-products{
+   th{
+   padding: 135px 30px;
+   }
+   td{
+   padding: 30px 40px;
+   .productImg{
+   margin-bottom: 15px;   
+   }
+   .productText{
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;   
+   }   
+   }
+   }
+   .compare-description{
+   th{
+   padding: 37px 19px;
+   }
+   td{
+   padding: 20px 18px;   
+   font-family: $secondaryfont;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28px;    
+   }
+   }
+   .compare-price, .compare-color, .compare-ratting, .compare-stock{
+   th{
+   padding: 12px 42px;
+   }
+   td{
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   color: $arrivalpriceColor;   
+   }
+   }
+   .compare-ratting{
+   .compare-star{
+   color: $colorPrimary;
+   span{
+     span{
+     font-size: 16px;
+     color: $arrivalpriceColor;
+     font-weight: 400;
+     line-height: 26px; 
+     } 
+   }   
+   }   
+   }
+   .compare-stock{
+   td{
+   span{
+   color: $compareStockicon;   
+   margin-right: 4px;   
+   }   
+   }   
+   }
+   .compare-addCart{
+   th{
+   padding: 24px 16px; 
+   }
+   td{
+    padding: 13px 0px;
+    a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    width: 140px;
+    height: 50px; 
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: $colorPrimary;
+    color: $whiteColor;    
+    } 
+   } 
+   }
+   .compare-price, .compare-addCart, .compare-ratting {
+   th, td{
+   background-color: $spacialBgColor; 
+   }
+   }
+   }
+   th{
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 28px; 
+   }   
+   }
+}
+//  COMPARE END
+// COMPARE FOOTER START
+@import "./secondfooter"
+// COMPARE FOOTER END
+// ********************* COMPARE PAGE START / 5TH PAGE END ********************************

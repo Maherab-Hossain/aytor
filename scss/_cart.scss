@@ -1,0 +1,178 @@
+// ********************* CART PAGE START / 6TH PAGE ********************************
+// CART TABLE START
+#cartTable{
+  margin: 100px 0px;
+  .cartCnt{
+  table{
+  text-align: center;  
+  border: 1px solid $comparetableBorder;
+  .cart-head{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  th{
+  border-bottom: 2px solid $colorPrimary;  
+  background-color: $spacialBgColor;  
+  } 
+  }
+  .cart-product-info{
+   text-align: center;
+   font-size: 16px;
+   color: $arrivalpriceColor;
+   font-weight: 400;
+   line-height: 28px; 
+  td{
+  border: 1px solid $comparetableBorder;
+  padding: 30px 50px;  
+  }
+  .cart-img{
+  padding: 30px 50px;  
+  }
+  .cart-product{  
+  padding: 86px 100px;  
+  font-family:$secondaryfont;
+  font-size: 16px;
+  color: $arrivalpriceColor;
+  font-weight: 400;
+  line-height: 28px; 
+  }
+  .cart-price, .cart-total, .cart-remove{
+  padding: 86px 55px;
+  }
+  .cart-remove{
+  color: $colorPrimary;  
+  }
+  .cart-quantity{
+    padding: 85px 53px;
+    // quantity arrow start 
+      .cart-quantity-down{ 
+      color: $dealCntbgColor;  
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      border: 1px solid $spacialBgColor;
+      }
+      .cart-quantity-up{
+      color: $dealCntbgColor;    
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      border: 1px solid $spacialBgColor;
+      }
+      .cart-output{
+      padding: 2px 30px;  
+      font-size: 16px;
+      font-family: $secondaryfont;
+      color: $arrivalpriceColor;
+      font-weight: 400;
+      line-height: 28px;    
+      width: 24px;    
+      height: 24px;
+      text-align: center;
+      border: 1px solid $spacialBgColor;
+      outline: none; 
+      }   
+
+      // quantity arrow end    
+  }  
+  }
+  .cart-submit{
+    position: relative;
+  form{
+  margin-left: 15px;
+  padding: 15px 0px;  
+  input{
+  padding: 11px 171px 11px 15px;
+  border: 1px solid $dealCntbgColor;
+  outline: none;  
+  }
+  }
+  // .go-bttn{
+  // padding: 15px 0px;  
+  // a{
+  // @include showMoreBtn ()  
+  // }  
+  // }
+  .update-bttn{
+  padding: 15px 0px;
+  a{
+   margin-right: 20px; 
+   @include showMoreBtn ();
+   width: inherit;
+  }  
+  }  
+  }  
+  }  
+  }    
+}
+// CART TABLE END
+
+// CART TOTAL START
+#cart-total{
+  margin-bottom: 100px;
+ .cartTotalBox{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  @include customScreen (320px, 991px){
+    display: block;
+  }  
+  h3{
+  margin-right: 533px;  
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  @include customScreen (320px, 991px){
+    margin-right: 0px;
+  }     
+  }
+  table{
+  text-align: center;
+  border: 1px solid $comparetableBorder;  
+  tr{
+  color: $arrivalpriceColor;  
+  font-size: 16px;
+  color: $arrivalpriceColor;
+  font-weight: 400;
+  line-height: 26px;  
+  border: 1px solid $comparetableBorder;  
+  th{
+  border: 1px solid $comparetableBorder;  
+  padding: 17px 142px 17px 20px;  
+  background-color: $spacialBgColor;
+  @include customScreen (320px, 991px){
+    padding:17px 0px ;
+  }     
+  }
+  td{
+  padding: 17px 338px 17px 30px;
+  @include customScreen (320px, 991px){
+    padding:17px 30px ;
+  }  
+  }
+  }  
+  }
+  .cart-checkout-bttn{
+  margin-right: 420px;  
+  margin-top: 30px;
+  @include customScreen (320px, 991px){
+    margin-right: 0px;
+    margin-top: 10px
+  }   
+  a{
+  @include showMoreBtn ();
+  width:230px;
+  span{
+   right: 16px; 
+  }
+  }
+  }
+ } 
+}
+// CART TOTAL END
+// CART FOOTER START
+@import "./secondfooter";
+// CART FOOTER END
+// ********************* CART PAGE END / 6TH PAGE ********************************
