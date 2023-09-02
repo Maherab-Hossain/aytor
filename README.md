@@ -6,7 +6,7 @@ Revolutionary e-commerce platform with cutting-edge features for better online s
 
 <h2>Description</h2>
 
-This repository houses the source code for [Your E-commerce Website Name], a cutting-edge e-commerce platform designed to provide a seamless online shopping experience. Built with the latest technologies and best coding practices, our platform aims to revolutionize the way customers shop for their favorite products.
+This repository houses the source code for Aytor, a cutting-edge e-commerce platform designed to provide a seamless online shopping experience. Built with the latest technologies and best coding practices, our platform aims to revolutionize the way customers shop for their favorite products.
 
 <h2>Features</h2>
 
