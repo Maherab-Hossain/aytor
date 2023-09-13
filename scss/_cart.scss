@@ -60,7 +60,7 @@
       border: 1px solid $spacialBgColor;
       }
       .cart-output{
-      padding: 2px 30px;  
+      // padding: 2px 30px;  
       font-size: 16px;
       font-family: $secondaryfont;
       color: $arrivalpriceColor;
@@ -71,6 +71,7 @@
       text-align: center;
       border: 1px solid $spacialBgColor;
       outline: none; 
+      margin: 0px 5px;
       }   
 
       // quantity arrow end    

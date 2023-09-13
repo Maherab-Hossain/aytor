@@ -1,0 +1,73 @@
+// ********************* WISHLIST PAGE START / 9TH PAGE ********************************
+// WISHLIST TABLE START
+#wishlistTable{
+    margin: 100px auto;
+    .wish-Cnt{
+      table{
+        text-align: center;  
+        border: 1px solid $comparetableBorder;
+        .checkout-head{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        .wish-product-th{
+        padding-right: 215px;  
+        }
+        }
+        th{
+        border-bottom: 2px solid $colorPrimary;  
+        background-color: $spacialBgColor;  
+        } 
+        }
+        .checkout-product-info{
+         text-align: center;
+         font-size: 16px;
+         color: $arrivalpriceColor;
+         font-weight: 400;
+         line-height: 28px; 
+        .wish-product-icon{
+        padding:75px 50px;
+        a{
+        color: $arrivalpriceColor;
+        }
+        }
+        .wish-details-product{  
+        padding: 42px 0px;  
+        font-family:$secondaryfont;
+        font-size: 16px;
+        color: $arrivalpriceColor;
+        font-weight: 400;
+        line-height: 28px;
+        span{
+        margin-left: 20px; 
+        } 
+        }
+        .wish-price{
+        padding: 75px 0px;   
+        }
+        .wish-stock{
+        padding:75px 0px;
+        span{
+        padding-right: 5px;
+        color: $compareStockicon;
+        }
+        }
+        .wish-total{
+        padding:75px 0px;
+        // @include customScreen (320px, 991px) {
+        //     padding: 0px 2px;
+        // }
+        a{
+        color: $whiteColor;
+        @include showMoreBtn
+        }  
+        }  
+        }
+        }
+    }    
+// WISHLIST TABLE END
+
+// WISHLIST FOOTER START
+@import "./secondfooter";
+// WISHLIST FOOTER END
+// ********************* WISHLIST PAGE END / 9TH PAGE ********************************

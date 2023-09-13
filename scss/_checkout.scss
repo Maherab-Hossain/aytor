@@ -100,22 +100,22 @@
     .checkout-quantity{
     padding: 85px 53px;
     // quantity arrow start 
-    .checkout-quantity-down{ 
+    .cart-quantity-down{ 
     color: $dealCntbgColor;  
     width: 24px;
     height: 24px;
     background-color: transparent;
     border: 1px solid $spacialBgColor;
     }
-    .checkout-quantity-up{
+    .cart-quantity-up{
     color: $dealCntbgColor;    
     width: 24px;
     height: 24px;
     background-color: transparent;
     border: 1px solid $spacialBgColor;
     }
-    .checkout-output{
-    padding: 2px 30px;  
+    .cart-output{
+    // padding: 2px 30px;  
     font-size: 16px;
     font-family: $secondaryfont;
     color: $arrivalpriceColor;
@@ -126,6 +126,7 @@
     text-align: center;
     border: 1px solid $spacialBgColor;
     outline: none; 
+    margin: 0px 5px;
     }   
     // quantity arrow end    
     }  

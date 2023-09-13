@@ -1,0 +1,133 @@
+// ********************* BLOG PAGE START / 10TH PAGE ********************************
+// BLOG PAGINATION START
+#blogGrid{
+    margin: 100px 0px;
+    .shopGridBox{
+
+    #gridSlider{
+    margin-top: 30px;
+    .shopGridCnt{
+    margin-bottom: 24px;
+    }
+    .shopSliderBox{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    // padding-right: 24px;
+    width: 424px;
+    .bestCnt{
+    .arrivImg {
+    width: inherit;
+    img{  
+    max-width: 424px;
+    width: 100%;
+    filter: brightness(100%);
+    }
+    }
+    .sale h4{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    text-align: center;
+    color: $dealCntbgColor;
+    background-color: $arrivalpriceColor;
+    padding: 7px 12px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    }
+    &:hover .arrivImg{
+    filter: brightness(80%);
+    }
+    }
+    .bestText{    
+    box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+    background-color: $whiteColor;    
+    width: 100%; 
+    padding:20px 30px;
+    position: relative;
+    h5{
+    font-family: $secondaryfont;
+    font-size: 16px;
+    color: $arrivalpriceColor;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 10px;
+    }
+    h4{
+    font-size: 24px;
+    color: $textColorPrimary;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 10px;
+    &:hover{
+    color: $colorPrimary;    
+    }
+    }
+    a{
+    color: $arrivalpriceColor;
+    transition: 0.25s;
+    span{
+    position: absolute;
+    bottom: 15px;
+    left:115px;
+    transition: 0.25s;    
+    } 
+    &:hover{
+    color:$colorPrimary; 
+    }
+    }
+    }
+    }
+    }   
+    }
+    .blog-page-details{
+    .page-details{
+     p{
+     span{
+      padding-bottom: 5px;
+      border-bottom: 2px solid $arrivalpriceColor ;
+     } 
+     } 
+    }
+    }
+    // pagination start
+    .paginationbox{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    .paginationCnt{
+      text-align: center;
+    ul{
+    li{
+    margin-left: 10px;  
+     a{
+     color: $arrivalpriceColor ; 
+     }
+     .arrowNumber{
+      transition: 0.25s;
+     &:hover{
+      color: $whiteColor;
+      background-color: $navButtonColor;
+     } 
+     }
+    .arrowBtn{
+    box-shadow: none;
+    background: transparent;  
+    color: $arrivalpriceColor;
+    transition: 0.25s;
+    &:hover{
+     color: $colorPrimary 
+    }
+    }  
+    }
+    }  
+    } 
+    }
+        //pagination end 
+}
+// BLOG PAGINATION END
+// ********************* BLOG PAGE END / 10TH PAGE ********************************
