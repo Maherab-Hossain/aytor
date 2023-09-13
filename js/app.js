@@ -40,6 +40,21 @@ $ (function () {
  })
   // SCROLL UP END
 
+    // SCREEN MOOD START
+  //   $(window).scroll(function () {
+  //     let scrollup = $(window).scrollTop()
+      
+  //     if (scrollup > 1000) {
+
+  //         $(`.screenMood `).addClass(`screenfixed`)
+  //         $(`.display`).fadeIn()
+  //     } else {
+  //         $(`.screenMood `).removeClass(`screenfixed`)
+  //         $(`.display`).fadeOut()
+  //     }
+  // })
+    // SCREEN MOOD END
+
 
   //banner slick slider  start
     $('#banner').slick({
@@ -184,7 +199,7 @@ $ (function () {
 // ********************* ABOUT US PAGE START / 2nd PAGE ********************************
 // ABOUT PAGE COUNTER UP START
 
-$('.couterUpAbout').spincrement()
+// ---------------------------------------------------------
 // ABOUT PAGE COUNTER UP END
 
 // LEADERSHIP START
@@ -300,7 +315,8 @@ function upResult() {
   upNewValue = upNewValue + 1;
   output.value = upNewValue;
 }
-upbtn.addEventListener(`click`, upResult);
+if(upbtn!= null){upbtn.addEventListener(`click`, upResult)}
+
 // UP BUTTON ENDS
 
 // // DOWN BUTTON STARTS
@@ -313,7 +329,7 @@ function downResult() {
   downNewValue = downNewValue - 1;
   output.value = downNewValue;
 }
-downbtn.addEventListener(`click`, downResult);
+if(downbtn!= null){downbtn.addEventListener(`click`, downResult)}
 // // DOWN BUTTON ENDS
 
 // QUANTITY ARROW END
@@ -415,8 +431,7 @@ let cartoutput = document.querySelector(`.cart-output`);
 function cartupResult() {
     let cartupNewValue = Number(cartoutput.value);
     cartupNewValue = cartupNewValue + 1;
-    output.value = cartupNewValue;
-
+    cartoutput.value = cartupNewValue;
 }
 
 cartupbtn.addEventListener(`click`, cartupResult);
@@ -430,14 +445,14 @@ let cartdownbtn = document.querySelector(`.cart-quantity-down`)
 
 
 function cartdownResult() {
-    let downNewValue =Number(output.value);
+    let downNewValue =Number(cartoutput.value);
 
     if (downNewValue == 0) {
         return false
     }
 
     downNewValue = downNewValue - 1;
-    output.value = downNewValue;
+    cartoutput.value = downNewValue;
 }
 
 cartdownbtn.addEventListener(`click`, cartdownResult);
@@ -447,3 +462,31 @@ cartdownbtn.addEventListener(`click`, cartdownResult);
 
 // CART TABLE ARROWS END
 // ********************* CART PAGE END / 6TH PAGE ********************************
+
+// Dark Mood Strats
+
+let displaymoodbtn = document.querySelector(`.display`)
+let bodybtn = document.querySelector(`body`)
+// let moodbtn = document.querySelector(`.mood`)
+let lightbtn = document.querySelector(`.light`)
+
+function moodresult() {
+    bodybtn.classList.toggle(`displayMood`)
+
+    if (bodybtn.classList.contains(`displayMood`)== false) {
+        
+        // moodbtn.innerHTML=`Dark Mood`
+        lightbtn.innerHTML= `<i class="fa-solid fa-sun"></i>`
+
+    } else {
+        // moodbtn.innerHTML=`Light Mood`
+        lightbtn.innerHTML= `<i class="fa-solid fa-moon"></i></i>`
+    }
+}
+if(displaymoodbtn!= null){displaymoodbtn.addEventListener(`click`, moodresult)}
+
+
+// Dark Mood End
+
+// sp----------------
+$('.couterUpAbout').spincrement()

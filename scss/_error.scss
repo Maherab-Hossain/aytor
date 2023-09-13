@@ -1,0 +1,38 @@
+// ********************* ERROR PAGE START / 11TH PAGE ********************************
+// error banner start
+#errorBanner{
+    background-image: url(/images/error\ bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .banner{
+    padding-top: 450px;
+    padding-bottom: 120px;
+    text-align: center;
+    h3{
+    font-size: clamp(16px, 12vw, 24px);
+    color: $whiteColor;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 10px;
+    }
+    h4{  
+    color: $whiteColor;
+    font-family: $secondaryfont;
+    font-size: 16px;
+    color: $whiteColor;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 40px;
+    a{  
+    color: $whiteColor;
+    }
+    }
+    a{
+    @include showMoreBtn    
+    }
+    }
+}
+// error banner end
+// ********************* ERROR PAGE END / 11TH PAGE ********************************
