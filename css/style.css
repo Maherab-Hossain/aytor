@@ -26,6 +26,38 @@ body {
   background-color: white;
 }
 
+.display {
+  position: fixed;
+  right: 0px;
+  top: 250px;
+  z-index: 999999;
+  border-radius: 50px 0px 0px 50px;
+  padding: 5px 15px 5px 25px;
+  background-color: #FF6F61;
+  border: 5px solid #fff;
+  border-left: none;
+  border-right: none;
+  animation: screenFixed 1s ease-in forwards;
+}
+.display button {
+  position: static;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  font-size: 25px;
+  background-color: #FF6F61;
+  border: none;
+  cursor: pointer;
+}
+@keyframes screenFixed {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 /* pre load start */
 /* pre load start */
 .preload {

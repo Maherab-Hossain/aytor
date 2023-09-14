@@ -41,18 +41,18 @@ $ (function () {
   // SCROLL UP END
 
     // SCREEN MOOD START
-  //   $(window).scroll(function () {
-  //     let scrollup = $(window).scrollTop()
+    $(window).scroll(function () {
+      let scrollup = $(window).scrollTop()
       
-  //     if (scrollup > 1000) {
+      if (scrollup > 1000) {
 
-  //         $(`.screenMood `).addClass(`screenfixed`)
-  //         $(`.display`).fadeIn()
-  //     } else {
-  //         $(`.screenMood `).removeClass(`screenfixed`)
-  //         $(`.display`).fadeOut()
-  //     }
-  // })
+          $(`.screenMood `).addClass(`screenfixed`)
+          $(`.display`).fadeIn()
+      } else {
+          $(`.screenMood `).removeClass(`screenfixed`)
+          $(`.display`).fadeOut()
+      }
+  })
     // SCREEN MOOD END
 
 
