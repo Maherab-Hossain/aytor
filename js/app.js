@@ -1,10 +1,4 @@
 $ (function () {
-  // pre loader start
-    $(window).on(`load`, function () {
-      $(`.preload`).fadeOut()
-    });
-  // pre loader end
-
   // modal chat button start
     $(window).scroll(function () {
       let scrollup = $(window).scrollTop()
@@ -29,7 +23,6 @@ $ (function () {
      })
   // modal chat button end
 
-  
   // SCROLL UP START
  $(`.scrollup`).click (function () {
     
@@ -54,7 +47,6 @@ $ (function () {
       }
   })
     // SCREEN MOOD END
-
 
   //banner slick slider  start
     $('#banner').slick({
@@ -198,8 +190,7 @@ $ (function () {
 
 // ********************* ABOUT US PAGE START / 2nd PAGE ********************************
 // ABOUT PAGE COUNTER UP START
-
-// ---------------------------------------------------------
+// LINE NUMBER -- 492 --
 // ABOUT PAGE COUNTER UP END
 
 // LEADERSHIP START
@@ -434,8 +425,7 @@ function cartupResult() {
     cartoutput.value = cartupNewValue;
 }
 
-cartupbtn.addEventListener(`click`, cartupResult);
-
+if(cartupbtn!= null){cartupbtn.addEventListener(`click`, cartupResult)}
 // UP BUTTON ENDS
 
 // // DOWN BUTTON STARTS
@@ -455,7 +445,7 @@ function cartdownResult() {
     cartoutput.value = downNewValue;
 }
 
-cartdownbtn.addEventListener(`click`, cartdownResult);
+if(cartdownbtn!= null){cartdownbtn.addEventListener(`click`, cartdownResult)}
 
 
 // // DOWN BUTTON ENDS
@@ -465,28 +455,34 @@ cartdownbtn.addEventListener(`click`, cartdownResult);
 
 // Dark Mood Strats
 
-let displaymoodbtn = document.querySelector(`.display`)
-let bodybtn = document.querySelector(`body`)
-// let moodbtn = document.querySelector(`.mood`)
-let lightbtn = document.querySelector(`.light`)
+// let displaymoodbtn = document.querySelector(`.display`)
+// let bodybtn = document.querySelector(`body`)
 
-function moodresult() {
-    bodybtn.classList.toggle(`displayMood`)
+// let lightbtn = document.querySelector(`.light`)
 
-    if (bodybtn.classList.contains(`displayMood`)== false) {
+// function moodresult() {
+//     bodybtn.classList.toggle(`displayMood`)
+
+//     if (bodybtn.classList.contains(`displayMood`)== false) {
         
-        // moodbtn.innerHTML=`Dark Mood`
-        lightbtn.innerHTML= `<i class="fa-solid fa-sun"></i>`
+        
+//         lightbtn.innerHTML= `<i class="fa-solid fa-sun"></i>`
 
-    } else {
-        // moodbtn.innerHTML=`Light Mood`
-        lightbtn.innerHTML= `<i class="fa-solid fa-moon"></i></i>`
-    }
-}
-if(displaymoodbtn!= null){displaymoodbtn.addEventListener(`click`, moodresult)}
+//     } else {
+        
+//         lightbtn.innerHTML= `<i class="fa-solid fa-moon"></i></i>`
+//     }
+// }
+// if(displaymoodbtn!= null){displaymoodbtn.addEventListener(`click`, moodresult)}
 
 
 // Dark Mood End
-
-// sp----------------
+ // pre loader start
+ $(window).on(`load`, function () {
+  $(`.preload`).fadeOut()
+});
+// pre loader end
+// ********************* ABOUT US PAGE START / 2nd PAGE ********************************
+// ABOUT PAGE COUNTER UP START
 $('.couterUpAbout').spincrement()
+// ABOUT PAGE COUNTER UP END

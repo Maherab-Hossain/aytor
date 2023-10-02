@@ -26,38 +26,6 @@ body {
   background-color: white;
 }
 
-.display {
-  position: fixed;
-  right: 0px;
-  top: 250px;
-  z-index: 999999;
-  border-radius: 50px 0px 0px 50px;
-  padding: 5px 15px 5px 25px;
-  background-color: #FF6F61;
-  border: 5px solid #fff;
-  border-left: none;
-  border-right: none;
-  animation: screenFixed 1s ease-in forwards;
-}
-.display button {
-  position: static;
-  color: #fff;
-  height: 60px;
-  width: 60px;
-  font-size: 25px;
-  background-color: #FF6F61;
-  border: none;
-  cursor: pointer;
-}
-@keyframes screenFixed {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
 /* pre load start */
 /* pre load start */
 .preload {
@@ -4032,7 +4000,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   margin: 100px 0px;
 }
 #contactInfo .contactInfo-details .phone, #contactInfo .contactInfo-details .mail {
-  margin-right: 24px;
+  margin-right: 20px;
 }
 #contactInfo .contactInfo-details .phone, #contactInfo .contactInfo-details .mail, #contactInfo .contactInfo-details .social {
   padding: 50px 40px 40px;
@@ -4339,7 +4307,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 424px;
+  max-width: 424px;
 }
 #blogGrid .shopGridBox #gridSlider .shopSliderBox .bestCnt .arrivImg {
   width: inherit;
@@ -4441,7 +4409,7 @@ nav .navButton li span .cart, nav .navButton li a .cart {
 }
 
 #errorBanner {
-  background-image: url(/images/error\ bg.png);
+  background-image: url(../images/error\ bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
