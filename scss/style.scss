@@ -25,29 +25,6 @@ h1,h2,h3,h4,h5,h6,ul,p,span,ol,a{
 // mixin start
 @import "./_mixin.scss";
 // mixin end
-
-
-.displayMood{
-  $bgcolordark:#06070ce1;
-  $navButtonColor:#fcfcff;
-  $beautyArrowbg:#ffffffbd;
-  $colorPrimary:#FF6F61;
-  $textColorPrimary:#b6b6b6;
-  $whiteColor:#fff;
-  $bannerTextColor:#ece5e5;
-  $beautyCreamHoverBg:darken(#11161e88,100%);
-  $arrivalpriceColor:#7c7c7c;
-  $dealCntbgColor:#CACACA;
-  $spacialBgColor:#F1F3F4;
-  $footerBgColor:#e6eaf1;
-  $footerbordercolor:#F1F1F1;
-  $pageBannerBg:lighten(#e6e8eb,8%);
-  $aboutCounterbg:lighten(#FF6F61,20%);
-  $aboutCounterHoverbg:#F1F3F4;
-  $aboutInstaHoverBg:lighten(#eaebf3,8%);
-  $comparetableBorder:#E0E0E0;
-  $compareStockicon:#29CC00;
-}
 body{
   font-family: $primaryfont;
   color: $textColorPrimary;
@@ -55,7 +32,6 @@ body{
   overflow-x: hidden;
   background-color: $bgcolorlight;
 }
-
 // screen mood start
 @import "./screenmood"; 
 // screen mood end 
